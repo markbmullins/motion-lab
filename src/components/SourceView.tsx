@@ -83,9 +83,9 @@ export function AuditLibrary() {
     <div className="audit-library">
       <div className="page-heading">
         <div>
-          <span className="eyebrow">PRIMARY REFERENCES / 05</span>
+          <span className="eyebrow">PRIMARY REFERENCES / {sites.length}</span>
           <h1>Keep the evidence.</h1>
-          <p>Five independent homepage audits. Their files remain intact.</p>
+          <p>Independent homepage audits with their original files preserved.</p>
         </div>
         <span className="composition-mark">↗</span>
       </div>

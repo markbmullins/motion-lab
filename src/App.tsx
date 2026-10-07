@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { recipes } from './catalog/recipes';
 import { patterns } from './catalog/patterns';
 import { scenes } from './catalog/scenes';
+import sites from './catalog/sites.json';
 import { purposes } from './catalog/types';
 import { useSettings } from './player/settings';
 import { StudyView } from './components/StudyView';
@@ -128,10 +129,10 @@ export default function App() {
             {current.kind === 'patterns'
               ? 'VOCABULARY / ' + patterns.length
               : current.kind === 'recipes'
-                ? 'COMPOSITIONS / 05'
+                ? 'COMPOSITIONS / ' + recipes.length
                 : current.kind === 'scenes'
-                  ? 'IN CONTEXT / 03'
-                  : 'EVIDENCE / 05'}
+                  ? 'IN CONTEXT / ' + scenes.length
+                  : 'EVIDENCE / ' + sites.length}
           </span>
           {current.kind === 'patterns' || current.kind === 'recipes' ? (
             <>
@@ -207,11 +208,6 @@ export default function App() {
               labeled.
             </div>
           )}
-          <div className="sidebar-note">
-            Five sites.
-            <br />
-            One motion vocabulary.
-          </div>
         </aside>
         <main id="main" tabIndex={-1}>
           {current.kind === 'sources' ? (
@@ -235,7 +231,9 @@ export default function App() {
       )}
       <footer className="app-footer">
         <span>Motion Lab / Private study collection</span>
-        <span>{patterns.length} mechanisms · 5 recipes · 3 scenes</span>
+        <span>
+          {patterns.length} mechanisms · {recipes.length} recipes · {scenes.length} scenes
+        </span>
       </footer>
     </>
   );

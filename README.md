@@ -1,6 +1,6 @@
 # Motion Lab
 
-A React learning environment built from the Barber & Co, Studio Lenzing, Linear, Instrument and Vestre homepage audits. **38 mechanisms, five compositions across sites, and three miniature websites.** The five independent audits remain unchanged.
+A React learning environment built from homepage motion audits. Study individual mechanisms, combine them in recipes, and explore them in miniature websites. Independent audits remain unchanged.
 
 ## Run it
 
