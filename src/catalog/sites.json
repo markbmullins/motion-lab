@@ -1,0 +1,32 @@
+[
+  {
+    "id": "barber",
+    "directory": "barber-motion-audit",
+    "name": "Barber & Co",
+    "url": "https://www.barberandco.us/"
+  },
+  {
+    "id": "lenzing",
+    "directory": "lenzing-motion-audit",
+    "name": "Studio Lenzing",
+    "url": "https://www.studiolenzing.com/"
+  },
+  {
+    "id": "linear",
+    "directory": "linear-motion-audit",
+    "name": "Linear",
+    "url": "https://linear.app/"
+  },
+  {
+    "id": "instrument",
+    "directory": "instrument-motion-audit",
+    "name": "Instrument",
+    "url": "https://www.instrument.com/"
+  },
+  {
+    "id": "vestre",
+    "directory": "vestre-motion-audit",
+    "name": "Vestre",
+    "url": "https://www.vestre.com/us"
+  }
+]

@@ -1,0 +1,33 @@
+import type { Track } from '../catalog/types';
+export const clamp = (value: number, min = 0, max = 1) => Math.max(min, Math.min(max, value));
+export const mix = (from: number, to: number, p: number) => from + (to - from) * p;
+export const phase = (timeMs: number, startMs: number, durationMs: number) => durationMs <= 0 ? Number(timeMs >= startMs) : clamp((timeMs - startMs) / durationMs);
+export function cubicBezier(a: number, b: number, c: number, d: number) {
+ const value = (t: number, x: number, y: number) => 3 * (1 - t) ** 2 * t * x + 3 * (1 - t) * t ** 2 * y + t ** 3;
+ return (progress: number) => {
+  if (progress <= 0 || progress >= 1) return clamp(progress);
+  let lo = 0, hi = 1;
+  for (let i = 0; i < 25; i++) { const t = (lo + hi) / 2; if (value(t, a, c) < progress) lo = t; else hi = t; }
+  return value((lo + hi) / 2, b, d);
+ };
+}
+export const curves = {
+ reveal: cubicBezier(.33, 1, .68, 1), settle: cubicBezier(.22, 1, .36, 1),
+ header: cubicBezier(.3, .6, 0, 1), drawer: cubicBezier(.32, .72, 0, 1),
+ standard: cubicBezier(.4, 0, .2, 1), out: cubicBezier(0, 0, .2, 1),
+ nativeOut: cubicBezier(0, 0, .58, 1), css: cubicBezier(.25, .1, .25, 1),
+ quint: (p: number) => 1 - (1 - p) ** 5, expo: (p: number) => p >= 1 ? 1 : 1 - 2 ** (-10 * p), linear: (p: number) => p,
+};
+export const sampleTrack = (timeMs: number, track: Pick<Track, 'startMs' | 'durationMs'>, ease = curves.reveal) => ease(phase(timeMs, track.startMs, track.durationMs));
+export function overlapValues(progress: number, narrow = false) {
+ const p = clamp(progress);
+ if (narrow) return { leftX: mix(-14, 0, p), rightX: mix(14, 0, p), leftY: 0, rightY: 0 };
+ return { leftX: 40 * (1 - clamp(p / .42)), rightX: -40 * (1 - clamp(p / .42)),
+  leftY: p <= .32 ? mix(22, 0, p / .32) : mix(0, -40, (p - .32) / .68),
+  rightY: p <= .32 ? mix(-22, 0, p / .32) : mix(0, 36, (p - .32) / .68) };
+}
+export const compactHeader = (wasCompact: boolean, scrollY: number) => wasCompact ? scrollY >= 4 : scrollY > 24;
+export function letterDelays(text: string, characterMs = 25, wordMs = 80) {
+ let index = 0;
+ return text.trim().split(/\s+/).flatMap((word, wordIndex) => Array.from(word).map(char => ({ char, word: wordIndex, delayMs: characterMs * index++ + wordMs * wordIndex })));
+}
