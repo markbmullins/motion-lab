@@ -16,7 +16,9 @@ export const curves = {
  header: cubicBezier(.3, .6, 0, 1), drawer: cubicBezier(.32, .72, 0, 1),
  standard: cubicBezier(.4, 0, .2, 1), out: cubicBezier(0, 0, .2, 1),
  nativeOut: cubicBezier(0, 0, .58, 1), css: cubicBezier(.25, .1, .25, 1),
- quint: (p: number) => 1 - (1 - p) ** 5, expo: (p: number) => p >= 1 ? 1 : 1 - 2 ** (-10 * p), linear: (p: number) => p,
+ quad: (p: number) => 1 - (1 - p) ** 2, inOutQuad: (p: number) => p < .5 ? 2 * p * p : 1 - (-2 * p + 2) ** 2 / 2,
+ cubic: (p: number) => 1 - (1 - p) ** 3, inOutExpo: (p: number) => p === 0 || p === 1 ? p : p < .5 ? 2 ** (20 * p - 10) / 2 : (2 - 2 ** (-20 * p + 10)) / 2,
+ inOutQuint: (p: number) => p < .5 ? 16 * p ** 5 : 1 - (-2 * p + 2) ** 5 / 2, quint: (p: number) => 1 - (1 - p) ** 5, expo: (p: number) => p >= 1 ? 1 : 1 - 2 ** (-10 * p), linear: (p: number) => p,
 };
 export const sampleTrack = (timeMs: number, track: Pick<Track, 'startMs' | 'durationMs'>, ease = curves.reveal) => ease(phase(timeMs, track.startMs, track.durationMs));
 export function overlapValues(progress: number, narrow = false) {

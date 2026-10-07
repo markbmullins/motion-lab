@@ -13,7 +13,7 @@ export function Editorial({ time, reduced, profile, compare, layers }: StudyProp
  const eyebrow = useTransform(time, t => reduced ? 1 : curves.nativeOut(phase(t, supportStart, 600)));
  const description = useTransform(time, t => reduced ? 1 : curves.nativeOut(phase(t, supportStart + 100, 600)));
  const cta = useTransform(time, t => reduced ? 1 : curves.nativeOut(phase(t, supportStart + 200, 600)));
- const divider = useTransform(time, t => reduced ? 1 : curves.standard(phase(t, 400, 1000)));
+ const divider = useTransform(time, t => reduced ? 1 : curves.inOutQuad(phase(t, 400, 1000)));
  const shine = useTransform(time, t => reduced ? 0 : .35 * Math.sin(Math.PI * phase(t, 400, 1800)));
  return <div className="editorial-demo" data-compare={compare}>
   <div className="demo-mast"><span>COMMON GROUND</span><span>Objects · Places · Purpose</span></div>

@@ -11,7 +11,7 @@ export type Study = {
  id: string; title: string; subtitle: string; purpose: Purpose; driver: Driver; durationMs: number;
  sources: SourceRef[]; tags: string[]; useWhen: string; avoidWhen: string; mechanics: string;
  lesson: string; tracks: Track[]; variants?: { id: string; label: string }[];
- component: ComponentType<StudyProps>; code: string; patternIds?: string[];
+ component: ComponentType<StudyProps>; code: () => Promise<string>; patternIds?: string[]; adapted?: string; comparison?: string;
 };
 export type SceneDefinition = { id: string; title: string; subtitle: string; recipeIds: string[]; purpose: string; theme: 'editorial' | 'portfolio' | 'product' };
 export const purposes: Purpose[] = ['Introduce', 'Direct attention', 'Respond', 'Preserve continuity', 'Explain', 'Atmosphere'];
