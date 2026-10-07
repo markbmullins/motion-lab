@@ -1,0 +1,309 @@
+{
+  "verifiedAt": "2026-10-07T21:38:39.203Z",
+  "mode": "Stable reduced-motion destinations; WCAG A/AA tags; not a screen-reader certification",
+  "patterns": [
+    {
+      "study": "#/patterns/fade-rise",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/masked-text",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/blur-reveal",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/divider",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/media-settle",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/image-wipe",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/stagger-sequence",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/logo-entrance",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/lottie-logo",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/hover-zoom",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/image-crossfade",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/sibling-dim",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/measured-highlight",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/hover-detail",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/layer-lift",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/link-accents",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/press-response",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/popover",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/tooltip",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/drawer",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/mobile-menu",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/placeholder",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/compact-header",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/filter-swap",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/shared-layout",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/scroll-converge",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/scroll-light",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/native-carousel",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/chart-reveal",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/thinking-sequence",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/slideshow-progress",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/gallery-drift",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/patterns/marquee",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/shape-loops",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/column-rotators",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/patterns/spring-bars",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/dot-matrix",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/patterns/delayed-help",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "study": "#/recipes/editorial",
+      "report": {
+        "violations": [],
+        "passes": 19
+      }
+    },
+    {
+      "study": "#/recipes/focused-collection",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    },
+    {
+      "study": "#/recipes/scroll-story",
+      "report": {
+        "violations": [],
+        "passes": 20
+      }
+    },
+    {
+      "study": "#/recipes/workflow",
+      "report": {
+        "violations": [],
+        "passes": 17
+      }
+    },
+    {
+      "study": "#/recipes/closing",
+      "report": {
+        "violations": [],
+        "passes": 18
+      }
+    }
+  ]
+}

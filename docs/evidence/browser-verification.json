@@ -1,0 +1,285 @@
+{
+  "checkedAt": "2026-10-07T21:45:21.398Z",
+  "production": [
+    {
+      "heading": "Fade, rise, and nested opacity",
+      "overflow": false,
+      "route": "#/patterns/fade-rise",
+      "stage": true
+    },
+    {
+      "heading": "A reading rhythm",
+      "overflow": false,
+      "route": "#/patterns/masked-text",
+      "stage": true
+    },
+    {
+      "heading": "Resolve into focus",
+      "overflow": false,
+      "route": "#/patterns/blur-reveal",
+      "stage": true
+    },
+    {
+      "heading": "Draw the structure",
+      "overflow": false,
+      "route": "#/patterns/divider",
+      "stage": true
+    },
+    {
+      "heading": "Settle inside the frame",
+      "overflow": false,
+      "route": "#/patterns/media-settle",
+      "stage": true
+    },
+    {
+      "heading": "Reveal by moving a cover",
+      "overflow": false,
+      "route": "#/patterns/image-wipe",
+      "stage": true
+    },
+    {
+      "heading": "An editorial cascade",
+      "overflow": false,
+      "route": "#/patterns/stagger-sequence",
+      "stage": true
+    },
+    {
+      "heading": "Assemble an identity",
+      "overflow": false,
+      "route": "#/patterns/logo-entrance",
+      "stage": true
+    },
+    {
+      "heading": "A vector logo timeline",
+      "overflow": false,
+      "route": "#/patterns/lottie-logo",
+      "stage": true
+    },
+    {
+      "heading": "A fixed frame, a moving image",
+      "overflow": false,
+      "route": "#/patterns/hover-zoom",
+      "stage": true
+    },
+    {
+      "heading": "One object, two contexts",
+      "overflow": false,
+      "route": "#/patterns/image-crossfade",
+      "stage": true
+    },
+    {
+      "heading": "Let the group direct attention",
+      "overflow": false,
+      "route": "#/patterns/sibling-dim",
+      "stage": true
+    },
+    {
+      "heading": "A measured selection",
+      "overflow": false,
+      "route": "#/patterns/measured-highlight",
+      "stage": true
+    },
+    {
+      "heading": "A layered location card",
+      "overflow": false,
+      "route": "#/patterns/hover-detail",
+      "stage": true
+    },
+    {
+      "heading": "A stack with depth",
+      "overflow": false,
+      "route": "#/patterns/layer-lift",
+      "stage": true
+    },
+    {
+      "heading": "Small state signals",
+      "overflow": false,
+      "route": "#/patterns/link-accents",
+      "stage": true
+    },
+    {
+      "heading": "Feedback at contact",
+      "overflow": false,
+      "route": "#/patterns/press-response",
+      "stage": true
+    },
+    {
+      "heading": "Reveal from the control",
+      "overflow": false,
+      "route": "#/patterns/popover",
+      "stage": true
+    },
+    {
+      "heading": "Explain beside the control",
+      "overflow": false,
+      "route": "#/patterns/tooltip",
+      "stage": true
+    },
+    {
+      "heading": "Keep the page behind the details",
+      "overflow": false,
+      "route": "#/patterns/drawer",
+      "stage": true
+    },
+    {
+      "heading": "Navigate inside a sheet",
+      "overflow": false,
+      "route": "#/patterns/mobile-menu",
+      "stage": true
+    },
+    {
+      "heading": "Suggestions that yield to typing",
+      "overflow": false,
+      "route": "#/patterns/placeholder",
+      "stage": true
+    },
+    {
+      "heading": "A header with memory",
+      "overflow": false,
+      "route": "#/patterns/compact-header",
+      "stage": true
+    },
+    {
+      "heading": "Fade, replace, reveal",
+      "overflow": false,
+      "route": "#/patterns/filter-swap",
+      "stage": true
+    },
+    {
+      "heading": "Same object, new context",
+      "overflow": false,
+      "route": "#/patterns/shared-layout",
+      "stage": true
+    },
+    {
+      "heading": "Two views become a place",
+      "overflow": false,
+      "route": "#/patterns/scroll-converge",
+      "stage": true
+    },
+    {
+      "heading": "Move the light, keep the message",
+      "overflow": false,
+      "route": "#/patterns/scroll-light",
+      "stage": true
+    },
+    {
+      "heading": "Let the browser move the row",
+      "overflow": false,
+      "route": "#/patterns/native-carousel",
+      "stage": true
+    },
+    {
+      "heading": "Reveal the distribution",
+      "overflow": false,
+      "route": "#/patterns/chart-reveal",
+      "stage": true
+    },
+    {
+      "heading": "Explain a wait",
+      "overflow": false,
+      "route": "#/patterns/thinking-sequence",
+      "stage": true
+    },
+    {
+      "heading": "Two tempos in a slideshow",
+      "overflow": false,
+      "route": "#/patterns/slideshow-progress",
+      "stage": true
+    },
+    {
+      "heading": "A drifting, draggable gallery",
+      "overflow": false,
+      "route": "#/patterns/gallery-drift",
+      "stage": true
+    },
+    {
+      "heading": "A seamless repeated track",
+      "overflow": false,
+      "route": "#/patterns/marquee",
+      "stage": true
+    },
+    {
+      "heading": "Background motion on a slow clock",
+      "overflow": false,
+      "route": "#/patterns/shape-loops",
+      "stage": true
+    },
+    {
+      "heading": "Independent columns, one rhythm",
+      "overflow": false,
+      "route": "#/patterns/column-rotators",
+      "stage": true
+    },
+    {
+      "heading": "A field responds to proximity",
+      "overflow": false,
+      "route": "#/patterns/spring-bars",
+      "stage": true
+    },
+    {
+      "heading": "Behavior from a small grid",
+      "overflow": false,
+      "route": "#/patterns/dot-matrix",
+      "stage": true
+    },
+    {
+      "heading": "Wait before inviting",
+      "overflow": false,
+      "route": "#/patterns/delayed-help",
+      "stage": true
+    }
+  ],
+  "editorialViewportChecks": [
+    {
+      "clientWidth": 1425,
+      "frameWidth": 837,
+      "heading": "An editorial introduction",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1009,
+      "frameWidth": 524,
+      "heading": "An editorial introduction",
+      "scrollWidth": 1009,
+      "width": 1024
+    },
+    {
+      "clientWidth": 753,
+      "frameWidth": 443,
+      "heading": "An editorial introduction",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "clientWidth": 375,
+      "frameWidth": 337,
+      "heading": "An editorial introduction",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "clientWidth": 305,
+      "frameWidth": 279,
+      "heading": "An editorial introduction",
+      "scrollWidth": 305,
+      "width": 320
+    }
+  ],
+  "relayViewportChecks": [
+    {
+      "client": 305,
+      "scene": 279,
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "client": 753,
+      "scene": 703,
+      "scrollWidth": 753,
+      "width": 768
+    }
+  ],
+  "consoleWarningsOrErrors": []
+}

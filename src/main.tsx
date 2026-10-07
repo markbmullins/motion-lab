@@ -4,4 +4,10 @@ import { SettingsProvider } from './player/settings';
 import App from './App';
 import './styles/base.css';
 import './styles/studies.css';
-createRoot(document.getElementById('root')!).render(<React.StrictMode><SettingsProvider><App /></SettingsProvider></React.StrictMode>);
+createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <SettingsProvider>
+      <App />
+    </SettingsProvider>
+  </React.StrictMode>,
+);

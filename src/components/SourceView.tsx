@@ -1,16 +1,155 @@
 import { useEffect, useState } from 'react';
 import sites from '../catalog/sites.json';
 import type { SourceRef, SiteId } from '../catalog/types';
-const cache=new Map<SiteId,unknown>();
-export function getField(data:unknown,path:string):unknown {
- return path.split('.').reduce<unknown>((value,key)=>value&&typeof value==='object'?Reflect.get(value,key):undefined,data);
+const cache = new Map<SiteId, unknown>();
+export function getField(data: unknown, path: string): unknown {
+  return path
+    .split('.')
+    .reduce<unknown>(
+      (value, key) => (value && typeof value === 'object' ? Reflect.get(value, key) : undefined),
+      data,
+    );
 }
-export function SourceView({sources}:{sources:SourceRef[]}) {
- const [index,setIndex]=useState(0),[content,setContent]=useState<unknown>(),[error,setError]=useState('');
- const ref=sources[Math.min(index,sources.length-1)],site=sites.find(s=>s.id===ref.site)!;
- useEffect(()=>{let active=true;setContent(undefined);setError('');const cached=cache.get(ref.site);if(cached){setContent(getField(cached,ref.field));return;}const abort=new AbortController();fetch(import.meta.env.BASE_URL+'audits/'+site.directory+'/homepage-motion-data.json',{signal:abort.signal}).then(r=>{if(!r.ok)throw Error('Audit data unavailable');return r.json();}).then(data=>{cache.set(ref.site,data);if(active)setContent(getField(data,ref.field));}).catch(e=>{if(active)setError(String(e));});return()=>{active=false;abort.abort();};},[ref.site,ref.field,site.directory]);
- return <div className="source-view"><div className="source-tabs" aria-label="Source records">{sources.map((s,i)=><button key={s.site+s.field} aria-pressed={index===i} onClick={()=>setIndex(i)}>{sites.find(site=>site.id===s.site)?.name}<span>{s.field}</span></button>)}</div><div className="source-explanation"><span className="eyebrow">PRESERVED AUDIT RECORD / {ref.field}</span>{ref.note&&<p>{ref.note}</p>}<p>The study uses substitute content and React implementations. These records describe the original delivered homepage. Adaptations are called out in the study.</p><a className="text-link" href={import.meta.env.BASE_URL+'audits/'+site.directory+'/motion-audit.html'} target="_blank" rel="noreferrer">Open full {site.name} audit ↗</a></div><pre className="source-json">{error|| (content!==undefined?JSON.stringify(content,null,2):'Loading preserved record…')}</pre></div>;
+export function SourceView({ sources }: { sources: SourceRef[] }) {
+  const [index, setIndex] = useState(0),
+    [content, setContent] = useState<unknown>(),
+    [error, setError] = useState('');
+  const ref = sources[Math.min(index, sources.length - 1)],
+    site = sites.find((s) => s.id === ref.site)!;
+  useEffect(() => {
+    let active = true;
+    setContent(undefined);
+    setError('');
+    const cached = cache.get(ref.site);
+    if (cached) {
+      setContent(getField(cached, ref.field));
+      return;
+    }
+    const abort = new AbortController();
+    fetch(import.meta.env.BASE_URL + 'audits/' + site.directory + '/homepage-motion-data.json', {
+      signal: abort.signal,
+    })
+      .then((r) => {
+        if (!r.ok) throw Error('Audit data unavailable');
+        return r.json();
+      })
+      .then((data) => {
+        cache.set(ref.site, data);
+        if (active) setContent(getField(data, ref.field));
+      })
+      .catch((e) => {
+        if (active) setError(String(e));
+      });
+    return () => {
+      active = false;
+      abort.abort();
+    };
+  }, [ref.site, ref.field, site.directory]);
+  return (
+    <div className="source-view">
+      <div className="source-tabs" aria-label="Source records">
+        {sources.map((s, i) => (
+          <button key={s.site + s.field} aria-pressed={index === i} onClick={() => setIndex(i)}>
+            {sites.find((site) => site.id === s.site)?.name}
+            <span>{s.field}</span>
+          </button>
+        ))}
+      </div>
+      <div className="source-explanation">
+        <span className="eyebrow">PRESERVED AUDIT RECORD / {ref.field}</span>
+        {ref.note && <p>{ref.note}</p>}
+        <p>
+          The study uses substitute content and React implementations. These records describe the
+          original delivered homepage. Adaptations are called out in the study.
+        </p>
+        <a
+          className="text-link"
+          href={import.meta.env.BASE_URL + 'audits/' + site.directory + '/motion-audit.html'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open full {site.name} audit ↗
+        </a>
+      </div>
+      <pre className="source-json" tabIndex={0}>
+        {error ||
+          (content !== undefined ? JSON.stringify(content, null, 2) : 'Loading preserved record…')}
+      </pre>
+    </div>
+  );
 }
 export function AuditLibrary() {
- return <div className="audit-library"><div className="page-heading"><div><span className="eyebrow">PRIMARY REFERENCES / 05</span><h1>Keep the evidence.</h1><p>Five independent homepage audits. Their files remain intact.</p></div><span className="composition-mark">↗</span></div><div className="source-principles"><h2>Mechanisms travel.<br/>Measurements keep their origin.</h2><p>The patterns are normalized for comparison. Recipes and scenes are new compositions. Each measured source value stays attached to its audit, alongside limitations and inactive-code exclusions.</p></div><div className="audit-list">{sites.map((site,i)=><article key={site.id}><span className="audit-number">0{i+1}</span><div><h2>{site.name}</h2><p>{['Layered opacity, ornament sequences and location cards.','Editorial ordering, covers, slow zooms and vector logo timelines.','Interface continuity, lighting, physics and small state vocabularies.','Measured focus, discrete content changes and coordinated entrances.','Responsive spatial stories, independent atmosphere and quiet state signals.'][i]}</p></div><div className="audit-actions"><a href={import.meta.env.BASE_URL+'audits/'+site.directory+'/motion-audit.html'} target="_blank" rel="noreferrer">Read audit ↗</a><a href={import.meta.env.BASE_URL+'audits/'+site.directory+'/homepage-motion-data.json'} target="_blank" rel="noreferrer">Raw records ↗</a><a href={site.url} target="_blank" rel="noreferrer">Visit site ↗</a></div></article>)}</div><p className="audit-note">Archived audit dates and scope live inside each document. Live websites can change. No archived website scripts are executed by Motion Lab.</p></div>;
+  return (
+    <div className="audit-library">
+      <div className="page-heading">
+        <div>
+          <span className="eyebrow">PRIMARY REFERENCES / 05</span>
+          <h1>Keep the evidence.</h1>
+          <p>Five independent homepage audits. Their files remain intact.</p>
+        </div>
+        <span className="composition-mark">↗</span>
+      </div>
+      <div className="source-principles">
+        <h2>
+          Mechanisms travel.
+          <br />
+          Measurements keep their origin.
+        </h2>
+        <p>
+          The patterns are normalized for comparison. Recipes and scenes are new compositions. Each
+          measured source value stays attached to its audit, alongside limitations and inactive-code
+          exclusions.
+        </p>
+      </div>
+      <div className="audit-list">
+        {sites.map((site, i) => (
+          <article key={site.id}>
+            <span className="audit-number">0{i + 1}</span>
+            <div>
+              <h2>{site.name}</h2>
+              <p>
+                {
+                  [
+                    'Layered opacity, ornament sequences and location cards.',
+                    'Editorial ordering, covers, slow zooms and vector logo timelines.',
+                    'Interface continuity, lighting, physics and small state vocabularies.',
+                    'Measured focus, discrete content changes and coordinated entrances.',
+                    'Responsive spatial stories, independent atmosphere and quiet state signals.',
+                  ][i]
+                }
+              </p>
+            </div>
+            <div className="audit-actions">
+              <a
+                href={import.meta.env.BASE_URL + 'audits/' + site.directory + '/motion-audit.html'}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read audit ↗
+              </a>
+              <a
+                href={
+                  import.meta.env.BASE_URL +
+                  'audits/' +
+                  site.directory +
+                  '/homepage-motion-data.json'
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
+                Raw records ↗
+              </a>
+              <a href={site.url} target="_blank" rel="noreferrer">
+                Visit site ↗
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p className="audit-note">
+        Archived audit dates and scope live inside each document. Live websites can change. No
+        archived website scripts are executed by Motion Lab.
+      </p>
+    </div>
+  );
 }

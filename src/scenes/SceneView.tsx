@@ -5,28 +5,288 @@ import { recipes } from '../catalog/recipes';
 import { patterns } from '../catalog/patterns';
 import { usePlayer } from '../player/usePlayer';
 import { useSettings } from '../player/settings';
-import { compactHeader } from '../player/math';
+import { captureHeaderScroll } from '../player/events';
 import { Artwork } from '../components/Artwork';
 import { AnimatedText } from '../components/AnimatedText';
 import { ScrollConverge } from '../patterns/Scroll';
-const ScrollScene=(p:StudyProps)=><ScrollConverge {...p} realDefault/>;
-function SceneSlot({study,root,started,inspect,override}:{study:Study;root:RefObject<HTMLDivElement|null>;started:boolean;inspect:boolean;override?:React.ComponentType<StudyProps>}) {
- const [small,setSmall]=useState(false);
- const player=usePlayer(study.durationMs,study.driver,false),seen=useInView(player.container,{root,once:true,amount:.12}),settings=useSettings();
- useEffect(()=>{if(seen&&started&&study.durationMs>0)player.play();},[seen,started]);
- useEffect(()=>{const observer=new ResizeObserver(([entry])=>setSmall(entry.contentRect.width<500));if(player.container.current)observer.observe(player.container.current);return()=>observer.disconnect();},[]);
- const Component=override||study.component;
- return <section className="scene-slot" ref={player.container}>{inspect&&<div className="scene-annotation"><b>{study.title}</b><span>{study.purpose} · {study.sources.map(s=>s.site).filter((s,i,a)=>a.indexOf(s)===i).join(' + ')}</span><a href={'#/'+(recipes.some(s=>s.id===study.id)?'recipes/':'patterns/')+study.id}>Inspect this composition ↗</a></div>}<Component time={player.time} reduced={settings.reduced} speed={settings.speed} profile="source" compare={false} layers={{muted:[],solo:null}} narrow={small} variant={study.variants?.[0].id||''} resetKey={0}/></section>;
+const ScrollScene = (p: StudyProps) => <ScrollConverge {...p} realDefault />;
+function SceneSlot({
+  study,
+  root,
+  started,
+  inspect,
+  override,
+}: {
+  study: Study;
+  root: RefObject<HTMLDivElement | null>;
+  started: boolean;
+  inspect: boolean;
+  override?: React.ComponentType<StudyProps>;
+}) {
+  const [small, setSmall] = useState(false);
+  const player = usePlayer(study.durationMs, study.driver, false),
+    seen = useInView(player.container, { root, once: true, amount: 0.12 }),
+    settings = useSettings();
+  useEffect(() => {
+    if (seen && started && study.durationMs > 0) player.play();
+  }, [seen, started]);
+  useEffect(() => {
+    const observer = new ResizeObserver(([entry]) => setSmall(entry.contentRect.width < 500));
+    if (player.container.current) observer.observe(player.container.current);
+    return () => observer.disconnect();
+  }, []);
+  const Component = override || study.component;
+  return (
+    <section className="scene-slot" ref={player.container}>
+      {inspect && (
+        <div className="scene-annotation">
+          <b>{study.title}</b>
+          <span>
+            {study.purpose} ·{' '}
+            {study.sources
+              .map((s) => s.site)
+              .filter((s, i, a) => a.indexOf(s) === i)
+              .join(' + ')}
+          </span>
+          <a
+            href={
+              '#/' + (recipes.some((s) => s.id === study.id) ? 'recipes/' : 'patterns/') + study.id
+            }
+          >
+            Inspect this composition ↗
+          </a>
+        </div>
+      )}
+      <Component
+        time={player.time}
+        reduced={settings.reduced}
+        speed={settings.speed}
+        profile="source"
+        compare={false}
+        layers={{ muted: [], solo: null }}
+        narrow={small}
+        variant={study.variants?.[0].id || ''}
+        resetKey={0}
+      />
+    </section>
+  );
 }
-function FieldworkHero(p:StudyProps) {
- return <div className="fieldwork-hero"><span className="demo-eyebrow">INDEPENDENT DESIGN / VIENNA</span><h2><AnimatedText text="Ideas need room." time={p.time} reduced={p.reduced} duration={1000} stagger={50} wordStagger={0} rise={20} unit="px" ease="expo" fade mask={false}/></h2><div><p>We build identities and experiences<br/>for a more considered everyday.</p><span>Selected projects<br/>2024 — 2026 ↓</span></div><div className="fieldwork-art"><Artwork tone="clay"/></div></div>;
+function FieldworkHero(p: StudyProps) {
+  return (
+    <div className="fieldwork-hero">
+      <span className="demo-eyebrow">INDEPENDENT DESIGN / VIENNA</span>
+      <h2>
+        <AnimatedText
+          text="Ideas need room."
+          time={p.time}
+          reduced={p.reduced}
+          duration={1000}
+          stagger={50}
+          wordStagger={0}
+          rise={20}
+          unit="px"
+          ease="expo"
+          fade
+          mask={false}
+        />
+      </h2>
+      <div>
+        <p>
+          We build identities and experiences
+          <br />
+          for a more considered everyday.
+        </p>
+        <span>
+          Selected projects
+          <br />
+          2024 — 2026 ↓
+        </span>
+      </div>
+      <div className="fieldwork-art">
+        <Artwork tone="clay" />
+      </div>
+    </div>
+  );
 }
-function ProductHero(p:StudyProps) {
- return <div className="product-hero"><span className="demo-eyebrow">WORK WITH CONTEXT</span><h2><AnimatedText text="Keep the work connected." time={p.time} reduced={p.reduced} duration={800} stagger={20} wordStagger={50}/></h2><p>A small product for teams with a shared direction.</p><span className="product-label">A LOCAL INTERFACE STUDY ↓</span></div>;
+function ProductHero(p: StudyProps) {
+  return (
+    <div className="product-hero">
+      <span className="demo-eyebrow">WORK WITH CONTEXT</span>
+      <h2>
+        <AnimatedText
+          text="Keep the work connected."
+          time={p.time}
+          reduced={p.reduced}
+          duration={800}
+          stagger={20}
+          wordStagger={50}
+        />
+      </h2>
+      <p>A small product for teams with a shared direction.</p>
+      <span className="product-label">A LOCAL INTERFACE STUDY ↓</span>
+    </div>
+  );
 }
-export function SceneView({scene}:{scene:SceneDefinition}) {
- const [started,setStarted]=useState(false),[generation,setGeneration]=useState(0),[inspect,setInspect]=useState(true),[narrow,setNarrow]=useState(false),[compact,setCompact]=useState(false),root=useRef<HTMLDivElement>(null),settings=useSettings();
- const slot=(id:string,override?:React.ComponentType<StudyProps>)=><SceneSlot key={id+generation} study={[...recipes,...patterns].find(s=>s.id===id)!} root={root} started={started} inspect={inspect} override={override}/>;
- function start(){root.current?.scrollTo({top:0,behavior:'instant'});setGeneration(n=>n+1);setStarted(true);}
- return <><div className="page-heading"><div><span className="eyebrow">SCENE / {scene.theme}</span><h1>{scene.title}</h1><p>{scene.subtitle}</p></div><span className="composition-mark">↗</span></div><div className="scene-toolbar"><button className="play-button" onClick={start}>{started?'↻ Restart experience':'▶ Start experience'}</button><label><input type="checkbox" checked={inspect} onChange={e=>setInspect(e.target.checked)}/> Show composition notes</label><label><input type="checkbox" checked={narrow} onChange={e=>setNarrow(e.target.checked)}/> Narrow scene</label><span>Scroll inside the website ↓</span></div><div className={'scene-mat '+(narrow?'narrow-scene':'')}><div className={'scene-window scene-'+scene.theme} ref={root} tabIndex={0} aria-label={scene.title+' website preview; scroll to explore'} onScroll={e=>setCompact(v=>compactHeader(v,e.currentTarget.scrollTop))}><motion.header className="scene-header" animate={{height:compact?56:78}} transition={{duration:settings.reduced?0:.32/settings.speed,ease:[.3,.6,0,1]}}><b>{scene.theme==='editorial'?'COMMON GROUND':scene.theme==='portfolio'?'FIELDWORK':'RELAY'}</b><nav aria-label={scene.title+' preview navigation'}><a href={'#/'+(scene.theme==='product'?'recipes/workflow':'recipes/focused-collection')}>{scene.theme==='product'?'Workflow':'Collection'}</a><a href={'#/recipes/'+(scene.theme==='product'?'workflow':'closing')}>Approach ↗</a></nav></motion.header>{scene.theme==='editorial'?<>{slot('editorial')}<div className="scene-editorial-note"><span className="demo-eyebrow">PLACES FOR PEOPLE</span><p>Every shared space begins<br/>with a simple possibility.</p><span>Pause. Gather. Belong.</span></div>{slot('scroll-story',ScrollScene)}{slot('closing')}</>:scene.theme==='portfolio'?<>{slot('masked-text',FieldworkHero)}{slot('focused-collection')}<div className="scene-studio-note"><span className="demo-eyebrow">A WAY OF WORKING</span><h2>A clear idea.<br/>Care in the details.</h2><p>Motion supports the work: it introduces, acknowledges and connects.</p></div>{slot('closing')}</>:<>{slot('masked-text',ProductHero)}{slot('workflow')}<div className="scene-product-note"><span className="demo-eyebrow">A SYSTEM, NOT A SPECTACLE</span><h2>See the pattern.<br/>Choose the next step.</h2><p>Motion should explain what changed, where it went, and what you can do next.</p></div>{slot('chart-reveal')}{slot('native-carousel')}<footer className="scene-product-footer"><b>RELAY</b><p>Less friction.<br/>More shared direction.</p><a href="#/recipes/workflow">Inspect the workflow ↗</a></footer></>}</div></div><div className="scene-guide"><span className="eyebrow">THE PAGE-LEVEL DECISION</span><h2>Let each section have one job.</h2><p>{scene.purpose}</p><div>{scene.recipeIds.map(id=><a key={id} href={'#/recipes/'+id}>{recipes.find(r=>r.id===id)?.title} ↗</a>)}</div><p className="scene-note">Start plays timed sections once as they enter. Hover and local controls remain interactive. Hidden or offscreen studies pause; reduced motion shows useful destinations immediately. These are original miniature pages, not copies of the source sites.</p></div></>;
+export function SceneView({ scene }: { scene: SceneDefinition }) {
+  const [started, setStarted] = useState(false),
+    [generation, setGeneration] = useState(0),
+    [inspect, setInspect] = useState(true),
+    [narrow, setNarrow] = useState(false),
+    [compact, setCompact] = useState(false),
+    root = useRef<HTMLDivElement>(null),
+    settings = useSettings();
+  const slot = (id: string, override?: React.ComponentType<StudyProps>) => (
+    <SceneSlot
+      key={id + generation}
+      study={[...recipes, ...patterns].find((s) => s.id === id)!}
+      root={root}
+      started={started}
+      inspect={inspect}
+      override={override}
+    />
+  );
+  function start() {
+    root.current?.scrollTo({ top: 0, behavior: 'instant' });
+    setGeneration((n) => n + 1);
+    setStarted(true);
+  }
+  return (
+    <>
+      <div className="page-heading">
+        <div>
+          <span className="eyebrow">SCENE / {scene.theme}</span>
+          <h1>{scene.title}</h1>
+          <p>{scene.subtitle}</p>
+        </div>
+        <span className="composition-mark">↗</span>
+      </div>
+      <div className="scene-toolbar">
+        <button className="play-button" onClick={start}>
+          {started ? '↻ Restart experience' : '▶ Start experience'}
+        </button>
+        <label>
+          <input type="checkbox" checked={inspect} onChange={(e) => setInspect(e.target.checked)} />{' '}
+          Show composition notes
+        </label>
+        <label>
+          <input type="checkbox" checked={narrow} onChange={(e) => setNarrow(e.target.checked)} />{' '}
+          Narrow scene
+        </label>
+        <span>Scroll inside the website ↓</span>
+      </div>
+      <div className={'scene-mat ' + (narrow ? 'narrow-scene' : '')}>
+        <motion.div
+          layoutScroll
+          className={'scene-window scene-' + scene.theme}
+          ref={root}
+          tabIndex={0}
+          aria-label={scene.title + ' website preview; scroll to explore'}
+          onScroll={(e) => setCompact(captureHeaderScroll(e))}
+        >
+          <motion.header
+            className="scene-header"
+            animate={{ height: compact ? 56 : 78 }}
+            transition={{
+              duration: settings.reduced ? 0 : 0.32 / settings.speed,
+              ease: [0.3, 0.6, 0, 1],
+            }}
+          >
+            <b>
+              {scene.theme === 'editorial'
+                ? 'COMMON GROUND'
+                : scene.theme === 'portfolio'
+                  ? 'FIELDWORK'
+                  : 'RELAY'}
+            </b>
+            <nav aria-label={scene.title + ' preview navigation'}>
+              <a
+                href={
+                  '#/' +
+                  (scene.theme === 'product' ? 'recipes/workflow' : 'recipes/focused-collection')
+                }
+              >
+                {scene.theme === 'product' ? 'Workflow' : 'Collection'}
+              </a>
+              <a href={'#/recipes/' + (scene.theme === 'product' ? 'workflow' : 'closing')}>
+                Approach ↗
+              </a>
+            </nav>
+          </motion.header>
+          {scene.theme === 'editorial' ? (
+            <>
+              {slot('editorial')}
+              <div className="scene-editorial-note">
+                <span className="demo-eyebrow">PLACES FOR PEOPLE</span>
+                <p>
+                  Every shared space begins
+                  <br />
+                  with a simple possibility.
+                </p>
+                <span>Pause. Gather. Belong.</span>
+              </div>
+              {slot('scroll-story', ScrollScene)}
+              {slot('closing')}
+            </>
+          ) : scene.theme === 'portfolio' ? (
+            <>
+              {slot('masked-text', FieldworkHero)}
+              {slot('focused-collection')}
+              <div className="scene-studio-note">
+                <span className="demo-eyebrow">A WAY OF WORKING</span>
+                <h2>
+                  A clear idea.
+                  <br />
+                  Care in the details.
+                </h2>
+                <p>Motion supports the work: it introduces, acknowledges and connects.</p>
+              </div>
+              {slot('closing')}
+            </>
+          ) : (
+            <>
+              {slot('masked-text', ProductHero)}
+              {slot('workflow')}
+              <div className="scene-product-note">
+                <span className="demo-eyebrow">A SYSTEM, NOT A SPECTACLE</span>
+                <h2>
+                  See the pattern.
+                  <br />
+                  Choose the next step.
+                </h2>
+                <p>Motion should explain what changed, where it went, and what you can do next.</p>
+              </div>
+              {slot('chart-reveal')}
+              {slot('native-carousel')}
+              <footer className="scene-product-footer">
+                <b>RELAY</b>
+                <p>
+                  Less friction.
+                  <br />
+                  More shared direction.
+                </p>
+                <a href="#/recipes/workflow">Inspect the workflow ↗</a>
+              </footer>
+            </>
+          )}
+        </motion.div>
+      </div>
+      <div className="scene-guide">
+        <span className="eyebrow">THE PAGE-LEVEL DECISION</span>
+        <h2>Let each section have one job.</h2>
+        <p>{scene.purpose}</p>
+        <div>
+          {scene.recipeIds.map((id) => (
+            <a key={id} href={'#/recipes/' + id}>
+              {recipes.find((r) => r.id === id)?.title} ↗
+            </a>
+          ))}
+        </div>
+        <p className="scene-note">
+          Start plays timed sections once as they enter. Hover and local controls remain
+          interactive. Hidden or offscreen studies pause; reduced motion shows useful destinations
+          immediately. These are original miniature pages, not copies of the source sites.
+        </p>
+      </div>
+    </>
+  );
 }
