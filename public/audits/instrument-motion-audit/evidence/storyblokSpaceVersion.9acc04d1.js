@@ -1,0 +1,1 @@
+let c=null,r=0,n=null;const f=1e4;async function g(o,{ttlMs:t=f}={}){const u=Date.now();return t>0&&c!=null&&u<r?c:n||(n=o.get("cdn/spaces/me",{}).then(e=>{var a,i;const l=(i=(a=e==null?void 0:e.data)==null?void 0:a.space)==null?void 0:i.version;return t>0&&(c=l,r=Date.now()+t),l}).finally(()=>{n=null}),n)}export{g};

@@ -1,0 +1,299 @@
+{
+  "site": "https://www.instrument.com/",
+  "audited": "2026-10-07",
+  "scope": "Homepage, desktop 1280/1440px and narrow 390px viewport in a fine-pointer browser. True touch hardware and OS reduced-motion behavior were not emulated.",
+  "stack": [
+    "Nuxt / Vue",
+    "GSAP 3.13.0",
+    "SplitText 3.13.0",
+    "ScrollTrigger 3.13.0",
+    "anime.js 3.2.1",
+    "Swiper",
+    "Vimeo Player"
+  ],
+  "entrance": {
+    "firstVisitLogoPaths": 10,
+    "logoStartMs": 500,
+    "logoDurationMs": 800,
+    "pathStaggerMs": 40,
+    "navStartMs": 800,
+    "navDurationMs": 400,
+    "scrimFadeMs": 400,
+    "ease": "Power1.easeOut",
+    "subsequentLargeLogoDurationMs": 400,
+    "reducedMotion": "Durations set to0; explicit timeline positions remain."
+  },
+  "reveals": {
+    "rootMargin": "0px 0px -15% 0px",
+    "threshold": 0,
+    "repeat": "Each IntersectionObserver unobserves its target on first entry.",
+    "fade": {
+      "durationMs": 500,
+      "opacity": [
+        0,
+        1
+      ],
+      "ease": "Power1.easeOut"
+    },
+    "split": {
+      "types": [
+        "chars",
+        "words",
+        "lines",
+        "wordsWithSpan"
+      ],
+      "durationMs": 1000,
+      "staggerMs": 50,
+      "yPx": [
+        20,
+        0
+      ],
+      "opacity": [
+        0,
+        1
+      ],
+      "ease": "expo.out"
+    },
+    "grid": {
+      "batchIntervalMs": 200,
+      "batchMax": 4,
+      "durationMs": 1000,
+      "staggerMs": 50,
+      "yPx": [
+        20,
+        0
+      ],
+      "ease": "expo.out",
+      "completion": "clearProps:all"
+    },
+    "reducedMotion": "The helper does not initialize hidden/split states when noMotionPreference is false."
+  },
+  "purpose": {
+    "parentFadeMs": 500,
+    "separateObservers": [
+      "parent",
+      "Shape",
+      "A better",
+      "Future."
+    ],
+    "charDurationMs": 1000,
+    "charStaggerMs": 50,
+    "charRisePx": 20,
+    "titleContainerOpacity": 0.3,
+    "lineDelays": "Determined by each line entering the observer boundary, not fixed offsets between lines."
+  },
+  "filters": {
+    "outDurationMs": 500,
+    "inDurationMs": 500,
+    "staggerMs": 50,
+    "ease": "expo.out",
+    "order": "Fade old cards; change active grid after old batch completes; fade new cards.",
+    "layout": "Discrete grid replacement, no FLIP position tween found."
+  },
+  "abacus": {
+    "durationMs": 300,
+    "moveEase": "easeOutQuad",
+    "appearDisappearEase": "linear",
+    "measurement": "shape.getBoundingClientRect minus container.getBoundingClientRect",
+    "paddingPx": 1,
+    "extraWidthHeightPx": 2,
+    "firstAppearance": "Set target geometry immediately, then fade opacity.",
+    "interruption": "anime.remove cancels prior tween before replacement."
+  },
+  "dropdown": {
+    "durationMs": 300,
+    "ease": "ease-in-out",
+    "delayStepMs": 60,
+    "scaleStops": [
+      [
+        0,
+        0
+      ],
+      [
+        0.8,
+        1.07
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "opacityStops": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "origin": "top center",
+    "trigger": [
+      "hover",
+      "focus-within"
+    ],
+    "close": "display:none; no matching animated exit."
+  },
+  "header": {
+    "hideMs": 200,
+    "hideEase": "ease-in-out",
+    "hideY": "-100%",
+    "hideCondition": "positive sampled delta, past header height, menu closed",
+    "showCondition": "sampled delta < -15px or scroll top; mouse entering top header region can also recover it",
+    "brandSwapMs": 300,
+    "brandSwapEase": "linear",
+    "announcementHideMs": 300,
+    "themeMs": 350,
+    "themeEase": "ease-in-out"
+  },
+  "announcement": {
+    "transitionMs": 300,
+    "ease": "ease-in-out",
+    "incomingY": [
+      10,
+      0
+    ],
+    "outgoingY": [
+      0,
+      -10
+    ],
+    "opacity": [
+      0,
+      1
+    ],
+    "interval": "CMS marquee_time, not extracted from the delivered component; no numeric interval claimed.",
+    "pause": "mouseenter stops timer; mouseleave restarts it; touch toggles."
+  },
+  "rotators": {
+    "columnsDesktop": 6,
+    "columnsUnder1024": 3,
+    "assignment": "source item index modulo column count",
+    "sequence": "Fisher-Yates shuffled within each column",
+    "periodMs": 2500,
+    "columnOffsetMs": 100,
+    "transitionMs": 300,
+    "ease": "ease-in-out",
+    "hiddenY": -20,
+    "activeY": 0,
+    "reduced": {
+      "periodMs": 4000,
+      "transform": "none",
+      "rotation": "continues"
+    }
+  },
+  "slideshow": {
+    "slides": 6,
+    "autoplayDelayMs": 3000,
+    "transitionMs": 300,
+    "transitionEvidence": "No component speed override; delivered Swiper default speed is 300ms.",
+    "effect": "fade",
+    "crossFade": true,
+    "transitionEase": "CSS ease in inspected slides",
+    "loop": false,
+    "progressMs": 3000,
+    "progressEase": "linear",
+    "progressProperty": "width",
+    "pause": "Swiper autoplay pause/resume plus paused CSS progress",
+    "reduced": "Autoplay-start handler attempts a stop through a different ref path; actual reduced-motion result not verified."
+  },
+  "mobileMenu": {
+    "overlayEnterMs": 250,
+    "overlayEase": "linear",
+    "linkEnterMs": 1000,
+    "linkStaggerMs": 100,
+    "linkY": [
+      15,
+      0
+    ],
+    "linkEase": "easeOutCubic",
+    "socialDelayAfterOverlayMs": 800,
+    "socialEnterMs": 1000,
+    "socialY": [
+      "100%",
+      0
+    ],
+    "socialEase": "easeOutElastic",
+    "exitLinkMs": 400,
+    "exitLinkStaggerMs": 100,
+    "exitY": -75,
+    "exitEase": "easeInCubic",
+    "exitOverlayMs": 250,
+    "exitSocialDelayMs": 500,
+    "exitSocialMs": 400,
+    "exitSocialY": -32,
+    "blurPx": 16,
+    "reduced": "No preference guard in the menu tween handlers."
+  },
+  "micro": {
+    "mediaRestScale": 1.05,
+    "mediaHoverScale": 1,
+    "mediaDurationMs": 250,
+    "mediaEase": "CSS ease (implicit default)",
+    "siblingDimOpacity": 0.5,
+    "siblingDimDurationMs": 250,
+    "siblingDimCondition": "card-grid__cards--dim when item count<5 and parent has no no-hover flag",
+    "buttonPressScale": 0.975,
+    "buttonPressMs": 150,
+    "buttonPressEase": "ease-in-out",
+    "buttonColorMs": 250,
+    "buttonColorEase": "ease-in-out",
+    "abacusLabelColorMs": 300,
+    "abacusLabelEase": "linear",
+    "imageHoverReducedMotion": "Guarded by no-preference; sibling dimming and button rules are not equivalently guarded."
+  },
+  "video": {
+    "ambient": "Vimeo poster loop; IntersectionObserver loads and plays visible media, pauses offscreen.",
+    "reel": "Separate iframe shown on click; poster/play icon fade away.",
+    "fadeMs": 330,
+    "fadeEase": "CSS ease",
+    "touch": "Square ambient poster and requested fullscreen; CSS probe at x=-9999. Fine pointer switches to landscape variant and x=-9998.",
+    "reduced": "Ambient automatic play is gated by noMotionPreference; manual playback remains.",
+    "playIconHover": "A .95\u21921 scale150ms rule exists, but pointer-events:none and no parent-hover trigger were found; excluded as a verified active effect."
+  },
+  "cookie": {
+    "showWaitMs": 250,
+    "transitionMs": 500,
+    "bezier": [
+      0.36,
+      0,
+      0.66,
+      -0.56
+    ],
+    "yPx": [
+      100,
+      0
+    ],
+    "exitYPx": [
+      0,
+      100
+    ],
+    "reduced": "No local preference guard in transition CSS."
+  },
+  "notCounted": [
+    "Video scene edits as separate DOM animations",
+    "Generic page-enter/leave .3s CSS: Nuxt default pageTransition is false and active homepage transition was not established",
+    "Splide spinner/style rules shipped globally but no active Splide homepage element found",
+    "A continuous scroll marquee: announcement is rotating text, not a translating strip",
+    "Parallax/pinning/canvas effects: none identified in current homepage components",
+    "Animated purpose word color: parent opacity stays0.3"
+  ],
+  "liveVerified": [
+    "Card filtering replaces the four visible projects after the fade-out",
+    "Hover target media scale1; siblings opacity0.5, resting scale1.05",
+    "Mobile menu aria-expanded true, seven link rows and three social items",
+    "Escape initiates menu close",
+    "Desktop focus-within dropdown has .3s animation with60/120/180ms delays",
+    "Scroll down hides header; upward scroll restores it",
+    "Slideshow direct selection to slide2 and slide5; pause updates accessible button and CSS progress state",
+    "Hero click hides ambient poster and reveals main iframe",
+    "Purpose title containers remain0.3; each split character reaches opacity1"
+  ],
+  "limitations": [
+    "No quantitative FPS, frame-time or compositor performance trace.",
+    "Viewport resizing is not touch emulation.",
+    "OS motion preference was not changed. Source policy and study behavior are described separately.",
+    "Native hover pointer tests were supplemented with keyboard focus for dropdown verification.",
+    "Live site emitted Nuxt route-payload prefetch warnings for two announcement-linked articles."
+  ]
+}

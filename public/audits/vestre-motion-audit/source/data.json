@@ -1,0 +1,541 @@
+{
+  "audit": {
+    "date": "2026-10-07",
+    "url": "https://www.vestre.com/us",
+    "scope": "Current US homepage and its navigation/search/help controls",
+    "stack": [
+      "Next.js / React",
+      "Motion (motion components, AnimatePresence, useScroll / useTransform)",
+      "Tailwind CSS tokens / CSS modules",
+      "Embla Carousel + Auto Scroll",
+      "Base UI dialogs, drawer and menu primitives",
+      "Sanity content and native HTML video"
+    ],
+    "sourceAssets": 53,
+    "versionPolicy": "No package versions inferred from hashed filenames."
+  },
+  "hero": {
+    "media": {
+      "initial": {
+        "scale": 1.12,
+        "opacity": 0.6,
+        "blurPx": 2
+      },
+      "destination": {
+        "scale": 1,
+        "opacity": 1,
+        "blurPx": 0
+      },
+      "durationMs": 2400,
+      "ease": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "title": {
+      "fromY": "120% of character height",
+      "toY": 0,
+      "durationMs": 800,
+      "delayMs": "25 \u00d7 non-space character index + 80 \u00d7 word index",
+      "ease": [
+        0.33,
+        1,
+        0.68,
+        1
+      ],
+      "mask": "Per-word overflow-hidden wrapper; 0.14em bottom padding + negative margin preserve descenders",
+      "opacity": "No per-character opacity fade"
+    },
+    "support": {
+      "baseDelayMs": "Last character start delay + 320",
+      "eyebrow": {
+        "delayForGLADE": 420,
+        "durationMs": 600
+      },
+      "description": {
+        "delayForGLADE": 520,
+        "durationMs": 600
+      },
+      "cta": {
+        "delayForGLADE": 620,
+        "durationMs": 600
+      },
+      "ease": "Motion easeOut; CSS ease-out cubic(0,0,.58,1) for these opacity tweens"
+    },
+    "trigger": "Component mount, not viewport entry or scroll progress",
+    "source": "e693a111acb2493a.js"
+  },
+  "header": {
+    "compactThresholdPx": 24,
+    "expandThresholdPx": 4,
+    "logic": "Compact once y>24; remain compact until y<4. Initial mount directly tests y>24. Header stays fixed.",
+    "durationMs": 320,
+    "ease": [
+      0.3,
+      0.6,
+      0,
+      1
+    ],
+    "desktopHeightPx": [
+      136,
+      64
+    ],
+    "narrowHeightPx": [
+      104,
+      64
+    ],
+    "logoHeightPx": {
+      "desktop": [
+        96,
+        44
+      ],
+      "narrow": [
+        80,
+        44
+      ]
+    },
+    "yellowFillHeightPx": {
+      "desktop": [
+        96,
+        16
+      ],
+      "narrow": [
+        80,
+        16
+      ]
+    },
+    "yellowFillOpacity": [
+      1,
+      0
+    ],
+    "wordmarkBottomRem": {
+      "desktop": [
+        0.835,
+        0.835
+      ],
+      "narrow": [
+        0.7,
+        0.9
+      ]
+    },
+    "compactBackground": "Fill opacity rises to 0.3; header backdrop-blur-lg =16px.",
+    "coverDetection": "Each marked hero rect top<header height and bottom>0, recomputed on scroll/resize.",
+    "source": "b664f27371261aee.js + a0955bf8ab7df94c.css"
+  },
+  "mega": {
+    "durationMs": 320,
+    "ease": [
+      0.3,
+      0.6,
+      0,
+      1
+    ],
+    "motion": "Opacity only in the inspected markup; transition lists transform but no changing transform endpoint",
+    "trigger": "Desktop hover or focus on navigation point; close on pointer leave, blur outside header, Escape, route change",
+    "height": "40svh, min 288px, max 600px",
+    "content": "Active nav content conditionally rendered. On close the content is removed immediately while container opacity transitions. No item stagger.",
+    "source": "b664f27371261aee.js"
+  },
+  "accents": {
+    "underline": {
+      "fromWidth": "0%",
+      "toWidth": "100%",
+      "durationMs": 150,
+      "ease": [
+        0.4,
+        0,
+        0.2,
+        1
+      ],
+      "heightPx": 0.75
+    },
+    "caret": {
+      "rotationDeg": [
+        0,
+        180
+      ],
+      "durationMs": 200,
+      "ease": [
+        0.4,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "colors": {
+      "durationMs": 150,
+      "ease": [
+        0.4,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "marketPopup": {
+      "opacity": [
+        0,
+        1
+      ],
+      "scale": [
+        0.95,
+        1
+      ],
+      "origin": "top",
+      "durationMs": 150,
+      "ease": [
+        0.4,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "source": "b664f27371261aee.js, 3462b53b9009288a.js, a0955bf8ab7df94c.css"
+  },
+  "products": {
+    "durationMs": 300,
+    "ease": [
+      0,
+      0,
+      0.2,
+      1
+    ],
+    "trigger": "Product card group:hover",
+    "mainImageOpacity": [
+      1,
+      0
+    ],
+    "hoverImageOpacity": [
+      0,
+      1
+    ],
+    "captionOpacity": [
+      1,
+      0
+    ],
+    "behavior": "Contained studio image replaced by cropped lifestyle image. No scale tween here.",
+    "badges": "Shared-layout spring badge expansion is bundled, but no homepage feature badges were observed; excluded from active inventory.",
+    "source": "dddb31d6982abe9f.js / a38911ff8b6091cb.js"
+  },
+  "mediaHover": {
+    "series": {
+      "scale": [
+        1,
+        1.03
+      ],
+      "durationMs": 500
+    },
+    "articles": {
+      "scale": [
+        1.02,
+        1.04
+      ],
+      "durationMs": 300
+    },
+    "references": {
+      "scale": [
+        1,
+        1.02
+      ],
+      "durationMs": 300
+    },
+    "megaSeries": {
+      "scale": [
+        1,
+        1.04
+      ],
+      "durationMs": 500,
+      "overlayOpacity": [
+        0.25,
+        0.15
+      ],
+      "overlayDurationMs": 300
+    },
+    "ease": [
+      0.4,
+      0,
+      0.2,
+      1
+    ],
+    "source": "Live image/video classes; b664f27371261aee.js, 288d2982d73cba8c.js, a038fdf1b6baa266.js"
+  },
+  "gallery": {
+    "engine": "Embla Carousel + Auto Scroll",
+    "options": {
+      "loop": true,
+      "dragFree": true,
+      "align": "start",
+      "playOnInit": true,
+      "stopOnInteraction": false,
+      "speed": 0.5,
+      "startDelay": 0
+    },
+    "speedUnits": "0.5px per 1000/60ms simulation step =30px/s steady state; render interpolation between steps",
+    "defaults": {
+      "direction": "forward",
+      "stopOnMouseEnter": false,
+      "stopOnFocusIn": true
+    },
+    "interaction": "Pointer down stops automatic movement; after pointer up it waits for settle and restarts. Focus stops; focusout restarts.",
+    "layout": "Cropped natural aspect ratio on desktop; 3:4 tiles below 768px. Continuous loop with slide recycling, not CSS translate(-50%).",
+    "reducedMotion": "No guard in this homepage gallery component. A separate product-page carousel has one, but is outside this audit.",
+    "visibility": "No viewport-gated start/stop in the component; motion was observed while offscreen.",
+    "source": "43f8342382a2e50d.js"
+  },
+  "overlap": {
+    "desktopBreakpointPx": 768,
+    "desktopOffsets": [
+      "start 125vh",
+      "end 35vh"
+    ],
+    "desktop": {
+      "xProgress": [
+        0,
+        0.42,
+        1
+      ],
+      "leftX": [
+        "40%",
+        "0%",
+        "0%"
+      ],
+      "rightX": [
+        "-40%",
+        "0%",
+        "0%"
+      ],
+      "yProgress": [
+        0,
+        0.32,
+        1
+      ],
+      "leftYpx": [
+        22,
+        0,
+        -40
+      ],
+      "rightYpx": [
+        -22,
+        0,
+        36
+      ]
+    },
+    "narrowOffsets": [
+      "start 105vh",
+      "start 70vh"
+    ],
+    "narrow": {
+      "leftX": [
+        "-14%",
+        "0%"
+      ],
+      "rightX": [
+        "14%",
+        "0%"
+      ],
+      "independentTargets": true
+    },
+    "mapping": "Linear, clamped interpolation of live scroll progress; no fixed duration or ease curve",
+    "reducedMotion": "useReducedMotion returns undefined transforms, preserving static layout",
+    "source": "43f8342382a2e50d.js"
+  },
+  "rows": {
+    "engine": "Native scrollLeft + CSS scroll-behavior:smooth",
+    "buttonDistance": "\u00b1container.clientWidth, then browser clamps/snaps",
+    "snap": "x proximity; children snap-start; custom scroll-padding",
+    "duration": "User-agent controlled. No author-defined duration/easing.",
+    "boundaryEpsilonPx": 1,
+    "resize": "ResizeObserver recalculates overflow; scroll state updates in requestAnimationFrame",
+    "responsive": "Articles below 768px become a static vertical list of the first four entries. References retain native horizontal scrolling. Navigation buttons are hidden for coarse pointers.",
+    "source": "43f8342382a2e50d.js"
+  },
+  "footer": {
+    "trackDurationMs": 120000,
+    "trackTranslate": [
+      "0%",
+      "-50%"
+    ],
+    "trackCopies": 2,
+    "shapeDurationMs": [
+      450000,
+      257000,
+      600000,
+      327000,
+      225000,
+      400000
+    ],
+    "shapeDirections": [
+      "normal",
+      "reverse",
+      "normal",
+      "reverse",
+      "normal",
+      "reverse"
+    ],
+    "ease": "linear",
+    "rotationDeg": [
+      0,
+      360
+    ],
+    "transformBox": "fill-box",
+    "transformOrigin": "50% 50%",
+    "stroke": "1.5px, non-scaling-stroke",
+    "reducedMotion": "Both track and shapes animation:none",
+    "visibility": "No viewport gate in these CSS animations",
+    "source": "706408b83b455d97.css"
+  },
+  "mobile": {
+    "openClose": {
+      "translateY": [
+        "-100%",
+        "0%"
+      ],
+      "durationMs": 300,
+      "ease": [
+        0,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "backdrop": {
+      "durationMs": 150,
+      "ease": [
+        0.4,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "drillDown": {
+      "rootX": [
+        "0%",
+        "-100%"
+      ],
+      "submenuX": [
+        "100%",
+        "0%"
+      ],
+      "durationMs": 300,
+      "ease": [
+        0,
+        0,
+        0.2,
+        1
+      ]
+    },
+    "lifecycle": "Base UI Dialog; portal keepMounted. Escape closes; Back restores root. Icon/content swaps are discrete. No link cascade.",
+    "source": "b664f27371261aee.js"
+  },
+  "drawer": {
+    "openDurationMs": 450,
+    "closeDurationMs": "400 \u00d7 --drawer-swipe-strength; ordinary close at strength=1 is400ms",
+    "ease": [
+      0.32,
+      0.72,
+      0,
+      1
+    ],
+    "closedX": "100% of popup width + viewport padding",
+    "paddingPx": 8,
+    "webkitPaddingPx": 10,
+    "backdropOpacity": {
+      "light": 0.2,
+      "dark": 0.7
+    },
+    "swipe": "Direct displacement, transition disabled while swiping. Release duration follows swipe strength. Physical touch swipe not tested.",
+    "usedBy": "Search and floating help / project controls",
+    "source": "706408b83b455d97.css + 2ed703a53512c6bb.js"
+  },
+  "placeholder": {
+    "intervalMs": 3000,
+    "durationMs": 500,
+    "delayMs": "20 \u00d7 non-space character index + 10 \u00d7 word index",
+    "enterY": [
+      "150%",
+      0
+    ],
+    "exitY": [
+      0,
+      "-150%"
+    ],
+    "ease": [
+      0.33,
+      1,
+      0.68,
+      1
+    ],
+    "mask": "Single clipped input window",
+    "lifecycle": "AnimatePresence overlaps outgoing and incoming strings. Query text hides placeholder; reduced motion selects a static first string and skips interval.",
+    "source": "b664f27371261aee.js"
+  },
+  "help": {
+    "greetingWaitMs": 3000,
+    "greetingVisibleMs": 6000,
+    "gridColumns": [
+      "0fr",
+      "1fr"
+    ],
+    "durationMs": 300,
+    "ease": [
+      0,
+      0,
+      0.2,
+      1
+    ],
+    "footerFadeMs": 200,
+    "footerFadeEase": [
+      0.4,
+      0,
+      0.2,
+      1
+    ],
+    "footerTrigger": "IntersectionObserver on data-site-footer. Closed launcher hides while footer intersects.",
+    "source": "b664f27371261aee.js"
+  },
+  "video": {
+    "count": 3,
+    "content": [
+      "GLADE hero",
+      "BLOC series",
+      "APRIL series"
+    ],
+    "element": "Native video, loop, muted, playsInline, preload=metadata; Vimeo progressive media URL",
+    "start": "Imperative play() on effect unless prefers-reduced-motion matches; rejected play promises are ignored",
+    "visibility": "No pause observer in AmbientVideo; all three paused:false while far above viewport in live inspection",
+    "osChange": "Preference read at effect time; no preference-change subscription in that component",
+    "contentBoundary": "Object movement, camera edits and morphs inside video are not DOM animations. No remote videos downloaded.",
+    "source": "e693a111acb2493a.js / dddb31d6982abe9f.js"
+  },
+  "evidence": {
+    "live": [
+      "Hero initial 120% letter translates and hidden supporting copy",
+      "Hero media initial scale\u22481.113 with 2px blur",
+      "136\u219264px header and96\u219244px logo on desktop scroll",
+      "Product images 1/0\u21920/1; caption1\u21920 on actual pointer hover",
+      "Series scale1\u21921.03 after hover",
+      "Story transforms40%/-40% at start; -40px/+36px after scroll",
+      "Native article row0\u2192724px, bounded by725px max",
+      "Focus opens desktop mega-menu; Escape closes",
+      "Market popup150ms scale/opacity style",
+      "Search drawer450ms bespoke curve; animated placeholder changes strings",
+      "Mobile open and Products subpanel transforms; Escape closes",
+      "Footer120s track and twelve groups/six repeating rotation rates",
+      "Help opacity0 while footer intersects",
+      "All three ambient videos play while offscreen"
+    ],
+    "notTested": [
+      "Frame-time/FPS/compositor trace",
+      "Physical touch gestures",
+      "OS preference changed on actual site",
+      "External forms, account flows, configurator and product routes"
+    ],
+    "exclusions": [
+      "Bundled morph-shape keyframes have no observed active homepage element",
+      "Product-page configurator animations, badge layout springs and product-only reduced-motion carousel are outside active homepage scope",
+      "No general fade/rise entrances observed on static intro text or article/reference row wrappers"
+    ],
+    "studyPolicy": "No autoplay; pause on hidden document; OS preference respected; destinations shown immediately under reduced motion. CSS/JS demos are offline teaching reconstructions."
+  }
+}

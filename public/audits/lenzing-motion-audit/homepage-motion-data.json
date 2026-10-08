@@ -1,0 +1,4911 @@
+{
+  "site": "https://www.studiolenzing.com/",
+  "auditedOn": "2026-10-07",
+  "pageId": "5d69147f029cb296cb6027c0",
+  "method": "Public delivered HTML/CSS/scripts plus live DOM/computed-style and UI checks in the Codex in-app browser. No Chrome performance trace or measured FPS.",
+  "sourceCounts": {
+    "events": 539,
+    "actionLists": 53,
+    "homepageTargetMatchingEventDefinitions": 42,
+    "referencedLists": 14
+  },
+  "sources": {
+    "homepage": "https://www.studiolenzing.com/",
+    "css": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/css/studiolenzing.webflow.shared.1b2502c4c.css",
+    "interactions": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/js/webflow.schunk.191014ddbb530757.js",
+    "logo": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/67912624f95c497bb0a863ba_V6%20Nav%20Logo%20Animation%202.json"
+  },
+  "sourceSHA256": {
+    "home.html": "52962e570729697056ad15f30bdb99bac6a32fc666c9b8c783cba46bb5d40d60",
+    "site.css": "baf98bd71ba2012a0098647257329cde409f5ad1f33f966cfe0c93bf3836e2df",
+    "chunk-interactions.js": "481aff30b9815a34098f006a1e3727beecbe71475557bbffe9501317d1a30f1e",
+    "logo.json": "957e40ab450f50640986ce98003b8c8fa7a8ec3b84a21aaf4be5b97c6f3c4f8e"
+  },
+  "matchingEvents": [
+    {
+      "id": "e-1270",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-26",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1271"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|0c025a87-e7e2-c39b-e6e5-bebd8d7a00f2",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|0c025a87-e7e2-c39b-e6e5-bebd8d7a00f2",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 20,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722147136407,
+      "matches": [
+        "div.feature-logos-start._48px-bottom "
+      ]
+    },
+    {
+      "id": "e-1272",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-26",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1273"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|c82791b7-6ba2-e1f6-74d8-0c430bc36f45",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|c82791b7-6ba2-e1f6-74d8-0c430bc36f45",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 20,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722148386212,
+      "matches": [
+        "div.feature-logos-start "
+      ]
+    },
+    {
+      "id": "e-1274",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1275"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|2be864e9-0201-bd02-1b55-418fd58091dd",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|2be864e9-0201-bd02-1b55-418fd58091dd",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152567393,
+      "matches": [
+        "div Clients"
+      ]
+    },
+    {
+      "id": "e-1276",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1277"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|511577c9-63a9-83c1-fb9b-dddbf268d1af",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|511577c9-63a9-83c1-fb9b-dddbf268d1af",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 15,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152580703,
+      "matches": [
+        "div.div-block-44 We work internationally with a wide range of clients, shaping better futures by turning go"
+      ]
+    },
+    {
+      "id": "e-1278",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1279"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|0978f0dd-93fb-8758-5a43-1246c20621b5",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|0978f0dd-93fb-8758-5a43-1246c20621b5",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152632640,
+      "matches": [
+        "div Who We Are"
+      ]
+    },
+    {
+      "id": "e-1280",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1281"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|0978f0dd-93fb-8758-5a43-1246c20621b8",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|0978f0dd-93fb-8758-5a43-1246c20621b8",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 15,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152641166,
+      "matches": [
+        "div.start-about-wrapper At Studio Lenzing, we are all about people. This is why we put collaboration and open dial"
+      ]
+    },
+    {
+      "id": "e-1282",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1283"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "7b4be8a5-5ba4-b442-30fa-b963876b21c7",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "7b4be8a5-5ba4-b442-30fa-b963876b21c7",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152660203,
+      "matches": [
+        "div Services"
+      ]
+    },
+    {
+      "id": "e-1284",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1285"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "7b4be8a5-5ba4-b442-30fa-b963876b21ca",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "7b4be8a5-5ba4-b442-30fa-b963876b21ca",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152669540,
+      "matches": [
+        "div.services-container User Experience User InsightsUX AuditFocus GroupsUsability TestingAffinity Diagramming"
+      ]
+    },
+    {
+      "id": "e-1286",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1287"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "7b4be8a5-5ba4-b442-30fa-b963876b21d8",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "7b4be8a5-5ba4-b442-30fa-b963876b21d8",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152689408,
+      "matches": [
+        "div.services-container UX Strategy User JourneysBrand StrategyInformation ArchitectureBrand Principles"
+      ]
+    },
+    {
+      "id": "e-1288",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1289"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "7b4be8a5-5ba4-b442-30fa-b963876b21e5",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "7b4be8a5-5ba4-b442-30fa-b963876b21e5",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152698717,
+      "matches": [
+        "div.services-container Interactive Design UI DesignUX DesignMotion DesignPrototyping"
+      ]
+    },
+    {
+      "id": "e-1290",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1291"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "7b4be8a5-5ba4-b442-30fa-b963876b21f1",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "7b4be8a5-5ba4-b442-30fa-b963876b21f1",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152707662,
+      "matches": [
+        "div.services-container Production Design SystemsDesign LibrariesDev DocumentationsLottie animations"
+      ]
+    },
+    {
+      "id": "e-1292",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1293"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|b9435849-c95b-25e4-0064-af1012e99d41",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|b9435849-c95b-25e4-0064-af1012e99d41",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152725863,
+      "matches": [
+        "div Start Project"
+      ]
+    },
+    {
+      "id": "e-1294",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1295"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|b9435849-c95b-25e4-0064-af1012e99d44",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|b9435849-c95b-25e4-0064-af1012e99d44",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 15,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722152832336,
+      "matches": [
+        "div.start-about-wrapper Let's create something unique together. Complete the questionnaire and we will be in touch"
+      ]
+    },
+    {
+      "id": "e-1312",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-51",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1313"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|3ada02ea-f4db-b711-2ad9-07ac91b6125d",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|3ada02ea-f4db-b711-2ad9-07ac91b6125d",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 20,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1722267575029,
+      "matches": [
+        "div.img-work-hero-crop-div.desktop "
+      ]
+    },
+    {
+      "id": "e-1314",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-73",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1315"
+        }
+      },
+      "mediaQueries": [
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "1e686f01-c0fa-cd8c-8f84-15f570258f5e",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "1e686f01-c0fa-cd8c-8f84-15f570258f5e",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1736245298896,
+      "matches": [
+        "div.navigation-toggle "
+      ]
+    },
+    {
+      "id": "e-1315",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_SECOND_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-74",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1314"
+        }
+      },
+      "mediaQueries": [
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "1e686f01-c0fa-cd8c-8f84-15f570258f5e",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "1e686f01-c0fa-cd8c-8f84-15f570258f5e",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1736245298901,
+      "matches": [
+        "div.navigation-toggle "
+      ]
+    },
+    {
+      "id": "e-1402",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-78",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1403"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "b694eed1-c209-9d40-282d-5a8fcda5353b",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "b694eed1-c209-9d40-282d-5a8fcda5353b",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 50,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1737022824741,
+      "matches": [
+        "div.footer Studio Work Studio Lenzing is an interactive design studio focused on crafting better expe"
+      ]
+    },
+    {
+      "id": "e-1405",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-75",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1406"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "1e686f01-c0fa-cd8c-8f84-15f570258f7c",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "1e686f01-c0fa-cd8c-8f84-15f570258f7c",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1737563108571,
+      "matches": [
+        "a.navigation-updates-list-item-link.w-inline-block Connected to Create: Designing with Culture, Not Just for It Opinion",
+        "a.navigation-updates-list-item-link.w-inline-block Studio Partnerships: Why Growing Together Makes Sense Opinion",
+        "a.navigation-updates-list-item-link.w-inline-block Intuitive Design: The Balance Between Data and Creativity Opinion"
+      ]
+    },
+    {
+      "id": "e-1406",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-76",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1405"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "1e686f01-c0fa-cd8c-8f84-15f570258f7c",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "1e686f01-c0fa-cd8c-8f84-15f570258f7c",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1737563108575,
+      "matches": [
+        "a.navigation-updates-list-item-link.w-inline-block Connected to Create: Designing with Culture, Not Just for It Opinion",
+        "a.navigation-updates-list-item-link.w-inline-block Studio Partnerships: Why Growing Together Makes Sense Opinion",
+        "a.navigation-updates-list-item-link.w-inline-block Intuitive Design: The Balance Between Data and Creativity Opinion"
+      ]
+    },
+    {
+      "id": "e-1408",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "PAGE_FINISH",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-80",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1407"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0",
+        "appliesTo": "PAGE",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0",
+          "appliesTo": "PAGE",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1737563822346,
+      "matches": [
+        "root Studio Lenzing \u2013 UX & UI Design for Web, Apps & Brands !function(o,c){var n=c.documentElem"
+      ]
+    },
+    {
+      "id": "e-1702",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-89",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1703"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5ac61e23-8bac-1c9c-0fb3-d8ec9bd12d56",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5ac61e23-8bac-1c9c-0fb3-d8ec9bd12d56",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1741776329661,
+      "matches": [
+        "div.contact-form-overlay "
+      ]
+    },
+    {
+      "id": "e-1704",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-88",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1705"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "09cd56e0-909c-1a74-a786-b69d24ceb5c3",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "09cd56e0-909c-1a74-a786-b69d24ceb5c3",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1741792997427,
+      "matches": [
+        "div.navigation-pages-link Start Project"
+      ]
+    },
+    {
+      "id": "e-1706",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-89",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1707"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "688c4f92-07ab-ca7c-7def-283fc94fa333",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "688c4f92-07ab-ca7c-7def-283fc94fa333",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1741795047605,
+      "matches": [
+        "button.contact-form-overlay-close "
+      ]
+    },
+    {
+      "id": "e-1768",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-88",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-1769"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "2558be38-6027-915a-73ce-fc5af4b01dec",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "2558be38-6027-915a-73ce-fc5af4b01dec",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742223372834,
+      "matches": [
+        "div.form-fab "
+      ]
+    },
+    {
+      "id": "e-2008",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-88",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2009"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|e96aba54-c474-bf5f-85e3-4aedd7d46e7a",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|e96aba54-c474-bf5f-85e3-4aedd7d46e7a",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742292362117,
+      "matches": [
+        "div.ghost-button Let\u2019s work together"
+      ]
+    },
+    {
+      "id": "e-2048",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-88",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2049"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "b694eed1-c209-9d40-282d-5a8fcda53572",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "b694eed1-c209-9d40-282d-5a8fcda53572",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742303465504,
+      "matches": [
+        "div.p2-footer-link-grey Start project"
+      ]
+    },
+    {
+      "id": "e-2050",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2051"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161b",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161b",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "h2.body-03 Featured Cases"
+      ]
+    },
+    {
+      "id": "e-2052",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-77",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2053"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Syte Syte empowers project developers, investors, agents, architects and city planners to "
+      ]
+    },
+    {
+      "id": "e-2054",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-75",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2055"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Syte Syte empowers project developers, investors, agents, architects and city planners to "
+      ]
+    },
+    {
+      "id": "e-2055",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-76",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2054"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08161e",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Syte Syte empowers project developers, investors, agents, architects and city planners to "
+      ]
+    },
+    {
+      "id": "e-2056",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-75",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2057"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Pleo We worked with Pleo to create an extensive icon system that truly expresses its vibra"
+      ]
+    },
+    {
+      "id": "e-2057",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-76",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2056"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Pleo We worked with Pleo to create an extensive icon system that truly expresses its vibra"
+      ]
+    },
+    {
+      "id": "e-2058",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-77",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2059"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081627",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.work-card.w-inline-block Pleo We worked with Pleo to create an extensive icon system that truly expresses its vibra"
+      ]
+    },
+    {
+      "id": "e-2060",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-51",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2061"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 20,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.img-work-hero-crop-div.w-inline-block View Case Study"
+      ]
+    },
+    {
+      "id": "e-2062",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-52",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2063"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.img-work-hero-crop-div.w-inline-block View Case Study"
+      ]
+    },
+    {
+      "id": "e-2063",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-53",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2062"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081632",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "a.img-work-hero-crop-div.w-inline-block View Case Study"
+      ]
+    },
+    {
+      "id": "e-2064",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2065"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081639",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc081639",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "div.body-03._16px-bottom Regpit"
+      ]
+    },
+    {
+      "id": "e-2066",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2067"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08163c",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|db75fe9a-10c3-59af-01d0-dbc7dc08163c",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 10,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305468016,
+      "matches": [
+        "p.body-03 Creating the world\u2019s most intuitive anti-money laundering app, designed to effectively ser"
+      ]
+    },
+    {
+      "id": "e-2068",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2069"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|89f98fd2-77ea-8098-e893-74d92e08f896",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|89f98fd2-77ea-8098-e893-74d92e08f896",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305717569,
+      "matches": [
+        "h1.paragraph-large Let\u2019s create Better Interactions. Together with the world\u2019s most detail-obsessed brands, w"
+      ]
+    },
+    {
+      "id": "e-2070",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-23",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2071"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|89f98fd2-77ea-8098-e893-74d92e08f89a",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|89f98fd2-77ea-8098-e893-74d92e08f89a",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1742305717569,
+      "matches": [
+        "div.hero-showreel.w-embed.w-iframe.w-script "
+      ]
+    },
+    {
+      "id": "e-2074",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-51",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2075"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "5d69147f029cb296cb6027c0|54d13fda-e93e-4cf7-e2f8-f15d609c2578",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "5d69147f029cb296cb6027c0|54d13fda-e93e-4cf7-e2f8-f15d609c2578",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 20,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1743075775159,
+      "matches": [
+        "div.img-work-hero-crop-div.mobile "
+      ]
+    },
+    {
+      "id": "e-2076",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "MOUSE_CLICK",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-89",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-2077"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "3e724749-4377-77f7-3f8f-905aab510b10",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "3e724749-4377-77f7-3f8f-905aab510b10",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1743089435445,
+      "matches": [
+        "button.contact-form-overlay-close-mobile "
+      ]
+    }
+  ],
+  "referencedActionLists": {
+    "a-26": {
+      "id": "a-26",
+      "title": "Feature logo animation",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-26-n-2",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._02",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "d355c7d7-bd79-2161-4b22-b472a60d9664"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-10",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._02",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "d355c7d7-bd79-2161-4b22-b472a60d9664"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._01",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6c17da7e-fbfd-f20f-5852-45fbc1775b75"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-9",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._01",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6c17da7e-fbfd-f20f-5852-45fbc1775b75"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-3",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._03",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "f1d19a5c-e229-3e18-2df7-6f50ad251924"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-11",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._03",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "f1d19a5c-e229-3e18-2df7-6f50ad251924"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-4",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._04",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "4e2bcaa9-561c-6fd6-96bb-882bcd78f88c"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-12",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._04",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "4e2bcaa9-561c-6fd6-96bb-882bcd78f88c"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-5",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._05",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "fd62ff78-84c9-bc42-4662-9a7c64642636"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-13",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._05",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "fd62ff78-84c9-bc42-4662-9a7c64642636"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-6",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._06",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6d2a5ab2-ce03-8a5e-bf00-82e1e7f95a0c"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-14",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._06",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6d2a5ab2-ce03-8a5e-bf00-82e1e7f95a0c"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-7",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._07",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "90a1904a-0605-d246-bf70-70af6902e741"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-15",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._07",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "90a1904a-0605-d246-bf70-70af6902e741"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-8",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._08",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "a339e60d-0e0b-b01a-6070-e2dd6333db97"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-16",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._08",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "a339e60d-0e0b-b01a-6070-e2dd6333db97"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-26-n-17",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._01",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6c17da7e-fbfd-f20f-5852-45fbc1775b75"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-18",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._01",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6c17da7e-fbfd-f20f-5852-45fbc1775b75"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-19",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 350,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._02",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "d355c7d7-bd79-2161-4b22-b472a60d9664"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-20",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 350,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._02",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "d355c7d7-bd79-2161-4b22-b472a60d9664"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-21",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._03",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "f1d19a5c-e229-3e18-2df7-6f50ad251924"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-22",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._03",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "f1d19a5c-e229-3e18-2df7-6f50ad251924"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-24",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 450,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._04",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "4e2bcaa9-561c-6fd6-96bb-882bcd78f88c"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-23",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 450,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._04",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "4e2bcaa9-561c-6fd6-96bb-882bcd78f88c"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-26",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 500,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._05",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "fd62ff78-84c9-bc42-4662-9a7c64642636"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-25",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 500,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._05",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "fd62ff78-84c9-bc42-4662-9a7c64642636"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-27",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 550,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._06",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6d2a5ab2-ce03-8a5e-bf00-82e1e7f95a0c"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-28",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 550,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._06",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "6d2a5ab2-ce03-8a5e-bf00-82e1e7f95a0c"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-30",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 600,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._07",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "90a1904a-0605-d246-bf70-70af6902e741"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-26-n-29",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 600,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._07",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "90a1904a-0605-d246-bf70-70af6902e741"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-31",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 650,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._08",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "a339e60d-0e0b-b01a-6070-e2dd6333db97"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-32",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 650,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-partner-logo._08",
+                  "selectorGuids": [
+                    "58e8df9d-1f5c-d37a-be5a-a7543a352448",
+                    "a339e60d-0e0b-b01a-6070-e2dd6333db97"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1589987706051
+    },
+    "a-23": {
+      "id": "a-23",
+      "title": "Slide In",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-23-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "5d69147f029cb296cb6027c0|d716e59c-6fd6-1020-c9e4-0c6da7e89801"
+                },
+                "xValue": -32,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-23-n-3",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "5d69147f029cb296cb6027c0|d716e59c-6fd6-1020-c9e4-0c6da7e89801"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-23-n-4",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "inOutExpo",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "5d69147f029cb296cb6027c0|d716e59c-6fd6-1020-c9e4-0c6da7e89801"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-23-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutExpo",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "5d69147f029cb296cb6027c0|d716e59c-6fd6-1020-c9e4-0c6da7e89801"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1587627791100
+    },
+    "a-51": {
+      "id": "a-51",
+      "title": "Work Img Reveal (Legacy)",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-51-n-3",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".whitecolor-reveal-block",
+                  "selectorGuids": [
+                    "3dbd2d31-3619-2058-d19e-87ddd4ab8401"
+                  ]
+                },
+                "value": "flex"
+              }
+            },
+            {
+              "id": "a-51-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".whitecolor-reveal-block",
+                  "selectorGuids": [
+                    "3dbd2d31-3619-2058-d19e-87ddd4ab8401"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-51-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutExpo",
+                "duration": 1200,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".whitecolor-reveal-block",
+                  "selectorGuids": [
+                    "3dbd2d31-3619-2058-d19e-87ddd4ab8401"
+                  ]
+                },
+                "xValue": 100,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1631716790080
+    },
+    "a-73": {
+      "id": "a-73",
+      "title": "Navigation/Lottie/Open",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-73-n",
+              "actionTypeId": "PLUGIN_LOTTIE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "selector": ".navigation-toggle-lottie",
+                  "selectorGuids": [
+                    "40a29338-b4e3-1198-81ac-cd4a8e31d24f"
+                  ]
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-73-n-2",
+              "actionTypeId": "PLUGIN_LOTTIE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 400,
+                "target": {
+                  "selector": ".navigation-toggle-lottie",
+                  "selectorGuids": [
+                    "40a29338-b4e3-1198-81ac-cd4a8e31d24f"
+                  ]
+                },
+                "value": 100
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1586765569561
+    },
+    "a-74": {
+      "id": "a-74",
+      "title": "Navigation/Lottie/Close",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-74-n",
+              "actionTypeId": "PLUGIN_LOTTIE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".navigation-toggle-lottie",
+                  "selectorGuids": [
+                    "40a29338-b4e3-1198-81ac-cd4a8e31d24f"
+                  ]
+                },
+                "value": 55
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-74-n-2",
+              "actionTypeId": "PLUGIN_LOTTIE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 250,
+                "target": {
+                  "selector": ".navigation-toggle-lottie",
+                  "selectorGuids": [
+                    "40a29338-b4e3-1198-81ac-cd4a8e31d24f"
+                  ]
+                },
+                "value": 0
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1586775243265
+    },
+    "a-78": {
+      "id": "a-78",
+      "title": "Footer 2022 intro animation 2",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-78-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53540"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-2",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53540"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-3",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53541"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-4",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53541"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-5",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53544"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-6",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53544"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-7",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53548"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-8",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53548"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-9",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354c"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-10",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354c"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-11",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53555"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-12",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53555"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-13",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53557"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-14",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53557"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-15",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53559"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-16",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53559"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-17",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355d"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-18",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355d"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-19",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".footer-clock-address-wrapper",
+                  "selectorGuids": [
+                    "c6048fc9-949a-55b5-7414-57b53ad494de"
+                  ]
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-20",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".footer-clock-address-wrapper",
+                  "selectorGuids": [
+                    "c6048fc9-949a-55b5-7414-57b53ad494de"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-21",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5356b"
+                },
+                "xValue": -24,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-22",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5356b"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-65",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53575"
+                },
+                "xValue": -24,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-66",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53575"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-25",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53552"
+                },
+                "xValue": -24,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-26",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53552"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-27",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53550"
+                },
+                "xValue": -24,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-28",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53550"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-29",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355b"
+                },
+                "xValue": -24,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-30",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355b"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-31",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354e"
+                },
+                "xValue": -24,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-32",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354e"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-78-n-33",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53540"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-34",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53540"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-35",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53541"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-36",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53541"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-37",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 200,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53544"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-38",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 200,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53544"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-39",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53548"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-40",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53548"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-41",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354c"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-42",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354c"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-43",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 500,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354e"
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-44",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 500,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5354e"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-45",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 600,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53550"
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-46",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 600,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53550"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-47",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 700,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53552"
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-48",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 700,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53552"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-49",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 800,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53555"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-50",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 800,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53555"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-51",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 900,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53557"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-52",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 900,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53557"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-53",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1000,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53559"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-54",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1000,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53559"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-55",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355d"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-56",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355d"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-57",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355b"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-58",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1100,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5355b"
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-59",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".footer-clock-address-wrapper",
+                  "selectorGuids": [
+                    "c6048fc9-949a-55b5-7414-57b53ad494de"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-60",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1300,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".footer-clock-address-wrapper",
+                  "selectorGuids": [
+                    "c6048fc9-949a-55b5-7414-57b53ad494de"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-61",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5356b"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-78-n-62",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1400,
+                "easing": "outQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda5356b"
+                },
+                "xValue": 0,
+                "xUnit": "PX",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-67",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 1500,
+                "easing": "inOutQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53575"
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-78-n-68",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 1500,
+                "easing": "inOutQuint",
+                "duration": 500,
+                "target": {
+                  "id": "b694eed1-c209-9d40-282d-5a8fcda53575"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1586688752998
+    },
+    "a-75": {
+      "id": "a-75",
+      "title": "Case/Card/Image/Hover/In",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-75-n",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".work-card-image",
+                  "selectorGuids": [
+                    "b306c90c-66c8-e472-350d-05a84ce2e406"
+                  ]
+                },
+                "xValue": 1.04,
+                "yValue": 1.04,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-75-n-3",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".navigation-updates-list-item-image",
+                  "selectorGuids": [
+                    "eaf6d476-5087-a437-a5f7-3b94845c1366"
+                  ]
+                },
+                "xValue": 1.04,
+                "yValue": 1.04,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-75-n-2",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".work-card-video",
+                  "selectorGuids": [
+                    "8aa0bd44-4bac-7683-d694-498cfa44d3bb"
+                  ]
+                },
+                "xValue": 1.04,
+                "yValue": 1.04,
+                "locked": true
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1736780906953
+    },
+    "a-76": {
+      "id": "a-76",
+      "title": "Case/Card/Image/Hover/Out",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-76-n",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "selector": ".work-card-image",
+                  "selectorGuids": [
+                    "b306c90c-66c8-e472-350d-05a84ce2e406"
+                  ]
+                },
+                "xValue": 1,
+                "yValue": 1,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-76-n-2",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "selector": ".work-card-video",
+                  "selectorGuids": [
+                    "8aa0bd44-4bac-7683-d694-498cfa44d3bb"
+                  ]
+                },
+                "xValue": 1,
+                "yValue": 1,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-76-n-3",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".navigation-updates-list-item-image",
+                  "selectorGuids": [
+                    "eaf6d476-5087-a437-a5f7-3b94845c1366"
+                  ]
+                },
+                "xValue": 1,
+                "yValue": 1,
+                "locked": true
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1736780996809
+    },
+    "a-80": {
+      "id": "a-80",
+      "title": "Home/Navi/Logo",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-80-n",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".navigation-logo-lottie",
+                  "selectorGuids": [
+                    "e59fd43a-dc94-f687-0e93-57fa91c8d0c9"
+                  ]
+                },
+                "value": "flex"
+              }
+            },
+            {
+              "id": "a-80-n-5",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".navigation-logo-static",
+                  "selectorGuids": [
+                    "9ed1b703-9a24-12f4-57b9-97c86fcd7d6f"
+                  ]
+                },
+                "value": "none"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-80-n-3",
+              "actionTypeId": "PLUGIN_LOTTIE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 3400,
+                "target": {
+                  "selector": ".navigation-logo-lottie",
+                  "selectorGuids": [
+                    "e59fd43a-dc94-f687-0e93-57fa91c8d0c9"
+                  ]
+                },
+                "value": 100
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-80-n-6",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".navigation-logo-lottie",
+                  "selectorGuids": [
+                    "e59fd43a-dc94-f687-0e93-57fa91c8d0c9"
+                  ]
+                },
+                "value": "none"
+              }
+            },
+            {
+              "id": "a-80-n-7",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".navigation-logo-static",
+                  "selectorGuids": [
+                    "9ed1b703-9a24-12f4-57b9-97c86fcd7d6f"
+                  ]
+                },
+                "value": "flex"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1737563829289
+    },
+    "a-89": {
+      "id": "a-89",
+      "title": "Contact Overlay/Close",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-89-n-6",
+              "actionTypeId": "PLUGIN_VARIABLE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 600,
+                "value": {
+                  "size": 100,
+                  "unit": "%"
+                },
+                "target": {
+                  "objectId": "--_misc---form-translate",
+                  "selector": ".body",
+                  "selectorGuids": [
+                    "574c1dca-2895-08d2-b507-a5cf8c73e5f2"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "a-89-n-2",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 400,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-89-n-5",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 600,
+                "target": {
+                  "selector": ".form-fab",
+                  "selectorGuids": [
+                    "cf2b8210-651d-260b-5905-38be57804d0a"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-89-n-3",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": "none"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1741788572947
+    },
+    "a-88": {
+      "id": "a-88",
+      "title": "Contact Overlay/Open",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-88-n-2",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-88-n-6",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": "none"
+              }
+            },
+            {
+              "id": "a-88-n-9",
+              "actionTypeId": "PLUGIN_VARIABLE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "value": {
+                  "size": 100,
+                  "unit": "%"
+                },
+                "target": {
+                  "objectId": "--_misc---form-translate",
+                  "selector": ".body",
+                  "selectorGuids": [
+                    "574c1dca-2895-08d2-b507-a5cf8c73e5f2"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-88-n-7",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": "flex"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-88-n-10",
+              "actionTypeId": "PLUGIN_VARIABLE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 600,
+                "value": {
+                  "size": 0,
+                  "unit": "%"
+                },
+                "target": {
+                  "objectId": "--_misc---form-translate",
+                  "selector": ".body",
+                  "selectorGuids": [
+                    "574c1dca-2895-08d2-b507-a5cf8c73e5f2"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "a-88-n-3",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 400,
+                "target": {
+                  "selector": ".contact-form-overlay",
+                  "selectorGuids": [
+                    "2ab8ce47-d010-8f93-5887-c0f07278546b"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-88-n-8",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutCubic",
+                "duration": 600,
+                "target": {
+                  "selector": ".form-fab",
+                  "selectorGuids": [
+                    "cf2b8210-651d-260b-5905-38be57804d0a"
+                  ]
+                },
+                "xValue": 80,
+                "xUnit": "px",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1741776333394
+    },
+    "a-77": {
+      "id": "a-77",
+      "title": "Case/Card/Image/Reveal",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-77-n-3",
+              "actionTypeId": "GENERAL_DISPLAY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {
+                  "selector": ".work-card-image-reveal",
+                  "selectorGuids": [
+                    "94cf821d-e370-97f2-0bb1-29e8871e4e1f"
+                  ]
+                },
+                "value": "block"
+              }
+            },
+            {
+              "id": "a-77-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".work-card-image-reveal",
+                  "selectorGuids": [
+                    "94cf821d-e370-97f2-0bb1-29e8871e4e1f"
+                  ]
+                },
+                "xValue": 0,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-77-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "inOutExpo",
+                "duration": 1200,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".work-card-image-reveal",
+                  "selectorGuids": [
+                    "94cf821d-e370-97f2-0bb1-29e8871e4e1f"
+                  ]
+                },
+                "xValue": 100,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1736945529615
+    },
+    "a-52": {
+      "id": "a-52",
+      "title": "Work Img Hover-In",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-52-n",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 1400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-work-hero",
+                  "selectorGuids": [
+                    "cd3e665d-0e70-f32b-14a3-9572c453ae5a"
+                  ]
+                },
+                "xValue": 1.05,
+                "yValue": 1.05,
+                "locked": true
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1631717294202
+    },
+    "a-53": {
+      "id": "a-53",
+      "title": "Work Img Hover-Out",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-53-n",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuint",
+                "duration": 1400,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".img-work-hero",
+                  "selectorGuids": [
+                    "cd3e665d-0e70-f32b-14a3-9572c453ae5a"
+                  ]
+                },
+                "xValue": 1,
+                "yValue": 1,
+                "locked": true
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1631717654852
+    }
+  },
+  "listStatusNotes": {
+    "a-26": "Dormant: none of the current 11 client logos has the _01\u2013_08 classes targeted by this list.",
+    "a-73": "Dormant: .navigation-toggle-lottie is absent; current bars animate in CSS.",
+    "a-74": "Dormant: .navigation-toggle-lottie is absent; current bars animate in CSS.",
+    "a-51": "Conditional: Regpit is visible; Who We Are mobile photo is visible below 768px; desktop photo wrapper has zero height in the inspected layout."
+  },
+  "footerTimeline": [
+    {
+      "label": "Logo",
+      "delay": 0,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Work",
+      "delay": 100,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Studio",
+      "delay": 200,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Studio description",
+      "delay": 300,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Jobs",
+      "delay": 400,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Pricing",
+      "delay": 500,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Colophon",
+      "delay": 600,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Principles",
+      "delay": 700,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Newsletter",
+      "delay": 800,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Instagram",
+      "delay": 900,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Read.CV",
+      "delay": 1000,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Spotify",
+      "delay": 1100,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Twitter",
+      "delay": 1100,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Clock + address",
+      "delay": 1300,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Email + Contact + Start project",
+      "delay": 1400,
+      "duration": 500,
+      "ease": "outQuint"
+    },
+    {
+      "label": "Copyright + legal",
+      "delay": 1500,
+      "duration": 500,
+      "ease": "inOutQuint"
+    }
+  ],
+  "inlineScripts": [
+    {
+      "attrs": {
+        "type": "text/javascript"
+      },
+      "code": "!function(o,c){var n=c.documentElement,t=\" w-mod-\";n.className+=t+\"js\",(\"ontouchstart\"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+\"touch\")}(window,document);"
+    },
+    {
+      "attrs": {
+        "type": "application/ld+json"
+      },
+      "code": "\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Studio Lenzing\",\n  \"url\": \"https://www.studiolenzing.com/\",\n  \"logo\": \"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/61aa3b639296a2f1f45e42da_Mark%20White%20on%20Black_256.png\",\n  \"description\": \"Studio Lenzing is a UX & UI design studio specializing in app design, web design, branding and digital product strategy.\",\n  \"email\": \"hi@studiolenzing.com\",\n  \"sameAs\": [\n    \"https://instagram.com/studiolenzing\",\n    \"https://twitter.com/StudioLenzing\",\n    \"https://open.spotify.com/user/85qeqblq0is0qb1147lfja0ez\"\n  ],\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressLocality\": \"Hamburg\",\n    \"addressCountry\": \"Germany\"\n  }\n}\n"
+    },
+    {
+      "attrs": {
+        "type": "application/ld+json"
+      },
+      "code": "\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebSite\",\n  \"url\": \"https://www.studiolenzing.com/\",\n  \"name\": \"Studio Lenzing\"\n  }\n}\n"
+    },
+    {
+      "attrs": {
+        "defer": null,
+        "type": "text/javascript",
+        "src": "https://api.pirsch.io/pirsch.js",
+        "id": "pirschjs",
+        "data-code": "W5do9Uv4w8fELzAa3tANwBsppHl2uIsb"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {
+        "async": null,
+        "src": "https://tally.so/widgets/embed.js"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {},
+      "code": "\ndocument.addEventListener('DOMContentLoaded', function() {\n    const slidesContainer = document.querySelector('.slides-container');\n    const slides = document.querySelectorAll('.slide');\n    const progressContainer = document.querySelector('.progress-container');\n    const prevBtn = document.querySelector('.prev-btn');\n    const nextBtn = document.querySelector('.next-btn');\n\n    let currentSlide = 0;\n    let players = [];\n    let progressFills = [];\n\n    // Create progress bars\n    slides.forEach((_, index) => {\n        const progressBar = document.createElement('div');\n        progressBar.className = 'progress-bar';\n\n        const progressFill = document.createElement('div');\n        progressFill.className = 'progress-fill';\n        progressFill.style.opacity = '0';\n\n        progressBar.appendChild(progressFill);\n        progressContainer.appendChild(progressBar);\n        progressFills.push(progressFill);\n    });\n\n    // Initialize Vimeo Players\n    function initializePlayers() {\n        const iframes = document.querySelectorAll('.slide iframe');\n\n        iframes.forEach((iframe, index) => {\n            const player = new Vimeo.Player(iframe);\n            players.push(player);\n\n            player.on('loaded', () => {\n                console.log(`Video ${index} loaded`);\n                player.setVolume(0);\n                player.setLoop(false);\n                if (index === 0) startVideoAndProgress(index); // Start the first video directly\n            });\n\n            player.on('ended', () => {\n                goToSlide(currentSlide + 1); // Go to the next slide when video ends\n            });\n\n            player.on('timeupdate', (data) => {\n                if (index === currentSlide) { // Update progress only for the active slide\n                \tconst progress = ((data.seconds * 1000) / (data.duration * 1000)) * 100;\n                  progressFills[index].style.opacity = '1';\n                  progressFills[index].style.width = `${progress}%`;\n                }\n            });\n        });\n    }\n\n    // Start video and progress for a given slide\n    function startVideoAndProgress(index) {\n        progressFills.forEach((fill, i) => {\n            if (i < index) {\n                fill.style.width = '100%';\n                fill.style.opacity = '1';\n            } else if (i === index) {\n                fill.style.width = '0%';\n                fill.style.opacity = '1';\n            } else {\n                fill.style.width = '0%';\n                fill.style.opacity = '0';\n            }\n        });\n\n        players[index].setCurrentTime(0).then(() => {\n            players[index].play().catch(error => {\n                console.error(`Error playing video ${index}:`, error);\n            });\n        });\n    }\n\n    // Move to the next or previous slide\n    function goToSlide(index) {\n        if (index < 0) index = slides.length - 1;\n        if (index >= slides.length) index = 0;\n\n        players[currentSlide].pause();\n        currentSlide = index;\n        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;\n\n        startVideoAndProgress(currentSlide);\n    }\n\n    // Button event listeners\n    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));\n    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));\n\n    // Load the Vimeo Player API\n    if (typeof Vimeo === 'undefined') {\n        const script = document.createElement('script');\n        script.src = 'https://player.vimeo.com/api/player.js';\n        script.onload = initializePlayers;\n        document.body.appendChild(script);\n    } else {\n        initializePlayers();\n    }\n});\n"
+    },
+    {
+      "attrs": {
+        "src": "https://player.vimeo.com/api/player.js"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {
+        "src": "https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {},
+      "code": "\n var magnet = document.querySelector('#magneticHitArea')\n  var button = document.querySelector('#playButton')\n  var strength = 50\n\n  magnet.addEventListener('mousemove', moveMagnet);\n  magnet.addEventListener('mouseout', function(event) {\n    gsap.to(button, {\n      duration: 1,\n      x: 0,\n      y: 0,\n      ease: \"power4.out\"\n    })\n  });\n\n  function moveMagnet(event) {\n    var bounding = magnet.getBoundingClientRect()\n\n    gsap.to(button, {\n      duration: 1,\n      x: ((( event.clientX - bounding.left)/magnet.offsetWidth) - 0.5) * strength,\n      y: ((( event.clientY - bounding.top)/magnet.offsetHeight) - 0.5) * strength,\n      ease: \"power4.out\"\n    })\n  }\n  \n  // Add click effect\n  magnet.addEventListener('click', function() {\n    gsap.to(button, {\n      duration: 0.1,\n      scale: 0.95,\n      onComplete: function() {\n        gsap.to(button, {\n          duration: 0.1,\n          scale: 1\n        });\n      }\n    });\n  });\n"
+    },
+    {
+      "attrs": {
+        "src": "https://player.vimeo.com/api/player.js"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {},
+      "code": "\nvar overlay = document.querySelector('.HeaderVideoOverlay'),\n\t  nav = document.querySelector('.navigation'),\n\t  iframe = document.querySelector('.HeaderVideoOverlay_Inner iframe'),\n\t  showreelPlayer = new Vimeo.Player(iframe, {\n      controls: false,\n      title: false,\n      byline: false,\n      vimeo_logo: false,\n      portrait: false,\n      pip: false,\n      loop: true,\n      chromecast: false,\n      airplay: false,\n      play_button_position: 'bottom'\n    }),\n    playPauseButton = document.querySelector('.playPauseButton'),\n    playIcon = document.querySelector('.playIcon'),\n    pauseIcon = document.querySelector('.pauseIcon'),\n    isPlaying = false;\n  \nfunction openModal() {\n  overlay.classList.add('--Open')\n  nav.style.zIndex = '97'\n  showreelPlayer.play();\n  isPlaying = true;\n  updatePlayPauseIcon();\n}\n\nfunction closeModal() {\n  overlay.classList.remove('--Open')\n  showreelPlayer.pause()\n  isPlaying = false;\n  updatePlayPauseIcon();\n    \n  setTimeout(() => nav.style.zIndex = '99', 800)\n}\n\nfunction togglePlayPause() {\n  if (isPlaying) {\n    showreelPlayer.pause();\n    isPlaying = false;\n  } else {\n    showreelPlayer.play();\n    isPlaying = true;\n  }\n  updatePlayPauseIcon();\n}\n\nfunction updatePlayPauseIcon() {\n  if (isPlaying) {\n    playIcon.style.display = 'none';\n    pauseIcon.style.display = 'block';\n  } else {\n    playIcon.style.display = 'block';\n    pauseIcon.style.display = 'none';\n  }\n}\n\n// Check showreelPlayer state\nshowreelPlayer.on('play', function() {\n  isPlaying = true;\n  updatePlayPauseIcon();\n});\n\nshowreelPlayer.on('pause', function() {\n  isPlaying = false;\n  updatePlayPauseIcon();\n});\n\n// Make play/pause button follow cursor\nconst videoContainer = document.querySelector('.HeaderVideoOverlay_Inner');\nvideoContainer.addEventListener('mousemove', function(e) {\n  // Get mouse position relative to viewport\n  const mouseX = e.clientX;\n  const mouseY = e.clientY;\n  \n  // Update button position to follow cursor\n  playPauseButton.style.left = mouseX + 'px';\n  playPauseButton.style.top = mouseY + 'px';\n  playPauseButton.style.transform = 'translate(-50%, -50%)';\n  playPauseButton.classList.add('visible');\n});\n\n// Show/hide play button on hover\nvideoContainer.addEventListener('mouseenter', function() {\n  playPauseButton.classList.add('visible');\n});\n\nvideoContainer.addEventListener('mouseleave', function() {\n  playPauseButton.classList.remove('visible');\n});\n\n// Hide button when not moving mouse for 2 seconds\nlet mouseTimer;\nvideoContainer.addEventListener('mousemove', function() {\n  clearTimeout(mouseTimer);\n  playPauseButton.classList.add('visible');\n  \n  mouseTimer = setTimeout(() => {\n    if (!playPauseButton.matches(':hover')) {\n      playPauseButton.classList.remove('visible');\n    }\n  }, 2000);\n});\n  \n  \ndocument.querySelector('[data-showreel-toggle]').onclick = () => { openModal() }\ndocument.querySelector('.HeaderVideoOverlayClose').onclick = () => { closeModal() }\ndocument.querySelector('.HeaderVideoOverlay_Inner').onclick = () => { togglePlayPause() }\n\nwindow.onclick = (event) => {\n  if (event.target == overlay) { closeModal() }\n}\n\ndocument.onkeydown = (evt) => {\n\tevt = evt || window.event;\n  var isEscape = false;\n  \n  if (\"key\" in evt) {\n    isEscape = (evt.key === \"Escape\" || evt.key === \"Esc\");\n  } else {\n    isEscape = (evt.keyCode === 27);\n  }\n\n  if (isEscape) {\n    closeModal()\n  }\n}\n"
+    },
+    {
+      "attrs": {},
+      "code": "\n//clock\nfunction getClock() {\n    const options = {\n      timeZone: 'Europe/Berlin'\n    };\n    const today = new Date();\n\n    const mins = today.toLocaleTimeString(\"de-DE\", { minute: '2-digit' });\n    const hour = today.toLocaleTimeString(\"de-DE\", { hour: 'numeric' }).replace(' Uhr', '');\n    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;\n    document.querySelector('.analog-clock__hand').style.transform = `rotate(${hourDegrees}deg)`;\n}\n  \nsetInterval(getClock, 100);\n"
+    },
+    {
+      "attrs": {},
+      "code": "\nfunction getCurrentTime() {\n  const options = {\n    timeZone: 'Europe/Berlin'\n  };\n  const today = new Date();\n // console.log(today.toLocaleTimeString(\"en-GB\", options))\n  return document.getElementById('clock').innerHTML = today.toLocaleTimeString(\"de-DE\", options) + \" local time\";\n}\n\nsetInterval(getCurrentTime, 100);\n\n"
+    },
+    {
+      "attrs": {
+        "src": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5d69147f029cb22d9d6027bf",
+        "type": "text/javascript",
+        "integrity": "sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=",
+        "crossorigin": "anonymous"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {
+        "src": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/js/webflow.schunk.f2efb3c5440a81cf.js",
+        "type": "text/javascript",
+        "integrity": "sha384-VK02VJvMib7ytrF5M2joPWNtDQs366FZgEQ5B+Iwnjx0WBnwQXfootyziSYxdrmS",
+        "crossorigin": "anonymous"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {
+        "src": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/js/webflow.schunk.191014ddbb530757.js",
+        "type": "text/javascript",
+        "integrity": "sha384-wFvC+1wscUqdl5tQJaOgHVUrVNF9UYKOFOJAQAR/hY16SvxU4ha/35VozTCiPBlo",
+        "crossorigin": "anonymous"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {
+        "src": "https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/js/webflow.874a4cad.e46a47e38e1ce084.js",
+        "type": "text/javascript",
+        "integrity": "sha384-Zg+DIDDK6Qgbqt4lT3ihOyYz1FoYUcHk0zXU+hFEFd9CiRqrgJw9yEDyRJF6Az4A",
+        "crossorigin": "anonymous"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {},
+      "code": "\n  // Stop body scroll when mobile menu is open\n  const body = document.body;\n  function letBodyScroll(bool) {\n    if (bool) {\n      body.style.overflow = 'hidden';\n    } else {\n      body.style.overflow = 'auto'; \n    }  \n  }\n\n  const targetNode = document.querySelector('.w-nav-button');\n  const config = { attributes: true, childList: false, subtree: false };\n  const callback = function (mutationsList, observer) {\n    for (let i = 0; i < mutationsList.length; i++) {\n      if (mutationsList[i].type === 'attributes') {\n        const menuIsOpen = mutationsList[i].target.classList.contains('w--open');\n        letBodyScroll(menuIsOpen);  \n      }\n    }  \n  };\n\n  const observer = new MutationObserver(callback);\n  \n  if (targetNode) { observer.observe(targetNode, config); }\n"
+    },
+    {
+      "attrs": {
+        "src": "https://unpkg.com/animejs@3.2.1/lib/anime.min.js"
+      },
+      "code": ""
+    },
+    {
+      "attrs": {},
+      "code": "\n// Updated Custom Tooltip\ndocument.addEventListener('DOMContentLoaded', () => {\n  document.querySelector('.copyright-year').innerHTML = new Date().getFullYear();\n  \n  const tooltip = document.querySelector('#tooltip');\n  const closeButton = document.querySelector('.contact-form-overlay-close');\n  const overlay = document.querySelector('.contact-form-overlay');\n  const wrapper = document.querySelector('.contact-form-wrapper');\n        \n  // Function to determine if a point is inside the wrapper\n  function isPointInWrapper(x, y) {\n    const wrapperRect = wrapper.getBoundingClientRect();\n    return (\n      x >= wrapperRect.left &&\n      x <= wrapperRect.right &&\n      y >= wrapperRect.top &&\n      y <= wrapperRect.bottom\n    );\n  }\n\n  function moveTooltip(e) {\n    tooltip.style.left = `${e.clientX}px`;\n    tooltip.style.top = `${e.clientY}px`;\n  }\n  \n  function moveCloseButton(e) {\n    closeButton.style.left = `${e.clientX - 28}px`;\n    closeButton.style.top = `${e.clientY - 28}px`;\n  }\n\n  tooltip.style.display = 'none';\n  closeButton.style.display = 'none';\n\n  function showTooltip(text) {\n    tooltip.style.display = 'block';\n    tooltip.style.position = 'fixed';\n    tooltip.style.zIndex = '999';\n\n    tooltip.innerHTML = text;\n  }\n  \n  function showCloseButton() {\n    closeButton.style.display = 'flex';\n    closeButton.style.position = 'fixed';\n    closeButton.style.zIndex = '999';\n  }\n\n  function hideTooltip() {\n    tooltip.style.display = 'none';\n  }\n  \n  function hideCloseButton() {\n    closeButton.style.display = 'none';\n  }\n  \n  const tooltipElements = document.querySelectorAll('[data-tooltip]');\n  \n  tooltipElements.forEach(element => {\n    element.addEventListener('mousemove', moveTooltip);\n    element.addEventListener('mouseenter', (e) => {\n      showTooltip(element.dataset.tooltip);\n      moveTooltip(e);\n    });\n    element.addEventListener('mouseleave', hideTooltip);\n  });\n  \n  // The main mouse move handler for the overlay\n  overlay.addEventListener('mousemove', (e) => {\n    // Check if the current mouse position is inside the wrapper\n    if (isPointInWrapper(e.clientX, e.clientY)) {\n      hideCloseButton();\n    } else {\n      showCloseButton();\n      moveCloseButton(e);\n    }\n  });\n\n\n  // Initial visibility when entering the overlay\n  overlay.addEventListener('mouseenter', (e) => {\n    if (!isPointInWrapper(e.clientX, e.clientY)) {\n      showCloseButton();\n      moveCloseButton(e);\n    }\n  });\n\n  // Hide when leaving the overlay completely\n  overlay.addEventListener('mouseleave', hideCloseButton);\n})\n"
+    },
+    {
+      "attrs": {},
+      "code": "\n  document.addEventListener('DOMContentLoaded', () => {\nconst stats = document.querySelector(\"#stats\");\n\nfunction startCounting(counters) {\n  counters.forEach((counter) => {\n    // Get the data-count value\n    const finalValue = counter.getAttribute(\"data-count\");\n    \n    // Check if the value has a plus sign at the beginning\n    const hasPlus = finalValue.startsWith(\"+\");\n    \n    // Extract the numeric part (including the + if it exists)\n    const numericMatch = finalValue.match(/[-+]?\\d+(\\.\\d+)?/);\n    \n    if (!numericMatch) return; // Skip if no numeric value found\n    \n    // Get the pure numeric value (without the + sign)\n    const numericValue = parseFloat(numericMatch[0]);\n    \n    // Find where the number starts in the original string\n    const numericString = numericMatch[0];\n    const numericIndex = finalValue.indexOf(numericString);\n    \n    // Get the prefix (everything before the number, excluding the + if it's part of the number)\n    const prefix = hasPlus \n      ? finalValue.substring(0, numericIndex + 1) // Include the + in the prefix\n      : finalValue.substring(0, numericIndex);\n    \n    // Get the suffix (everything after the number)\n    const suffix = finalValue.substring(numericIndex + numericString.length);\n    \n    // Custom object to animate\n    const obj = { value: 0 };\n    \n    // Set up the animation\n    anime({\n      targets: obj,\n      value: numericValue, // Target the final numeric value (without the + sign)\n      easing: \"easeInOutSine\",\n      duration: 2000,\n      round: 10, // Use round: 10 as requested\n      update: function() {\n        // Get the current value\n        let currentValue = obj.value;\n        \n        // Update the counter with prefix, current value, and suffix\n        counter.innerHTML = prefix + currentValue + suffix;\n      }\n    });\n  });\n}\n\nif (stats) {\n  const counters = stats.querySelectorAll(\"[data-count]\");\n\n  const options = {\n    root: null,\n    rootMargin: \"0px\",\n    threshold: 0.5,\n  };\n\n  const observer = new IntersectionObserver((entries) => {\n    entries.forEach((entry) => {\n      if (entry.isIntersecting) {\n        startCounting(counters);\n        //observer.unobserve(entry.target); // Only trigger once\n      }\n    });\n  }, options);\n\n  observer.observe(stats);\n}\n  })\n"
+    },
+    {
+      "attrs": {},
+      "code": "\ndocument.addEventListener('keyup', (e) => {\n  const closeButton = document.querySelector('.contact-form-overlay-close')\n\n  if (closeButton && (e.key === 'Escape' || e.keyCode === 27)) {\n\tcloseButton.click()\n  }\n})\n"
+    }
+  ],
+  "customCSS": "\n  * {\n  \t-webkit-tap-highlight-color: transparent;\n  }\n  \n  ::selection{color:#ffffff; background:#000000;}\n  ::-moz-selection{color:#ffffff; background:#000000;}\n\n  /* custom cursor */\n  body {\n    cursor: url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/67879e5c7ee1fe0ceddff3f1_cursor_default%402x.png') 10 10, auto;\n    cursor: -webkit-image-set(\n      url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/67879e5ced784b772aa8ba55_cursor_default.png') 1x,\n      url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/67879e5c7ee1fe0ceddff3f1_cursor_default%402x.png') 2x\n    ) 10 10, auto !important;\n  }\n\n  a,\n  .glide__bullet,\n  .glide__arrow,\n  .showreel-button,\n  .HeaderVideoOverlayClose,\n  .contact-pill-wrapper,\n  .credits-toggle,\n  input[type=submit],\n  button {\n    cursor: url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png'), auto;\n    cursor: -webkit-image-set(\n      url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png') 1x,\n      url('https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33da8fa32214bd4c6255_cursor_link%402x.png') 2x\n  \t), auto !important;\n  }\n  \n  .contact-form-overlay-close {\n    cursor: none !important;\n  }\n\n  body {\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    scroll-padding-top: 80px;\n  }\n  \n  /* team slider */\n  #team-slider {position:relative;overflow:hidden;padding-bottom:80px;}\n  #team-slider-wrap {width:100%;overflow:visible;}\n    \n  /* navigation */\n  nav.navigation [data-updates-toggle]:hover ~ .navigation-updates,\n  nav.navigation .navigation-updates:has(.navigation-updates-wrapper:hover),\n  nav.navigation [data-work-toggle]:hover ~ .navigation-work,\n  nav.navigation .navigation-work:has(.navigation-work-grid:hover) {\n    opacity: 1;\n    pointer-events: all;\n  }\n  \n  nav.navigation [data-updates-toggle]:hover ~ .navigation-updates .navigation-updates-wrapper,\n  nav.navigation .navigation-updates-wrapper:hover,\n  nav.navigation [data-work-toggle]:hover ~ .navigation-work .navigation-work-grid,\n  nav.navigation .navigation-work-grid:hover {\n    transform: translateY(0);\n  }\n\n  nav.navigation .navigation-pages-wrapper {\n    transition-delay: 400ms;\n  }\n  \n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper {\n    transition-delay: 150ms;\n\ttransform: translateY(0);\n    pointer-events: all;\n  }\n  \n  @media screen and (max-width: 991px) {\n    nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper {\n      transform: translateY(64px);\n    }\n  }\n  \n  .credits-toggle::after,\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item .navigation-pages-link::after {\n  \tcontent: '';\n    position: absolute;\n    z-index: -1;\n    width: calc(100% + 16px);\n    height: 28px;\n    border-radius: 4px;\n    background-color: var(--grey--100);\n    opacity: 0;\n    transition: 200ms ease-in-out;\n  }\n  \n  .credits-toggle::after {\n    translate: -8px 0;\n  }\n  \n  @media (hover: hover) {\n    .credits-toggle:hover::after,\n    nav.navigation .navigation-pages-wrapper .navigation-pages-item .navigation-pages-link:hover::after {\n      opacity: 1;\n    }\n  }\n\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(1) {\n    transition-delay: 0s;\n  }\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(2) {\n    transition-delay: 15ms;\n  }\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(3) {\n    transition-delay: 30ms;\n  }\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(4) {\n    transition-delay: 45ms;\n  }\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(5) {\n    transition-delay: 60ms;\n  }\n  nav.navigation .navigation-pages-wrapper .navigation-pages-item:nth-child(6) {\n    transition-delay: 75ms;\n  }\n  \n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(1) {\n    transition-delay: 450ms;\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(2) {\n    transition-delay: calc(450ms + 15ms);\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(3) {\n    transition-delay: calc(450ms + 30ms);\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(4) {\n    transition-delay: calc(450ms + 45ms);\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(5) {\n    transition-delay: calc(450ms + 60ms);\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item:nth-child(6) {\n    transition-delay: calc(450ms + 75ms);\n  }\n  \n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-pages-item {\n\ttransform: translateX(0);\n\topacity: 1;\n  }\n\n  nav.navigation .navigation-pages-wrapper .navigation-cases,\n  nav.navigation .navigation-pages-wrapper .navigation-socials {\n    transition-delay: 0s;\n  }\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-cases,\n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-socials {\n    opacity: 1;\n  }\n  \n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-cases {\n    transition-delay: 700ms;\n  }\n  \n  nav.navigation [data-toggle][open] ~ .navigation-pages-wrapper .navigation-socials {\n  \ttransition-delay: 750ms;\n  }\n\n  nav.navigation .navigation-container {\n    transition-delay: 800ms;\n  }\n  \n  nav.navigation:has([data-toggle][open]) .navigation-container {\n    transition-delay: 0s;\n    background-color: black;\n    border-color: black;\n    color: white;\n  }\n  \n  nav.navigation .navigation-logo-static {\n  \ttransition-delay: 800ms;\n  }\n  \n  nav.navigation:has([data-toggle][open]) .navigation-logo-static {\n    transition-delay: 0s;\n    color: white;\n  }\n\n  nav.navigation [data-toggle] .navigation-toggle-bar {\n    transition-delay: 600ms;\n  }\n  \n  nav.navigation [data-toggle][open] .navigation-toggle-bar {\n  \ttransition-delay: 0s;\n    transform-origin: center center;\n    background-color: white;\n  }\n  \n  nav.navigation [data-toggle][open] .navigation-toggle-bar.top {\n    transform: translate(-50%, -50%) rotate(-45deg);\n    margin-top: -1px;\n  }\n  \n  nav.navigation [data-toggle][open] .navigation-toggle-bar.bottom {\n    transform: translate(-50%, -50%) rotate(-135deg);\n    margin-bottom: -1px;\n  }\n  \n  /* hide safari chevron */\n  details > summary::-webkit-details-marker,\n  details > summary::marker {\n    display: none;\n  }\n  \n  .navigation-cases-list::-webkit-scrollbar {\n  \tdisplay: none;\n  }\n  \n  nav.navigation[data-theme=dark] {\n    background: var(--black);\n    color: var(--white);\n    border-bottom-color: var(--grey--900);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-container {\n    border-bottom-color: var(--grey--900);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-pages-link,\n  nav.navigation[data-theme=dark] .navigation-updates-list-item-link {\n    color: var(--white);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-pages-link.w--current {\n  \tborder-bottom-color: var(--white);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-pages-wrapper .navigation-pages-item .navigation-pages-link::after {\n  \tbackground-color: var(--grey--900);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-updates {\n    background-color: rgba(255, 255, 255, 0.08);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-updates-grid,\n  nav.navigation[data-theme=dark] .navigation-updates-wrapper {\n  \tbackground-color: var(--black);\n  }\n  \n  nav.navigation[data-theme=dark] .ghost-button {\n    background-color: var(--black);\n    border-color: var(--grey--900);\n    color: var(--white);\n  }\n  \n  nav.navigation[data-theme=dark] .ghost-button:hover {\n    background-color: var(--grey--1000);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-updates-list-item .navigation-updates-list-item-image-figure {\n    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-logo-static {\n    color: var(--white);\n  }\n  \n  nav.navigation[data-theme=dark] .navigation-toggle-bar {\n    background: var(--white);\n  }\n  \n  .blog-post-author:not(:last-child) .blog-author::after {\n    content: ',';\n    margin-right: 3px;\n  }\n  \n  \t.glide .glide__arrows {\n\t  transition: opacity 100ms ease-in-out;\n  \topacity: 0;\n\t}\n  \n  .glide:hover .glide__arrows {\n\t  opacity: 1;\n  }\n\n\t.glide__bullet {\n\t  position: relative;\n    width: 6px;\n    height: 6px;\n    border-radius: 999px;\n    background: var(--grey--350);\n    transition: 300ms cubic-bezier(0.645, 0.045, 0.355, 1);\n    padding: 0 !important;\n    overflow: hidden;\n  }\n  \n  .glide__bullet.glide__bullet--active {\n  \twidth: 30px;\n  }\n  \n  .glide__bullet::after {\n  \tcontent: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 6px;\n    width: 30px;\n    transform: translateX(calc(-100% + 6px));\n    background: #000;\n    border-radius: 999px;\n    transition: opacity 400ms;\n    opacity: 0;\n    will-change: transform;\n  }\n  \n  .glide__bullet.glide__bullet--active::after {\n\t  opacity: 1;\n    animation: bullet 6s linear forwards;\n  }\n  \n  @keyframes bullet {\n    from { transform: translateX(calc(-100% + 6px)); }\n    to { transform: translateX(0%); }\n  }\n\n\n.progress-bar {\n  height: 3px;\n  background-color: rgba(255, 255, 255, 0.4);\n  backdrop-filter: blur(12px);\n  flex: 1;\n  border-radius: 4px;\n  overflow: hidden;\n} \n\n.progress-fill {\n\theight: 3px;\n\twidth: 3px;\n  opacity: 0;\n\tbackground-color: white;\n  transition: width 200ms linear;\n  border-radius: 4px;\n}\n\n\n.HeaderVideoOverlay {\n\tz-index: 99999;\n\tposition: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0,0,0,0.9);\n  padding: 160px 40px;\n  pointer-events: none;\n  opacity: 0;\n  transition: 200ms 200ms ease;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  will-change: opacity;\n}\n\n.HeaderVideoOverlayClose {\n  position: absolute;\n  top: 32px;\n  right: 40px;\n\twidth: 24px;\n\theight: 24px;\n  background: none;\n  appearance: none;\n  border: none;\n  padding: 0;\n}\n\n.playPauseButton {\n  position: fixed; /* Changed from absolute to fixed to follow cursor anywhere */\n  transform: translate(-50%, -50%);\n  background: rgba(136,136,136,0.24);\n  backdrop-filter: blur(8px);\n  z-index: 5;\n  height: 72px;\n  width: 72px;\n  border-radius: 999px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n  border: none;\n  pointer-events: none; /* Allow clicks to pass through when hidden */\n  cursor: none;\n}\n\n.playPauseButton.visible {\n  opacity: 1;\n}\n\n.HeaderVideoOverlay_Inner {\n\twidth: 100%;\n  height: 0;\n  padding-top: 42.19%;\n  position: relative;\n\ttransform: translate(0, 32px);\n  opacity: 0;\n  transition: 200ms 0s ease;\n  will-change: transform, opacity;\n  cursor: none;\n}\n\n.HeaderVideoOverlay_Inner iframe {\n\tpointer-events: none;\n  cursor: none;\n}\n\n.HeaderVideoOverlay.--Open {\n\topacity: 1;\n  pointer-events: all;\n  transition: 200ms 0s ease;\n}\n\n.HeaderVideoOverlay.--Open .HeaderVideoOverlay_Inner {\n\topacity: 1;\n  transform: translate(0);\n  transition: 200ms 200ms ease;\n}\n\n@media screen and (max-width: 767px) {\n\t.HeaderVideoOverlayClose { \n\t  width: 48px;\n\t\theight: 48px;\n\t\ttop: 16px;\n\t\tright: 16px;\n\t\tpadding: 18px 10px;\n  }\n\t.HeaderVideoOverlay { padding: 80px 16px; }\n  .HeaderVideoOverlay_Inner {\n  \theight: 0;\n    padding-top: 42.19%;\n  }\n}\n\n\n.clipped_gradient {\n    -webkit-text-fill-color: transparent;\n    -webkit-background-clip: text;\n    }\n\n\n\n.analog-clock {\n  position: relative;\n  width: 56px;\n  height: 56px;\n  border-radius: 50%;\n  border: 3px solid #ffffff; }\n  .analog-clock__hand {\n    -webkit-box-sizing: content-box;\n            box-sizing: content-box;\n    position: absolute;\n    width: 56px;\n    height: 56px;\n    top: -3px;\n    left: -3px;\n    -webkit-transform-origin: 50%;\n            transform-origin: 50%;\n    background: url(\"data:image/svg+xml,%3Csvg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 28H28' stroke='white' stroke-width='3'/%3E%3C/svg%3E\");\n    background-repeat: no-repeat no-repeat;\n    background-position: center center;\n    background-size: cover; }\n\n\n\n  .grid-12::before,\n  .grid-12::after {\n    visibility: hidden;\n    display: none;\n    content: unset;\n  }\n\n.menu-fab {mix-blend-mode: difference;}\n\n\n/* text selection */\n::selection{color:#ffffff; background:#000000;}\n::-moz-selection{color:#ffffff; background:#000000;}\n\n#tooltip {\n  position: fixed;\n  /* width: auto;\n  height: auto; */\n  padding: 5px 12px 4px;\n  top: 50%;\n  left: 50%;\n  margin: 20px 0 0 20px;\n  backface-visibility: hidden;\n  background-color: black; \n  font-size: 14px;\n  font-weight: 500;\n  color: white;\n  white-space: nowrap;\n  display: none;\n  pointer-events: none;\n  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);\n}\n\n#tooltip-mask {\noverflow: visible;\n}\n  \n.AudioPlayer{height:64px;border-radius:64px;padding:8px 32px 8px 8px;display:flex;align-items:center;gap:24px;border:1px solid #efefef}.AudioPlayer .Controls .PlayPause{height:48px;width:48px;padding:0;border-radius:48px;background:#f7f7f7;border:none;display:flex;align-items:center;justify-content:center;cursor:url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png\"),auto;cursor:-webkit-image-set(url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png\") 1x, url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33da8fa32214bd4c6255_cursor_link%402x.png\") 2x),auto !important}.AudioPlayer .Controls .PlayPause svg{transform:translate(0, 0);width:24px !important;height:24px !important}.AudioPlayer .Controls .PlayPause .Pause{display:none}.AudioPlayer .Controls .PlayPause.--Play .Play{display:block}.AudioPlayer .Controls .PlayPause.--Play .Pause{display:none}.AudioPlayer .Controls .PlayPause.--Pause .Play{display:none}.AudioPlayer .Controls .PlayPause.--Pause .Pause{display:block}.AudioPlayer .Timeline{height:100%;width:100%;overflow:hidden;position:relative;cursor:url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png\"),auto;cursor:-webkit-image-set(url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33d9c2702cd5daf708bd_cursor_link.png\") 1x, url(\"https://cdn.prod.website-files.com/5d69147f029cb22d9d6027bf/5efa33da8fa32214bd4c6255_cursor_link%402x.png\") 2x),auto !important}.AudioPlayer .Timeline::after{content:\"\";width:100%;height:4px;background:#f7f7f7;position:absolute;top:50%;left:0;transform:translate(0, -50%)}.AudioPlayer .Timeline .Progress{height:4px;background:#212121;transition:200ms linear;pointer-events:none;position:absolute;top:50%;left:0;transform:translate(0, -50%);z-index:1}.AudioPlayer .Duration{display:flex;align-items:center;line-height:1;gap:4px}.AudioPlayer .Duration .Current,.AudioPlayer .Duration .Divider,.AudioPlayer .Duration .Length{font-size:14px;font-weight:500}.AudioPlayer .Duration .Current,.AudioPlayer .Duration .Length{font-variant-numeric:tabular-nums;letter-spacing:.8px}.AudioPlayer .Duration .Length,.AudioPlayer .Duration .Divider{color:#bdbdbd}\n\n\n/* Hide scrollbar for Chrome, Safari and Opera */\n.slidercontainer-copy::-webkit-scrollbar {\n  display: none;\n  width: 0 !important;\n  height: 0 !important;\n}\n\n/* Hide scrollbar for IE, Edge and Firefox */\n.slidercontainer-copy {\n  -ms-overflow-style: none;  /* IE and Edge */\n  scrollbar-width: none;  /* Firefox */\n}\n",
+  "observations": {
+    "desktop1280": [
+      "Updates dropdown visible with opacity+Y transitions",
+      "Work dropdown display:none even when hovered",
+      "Syte and Pleo are img.work-card-image, not work-card-video",
+      "Card hover scale progressed above 1 and tooltip follows cursor immediately",
+      "Regpit white curtain and 1.05 hover definition",
+      "Who We Are desktop image wrapper zero height",
+      "Contact panel uses horizontal translate CSS variable",
+      "Footer all 16 animated targets finish opacity1 x0"
+    ],
+    "tablet820": [
+      "Mobile details menu with 400ms panel transform",
+      "Stories hidden",
+      "Contact translation vertical"
+    ],
+    "phone390": [
+      "Three Vimeo stories visible; next wraps to first immediately",
+      "Stories container has zero transition duration",
+      "Progress bars width transition200mslinear",
+      "600ms panel transition with 150ms opening/400ms closing delay",
+      "Links delays reset per sibling ul: 450,465,480,495,450,465ms",
+      "Native details open and close; body overflow remains visible",
+      "Who We Are image has nonzero height",
+      "Contact translation vertical"
+    ]
+  }
+}

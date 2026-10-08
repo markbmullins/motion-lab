@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-07",
+  "timelineBoundaryChecks": [
+    {
+      "lab": "hero",
+      "start": "0 / 3000 ms",
+      "end": "3000 / 3000 ms",
+      "total": "3000",
+      "passed": true
+    },
+    {
+      "lab": "frame",
+      "start": "0 / 4300 ms",
+      "end": "4300 / 4300 ms",
+      "total": "4300",
+      "passed": true
+    },
+    {
+      "lab": "purpose",
+      "start": "0 / 900 ms",
+      "end": "900 / 900 ms",
+      "total": "900",
+      "passed": true
+    },
+    {
+      "lab": "momentum",
+      "start": "0 / 3000 ms",
+      "end": "3000 / 3000 ms",
+      "total": "3000",
+      "passed": true
+    },
+    {
+      "lab": "grids",
+      "start": "0 / 22400 ms",
+      "end": "22400 / 22400 ms",
+      "total": "22400",
+      "passed": true
+    },
+    {
+      "lab": "marquee",
+      "start": "0 / 30000 ms",
+      "end": "30000 / 30000 ms",
+      "total": "30000",
+      "passed": true
+    },
+    {
+      "lab": "navigation",
+      "start": "0 / 400 ms",
+      "end": "400 / 400 ms",
+      "total": "400",
+      "passed": true
+    },
+    {
+      "lab": "panel",
+      "start": "0 / 500 ms",
+      "end": "500 / 500 ms",
+      "total": "500",
+      "passed": true
+    },
+    {
+      "lab": "lighting",
+      "start": "0 / 3000 ms",
+      "end": "3000 / 3000 ms",
+      "total": "3000",
+      "passed": true
+    },
+    {
+      "lab": "slack",
+      "start": "0 / 6500 ms",
+      "end": "6500 / 6500 ms",
+      "total": "6500",
+      "passed": true
+    },
+    {
+      "lab": "chart",
+      "start": "0 / 1000 ms",
+      "end": "1000 / 1000 ms",
+      "total": "1000",
+      "passed": true
+    },
+    {
+      "lab": "ai",
+      "start": "0 / 11500 ms",
+      "end": "11500 / 11500 ms",
+      "total": "11500",
+      "passed": true
+    },
+    {
+      "lab": "reviews",
+      "start": "0 / 100 ms",
+      "end": "100 / 100 ms",
+      "total": "100",
+      "passed": true
+    },
+    {
+      "lab": "carousel",
+      "start": "0 / 1300 ms",
+      "end": "1300 / 1300 ms",
+      "total": "1300",
+      "passed": true
+    }
+  ],
+  "responsiveChecks": [
+    {
+      "bodyWidth": 305,
+      "documentWidth": 305,
+      "overflow": [],
+      "width": 320
+    },
+    {
+      "bodyWidth": 753,
+      "documentWidth": 753,
+      "overflow": [],
+      "width": 768
+    },
+    {
+      "bodyWidth": 1009,
+      "documentWidth": 1009,
+      "overflow": [],
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1425,
+      "documentWidth": 1425,
+      "overflow": [],
+      "width": 1440
+    }
+  ],
+  "interactiveChecks": [
+    "Slow playback paused at134ms",
+    "Keyboard Home scrubbing",
+    "Blur channel isolated",
+    "Mobile hero has four headline lines",
+    "Reduced-motion replay shows destination immediately",
+    "Purpose layer0 moves matching visible/mask pair",
+    "Resources menu content switches",
+    "Panel close ends attranslateX105% andbackdrop0",
+    "Theme andissue selections update immediately",
+    "Transferred card andexistingInProgresscard do not overlap",
+    "Grid keyboard scrubbing changes exact opacity frames at2240ms",
+    "AI1150ms shows thinking withhidden response rows",
+    "Momentum keyboard control changes spring-driven geometry",
+    "Carousel Next changes native scrollLeft"
+  ],
+  "console": [],
+  "scope": "Functional and visual checks, not a quantitative performance benchmark."
+}

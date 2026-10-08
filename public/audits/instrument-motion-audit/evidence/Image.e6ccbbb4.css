@@ -1,0 +1,1 @@
+.image-component{--margin-bottom:0;--side:0;margin:0 var(--side) var(--margin-bottom);position:relative;width:100%}.image-component img{width:100%}main>.image-component{--margin-bottom:var(--space-96);--side:var(--side-spacing)}main>.image-component--full-bleed{--side:0}.image-component--rounded-corners img{border-radius:var(--border-radius)}

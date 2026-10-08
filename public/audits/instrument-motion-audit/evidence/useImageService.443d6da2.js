@@ -1,0 +1,1 @@
+const i=(t,s)=>{const e="https://a-us.storyblok.com";if(!t)return;if(!t.startsWith(e)||t.endsWith(".svg"))return t;const f=["m"];s.size&&f.push(s.size);let u="";const r=[];return s.focus&&r.push(`focal(${s.focus})`),s.format&&r.push(`format(${s.format})`),r.length&&(u="filters:"+r.join(":"),f.push(u)),`${t}/${f.join("/")}/`};export{i as u};

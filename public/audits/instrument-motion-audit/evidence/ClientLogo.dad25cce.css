@@ -1,0 +1,1 @@
+.client-logo{background:var(--theme-foreground);height:100%;-webkit-mask:var(--mask-src);mask:var(--mask-src);-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;width:100%}@media (min-width:90rem){.client-logo{width:70%}}

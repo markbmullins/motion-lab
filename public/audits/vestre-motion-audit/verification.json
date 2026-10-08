@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-07",
+  "browser": "Codex in-app Chromium browser",
+  "scope": "Offline showcase behavior; live homepage observations are separate evidence.",
+  "studyCount": 14,
+  "endpoints": [
+    {
+      "id": "hero",
+      "start": "Title last start 100ms \u00b7 supporting starts 420/520/620ms \u00b7 media 2400ms",
+      "end": "Title last start 100ms \u00b7 supporting starts 420/520/620ms \u00b7 media 2400ms"
+    },
+    {
+      "id": "header",
+      "start": "Header 136.0px / logo 96.0px / thresholds >24px and <4px / 320ms",
+      "end": "Header 64.0px / logo 44.0px / thresholds >24px and <4px / 320ms"
+    },
+    {
+      "id": "mega",
+      "start": "Open: content present immediately. Container opacity 0.000 \u00b7 320ms \u00b7 no stagger / transform",
+      "end": "Open: content present immediately. Container opacity 1.000 \u00b7 320ms \u00b7 no stagger / transform"
+    },
+    {
+      "id": "accents",
+      "start": "Underline / popup 150ms \u00b7 caret 200ms \u00b7 cubic(.4,0,.2,1)",
+      "end": "Underline / popup 150ms \u00b7 caret 200ms \u00b7 cubic(.4,0,.2,1)"
+    },
+    {
+      "id": "products",
+      "start": "Studio 1.000 / lifestyle 0.000 / caption 1.000 \u00b7 300ms \u00b7 scale unchanged",
+      "end": "Studio 0.000 / lifestyle 1.000 / caption 0.000 \u00b7 300ms \u00b7 scale unchanged"
+    },
+    {
+      "id": "media",
+      "start": "Scale 1.0000 \u00b7 500ms \u00b7 overlay 0.000",
+      "end": "Scale 1.0300 \u00b7 500ms \u00b7 overlay 0.000"
+    },
+    {
+      "id": "gallery",
+      "start": "Travel 0.0px \u00b7 steady speed 30px/s \u00b7 finite reconstruction, source loops and recycles",
+      "end": "Travel 360.0px \u00b7 steady speed 30px/s \u00b7 finite reconstruction, source loops and recycles"
+    },
+    {
+      "id": "overlap",
+      "start": "Progress 0.0% \u00b7 x 40.0% / -40.0% \u00b7 y 22.0px / -22.0px \u00b7 x settles at 42%, y crosses zero at 32%",
+      "end": "Progress 100.0% \u00b7 x 0.0% / 0.0% \u00b7 y -40.0px / 36.0px \u00b7 x settles at 42%, y crosses zero at 32%"
+    },
+    {
+      "id": "footer",
+      "start": "Track 0.0s / 120s \u00b7 shape periods 450 / 257 / 600 / 327 / 225 / 400s \u00b7 alternating directions",
+      "end": "Track 120.0s / 120s \u00b7 shape periods 450 / 257 / 600 / 327 / 225 / 400s \u00b7 alternating directions"
+    },
+    {
+      "id": "mobile",
+      "start": "Sheet / panels 300ms \u00b7 backdrop 150ms \u00b7 open \u00b7 no link stagger",
+      "end": "Sheet / panels 300ms \u00b7 backdrop 150ms \u00b7 open \u00b7 no link stagger"
+    },
+    {
+      "id": "drawer",
+      "start": "Open 450ms \u00b7 progress 0.000 \u00b7 scrim 0.000 \u00b7 8px viewport padding",
+      "end": "Open 450ms \u00b7 progress 1.000 \u00b7 scrim 0.200 \u00b7 8px viewport padding"
+    },
+    {
+      "id": "placeholder",
+      "start": "500ms / character \u00b7 20ms \u00d7 index + 10ms \u00d7 word \u00b7 original interval 3000ms",
+      "end": "500ms / character \u00b7 20ms \u00d7 index + 10ms \u00d7 word \u00b7 original interval 3000ms"
+    },
+    {
+      "id": "help",
+      "start": "Time 0ms \u00b7 grid 0.000fr \u00b7 opens 3000ms / closes 9000ms / 300ms transition",
+      "end": "Time 9300ms \u00b7 grid 0.000fr \u00b7 opens 3000ms / closes 9000ms / 300ms transition"
+    }
+  ],
+  "variants": [
+    {
+      "lab": "mega",
+      "value": "close",
+      "readout": "Close: active content removed at t=0. Container opacity 0.000 \u00b7 320ms \u00b7 no stagger / transform"
+    },
+    {
+      "lab": "products",
+      "value": "out",
+      "readout": "Studio 1.000 / lifestyle 0.000 / caption 1.000 \u00b7 300ms \u00b7 scale unchanged"
+    },
+    {
+      "lab": "media",
+      "value": "articles",
+      "readout": "Scale 1.0400 \u00b7 300ms \u00b7 overlay 0.000"
+    },
+    {
+      "lab": "media",
+      "value": "references",
+      "readout": "Scale 1.0200 \u00b7 300ms \u00b7 overlay 0.000"
+    },
+    {
+      "lab": "media",
+      "value": "megaSeries",
+      "readout": "Scale 1.0400 \u00b7 500ms \u00b7 overlay 0.150 / 300ms"
+    },
+    {
+      "lab": "overlap",
+      "value": "narrow",
+      "readout": "Progress 100.0% \u00b7 x 0.0% / 0.0% \u00b7 y 0.0px / 0.0px \u00b7 source cards have independent targets"
+    },
+    {
+      "lab": "mobile",
+      "value": "close",
+      "readout": "Sheet / panels 300ms \u00b7 backdrop 150ms \u00b7 close \u00b7 no link stagger"
+    },
+    {
+      "lab": "mobile",
+      "value": "drill",
+      "readout": "Sheet / panels 300ms \u00b7 backdrop 150ms \u00b7 drill \u00b7 no link stagger"
+    },
+    {
+      "lab": "mobile",
+      "value": "back",
+      "readout": "Sheet / panels 300ms \u00b7 backdrop 150ms \u00b7 back \u00b7 no link stagger"
+    },
+    {
+      "lab": "drawer",
+      "value": "close",
+      "readout": "Ordinary close 400ms \u00b7 progress 0.000 \u00b7 scrim 0.000 \u00b7 8px viewport padding"
+    }
+  ],
+  "responsive": [
+    {
+      "chaptersOverflow": true,
+      "clientWidth": 305,
+      "emptyReadouts": 0,
+      "scrollWidth": 305,
+      "stageCount": 14,
+      "width": 320
+    },
+    {
+      "chaptersOverflow": true,
+      "clientWidth": 753,
+      "emptyReadouts": 0,
+      "scrollWidth": 753,
+      "stageCount": 14,
+      "width": 768
+    },
+    {
+      "chaptersOverflow": false,
+      "clientWidth": 1009,
+      "emptyReadouts": 0,
+      "scrollWidth": 1009,
+      "stageCount": 14,
+      "width": 1024
+    },
+    {
+      "chaptersOverflow": false,
+      "clientWidth": 1425,
+      "emptyReadouts": 0,
+      "scrollWidth": 1425,
+      "stageCount": 14,
+      "width": 1440
+    }
+  ],
+  "checks": {
+    "consoleErrors": [],
+    "pauseAllStable": true,
+    "heroInitialScale": 1.12,
+    "heroInitialSupportOpacity": [
+      0,
+      0,
+      0
+    ],
+    "compoundTitleLastStartMs": 430,
+    "compoundTitleSupportStartMs": [
+      750,
+      850,
+      950
+    ],
+    "maskToggleVerified": true,
+    "captionIsolationVerified": true,
+    "nativeHeaderScroll": {
+      "compactAtObservedY": 454,
+      "expandAtObservedY": 0
+    },
+    "progressSliderObserved": {
+      "progressPercent": 10,
+      "yPx": [
+        15.125,
+        -15.125
+      ]
+    },
+    "helpWidthsPx": {
+      "collapsed": 44,
+      "expanded": 227.4296875
+    },
+    "nativeRowEndpoint": {
+      "scrollLeft": 621,
+      "max": 621
+    },
+    "footerGroupCount": 12,
+    "footerPathStrokePx": 1.5,
+    "reducedMotion": {
+      "replayShowsDestinationImmediately": true,
+      "cardsTransformIdentity": true,
+      "footerTransformIdentity": true,
+      "footerShapeTransformsIdentity": true,
+      "nativeScrollBehavior": "auto"
+    },
+    "localQueryHidesHint": true
+  },
+  "limitations": [
+    "No FPS/frame-time/compositor profiling",
+    "No physical touch tests",
+    "No screen-reader session",
+    "Original-site OS preference changes not exercised",
+    "Document-hidden pause verified by source inspection, not a visibility-transition runtime test"
+  ],
+  "staticChecks": {
+    "sourceAssetHashesMatched": 53,
+    "sourceAssetBytes": 2434903,
+    "missingLocalReferences": [],
+    "duplicateIds": false,
+    "standaloneRuntime": "Inline CSS and JavaScript; no external runtime dependencies",
+    "editableBuilder": "python3 source/build.py"
+  }
+}

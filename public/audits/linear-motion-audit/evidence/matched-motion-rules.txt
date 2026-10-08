@@ -1,0 +1,184 @@
+.TZTsQG_header{-webkit-user-select:none;user-select:none;isolation:isolate;z-index:var(--layer-header);transform:translateX(calc(-1 * var(--removed-body-scroll-bar-size,0px) / 2));-webkit-backdrop-filter:blur(var(--header-blur));backdrop-filter:blur(var(--header-blur));background:linear-gradient(180deg, var(--header-bg) 0%, color-mix(in oklab, var(--header-bg) 100%, transparent 5%) 100%);border-bottom:1px solid var(--header-border);transition:var(--speed-quickTransition) var(--ease-out-quad);top:0;margin-inline:auto;transition-property:border-color,background;position:fixed;inset-inline:0}
+.TZTsQG_anchor{height:32px;color:var(--color-text-tertiary);border-radius:var(--radius-rounded);transition:var(--speed-quickTransition) var(--ease-out-quad);--anchor-glass-bg:#ffffff14;background:0 0;justify-content:center;align-items:center;padding:0 12px;font-size:13px;transition-property:color,background;display:flex;position:relative}
+.b-30Va_action{transition:filter .16s var(--ease-out-quad), transform .16s var(--ease-out-quad);display:inline-block}
+.Mmx1Wq_switchWorkspaceButton{height:28px;transition:background .16s var(--ease-out-quad);cursor:pointer;border-radius:8px;align-items:center;gap:6px;padding-inline:4px;display:flex}
+._1uFtza_buttonBase{width:24px;height:24px;transition:transform .16s var(--ease-out-quad);border-radius:var(--radius-rounded);width:24px;height:24px;color:var(--color-text-quaternary);cursor:pointer;place-items:center;display:grid}
+._1uFtza_labelButton{border:var(--border-hairline) solid var(--hero-line,var(--color-border-primary));height:24px;color:var(--color-text-secondary);font-size:12px;line-height:14px;font-weight:var(--font-weight-normal);transition:filter .16s var(--ease-out-quad), transform .16s var(--ease-out-quad);border-radius:16px;align-items:center;gap:2px;padding-inline:7px 11px;display:flex}
+._1uFtza_navButton{border-radius:var(--radius-rounded);cursor:pointer;width:30px;height:28px;transition:background .16s var(--ease-out-quad);place-items:center;display:grid}
+._1uFtza_pillButton{border-radius:var(--radius-rounded);height:28px;color:var(--color-text-tertiary);cursor:pointer;transition:background .16s var(--ease-out-quad), color .16s var(--ease-out-quad);background:#ffffff05;flex:none;justify-content:center;align-items:center;padding-inline:7px;display:flex;overflow:hidden;box-shadow:inset 0 0 0 1px #ffffff0d}
+.S36ykG_variant{--button-corner-radius:var(--radius-rounded);font-weight:var(--font-weight-medium);font-size:var(--button-font-size);line-height:var(--button-height);height:var(--button-height);gap:var(--button-gap);padding:var(--button-padding);border-radius:var(--button-corner-radius);transition:.16s var(--ease-out-quad);transition-property:border,background-color,color,box-shadow,opacity,filter,transform}
+
+
+  .sx-1a64m5y {
+    transition: transform .15s;
+  }
+html.js .Sz_9La_root[data-fade=true][data-loaded=true]{animation:.8s both Sz_9La_load}
+html.js [data-rmiz-modal-content] .Sz_9La_root[data-fade=true]{opacity:1;animation:none;-webkit-mask:none;mask:none}
+.xt7VyG_content{animation:xt7VyG_scroll var(--Marquee-duration) linear infinite}
+.xt7VyG_content.xt7VyG_vertical{animation:xt7VyG_scroll-vertical var(--Marquee-duration) linear infinite}
+.xt7VyG_content:nth-child(2){visibility:visible;animation:xt7VyG_scroll-abs var(--Marquee-duration) linear infinite}
+.xt7VyG_content:nth-child(2).xt7VyG_vertical{animation:xt7VyG_scroll-abs-vertical var(--Marquee-duration) linear infinite}
+.MR81zG_root{width:100%;min-height:40px;transition:.2s var(--ease-out-quad);transition-property:filter}
+.GJ9TEa_purposeLift{transition:transform .7s cubic-bezier(.32,.72,0,1);transition-delay:var(--lift-delay,0s)}
+.GJ9TEa_purposeEdge{transition:stroke .7s cubic-bezier(.32,.72,0,1);transition-delay:var(--lift-delay,0s)}
+.GJ9TEa_purposeLift,.GJ9TEa_purposeEdge{transition:none}
+.QI8oKG_newFeatureLink{transition:filter .16s var(--ease-out-quad)}
+.M31rWW_ingredientLink{transition:filter .16s var(--ease-out-quad), transform .16s var(--ease-out-quad);display:block}
+.M31rWW_ingredientPlus{color:var(--color-text-quaternary);transition:color .16s var(--ease-out-quad);margin-left:4px;font-size:18px}
+.fFDhtq_inView .fFDhtq_dot{animation:fFDhtq_dotIn .42s var(--ease-out-quad) forwards;animation-delay:calc(var(--index) * 2ms)}
+.fFDhtq_inView .fFDhtq_dot{animation:none}
+.qM9FAa_sendButtonGroup{background:var(--color-brand-bg);outline:2px solid var(--color-bg-level-3);outline-offset:-1px;width:65px;height:28px;transition:filter .16s var(--ease-out-quad);border-radius:6px;align-items:center;margin-left:auto;display:flex;position:relative;overflow:visible;transform:translateZ(0);box-shadow:0 0 0 3px #5e6ad266}
+.qM9FAa_sendButton{cursor:pointer;width:32px;height:28px;transition:filter .16s var(--ease-out-quad);background:0 0;border:none;flex-shrink:0;place-items:center;display:grid;position:relative}
+.qM9FAa_dropdownButton{cursor:pointer;width:32px;height:28px;transition:filter .16s var(--ease-out-quad);background:0 0;border:none;place-items:center;display:grid}
+.qM9FAa_mentionDropdown{background:var(--color-bg-level-1);border:1px solid var(--color-border-primary);min-width:140px;box-shadow:var(--shadow-high);z-index:var(--layer-context-menu);animation:qM9FAa_mentionEnter .1s var(--ease-out-quad);border-radius:8px;outline:none;padding:4px}
+.qM9FAa_cursor{background:var(--color-text-quaternary);border-radius:1.5px;width:1.5px;height:21px;margin-left:3px;animation:1.25s infinite qM9FAa_cursorBlink;display:inline-block}
+/*!sc*/
+.grid-dot-0-0-upDown{-webkit-animation:grid-dot-0-0-upDown 2800ms steps(1, end) infinite;animation:grid-dot-0-0-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-1-upDown{-webkit-animation:grid-dot-0-1-upDown 2800ms steps(1, end) infinite;animation:grid-dot-0-1-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-2-upDown{-webkit-animation:grid-dot-0-2-upDown 2800ms steps(1, end) infinite;animation:grid-dot-0-2-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-3-upDown{-webkit-animation:grid-dot-0-3-upDown 2800ms steps(1, end) infinite;animation:grid-dot-0-3-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-4-upDown{-webkit-animation:grid-dot-0-4-upDown 2800ms steps(1, end) infinite;animation:grid-dot-0-4-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-0-upDown{-webkit-animation:grid-dot-1-0-upDown 2800ms steps(1, end) infinite;animation:grid-dot-1-0-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-1-upDown{-webkit-animation:grid-dot-1-1-upDown 2800ms steps(1, end) infinite;animation:grid-dot-1-1-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-2-upDown{-webkit-animation:grid-dot-1-2-upDown 2800ms steps(1, end) infinite;animation:grid-dot-1-2-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-3-upDown{-webkit-animation:grid-dot-1-3-upDown 2800ms steps(1, end) infinite;animation:grid-dot-1-3-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-4-upDown{-webkit-animation:grid-dot-1-4-upDown 2800ms steps(1, end) infinite;animation:grid-dot-1-4-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-0-upDown{-webkit-animation:grid-dot-2-0-upDown 2800ms steps(1, end) infinite;animation:grid-dot-2-0-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-1-upDown{-webkit-animation:grid-dot-2-1-upDown 2800ms steps(1, end) infinite;animation:grid-dot-2-1-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-2-upDown{-webkit-animation:grid-dot-2-2-upDown 2800ms steps(1, end) infinite;animation:grid-dot-2-2-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-3-upDown{-webkit-animation:grid-dot-2-3-upDown 2800ms steps(1, end) infinite;animation:grid-dot-2-3-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-4-upDown{-webkit-animation:grid-dot-2-4-upDown 2800ms steps(1, end) infinite;animation:grid-dot-2-4-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-0-upDown{-webkit-animation:grid-dot-3-0-upDown 2800ms steps(1, end) infinite;animation:grid-dot-3-0-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-1-upDown{-webkit-animation:grid-dot-3-1-upDown 2800ms steps(1, end) infinite;animation:grid-dot-3-1-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-2-upDown{-webkit-animation:grid-dot-3-2-upDown 2800ms steps(1, end) infinite;animation:grid-dot-3-2-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-3-upDown{-webkit-animation:grid-dot-3-3-upDown 2800ms steps(1, end) infinite;animation:grid-dot-3-3-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-4-upDown{-webkit-animation:grid-dot-3-4-upDown 2800ms steps(1, end) infinite;animation:grid-dot-3-4-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-0-upDown{-webkit-animation:grid-dot-4-0-upDown 2800ms steps(1, end) infinite;animation:grid-dot-4-0-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-1-upDown{-webkit-animation:grid-dot-4-1-upDown 2800ms steps(1, end) infinite;animation:grid-dot-4-1-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-2-upDown{-webkit-animation:grid-dot-4-2-upDown 2800ms steps(1, end) infinite;animation:grid-dot-4-2-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-3-upDown{-webkit-animation:grid-dot-4-3-upDown 2800ms steps(1, end) infinite;animation:grid-dot-4-3-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-4-upDown{-webkit-animation:grid-dot-4-4-upDown 2800ms steps(1, end) infinite;animation:grid-dot-4-4-upDown 2800ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-0-pong{-webkit-animation:grid-dot-0-0-pong 1600ms steps(1, end) infinite;animation:grid-dot-0-0-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-1-pong{-webkit-animation:grid-dot-0-1-pong 1600ms steps(1, end) infinite;animation:grid-dot-0-1-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-2-pong{-webkit-animation:grid-dot-0-2-pong 1600ms steps(1, end) infinite;animation:grid-dot-0-2-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-3-pong{-webkit-animation:grid-dot-0-3-pong 1600ms steps(1, end) infinite;animation:grid-dot-0-3-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-4-pong{-webkit-animation:grid-dot-0-4-pong 1600ms steps(1, end) infinite;animation:grid-dot-0-4-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-0-pong{-webkit-animation:grid-dot-1-0-pong 1600ms steps(1, end) infinite;animation:grid-dot-1-0-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-1-pong{-webkit-animation:grid-dot-1-1-pong 1600ms steps(1, end) infinite;animation:grid-dot-1-1-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-2-pong{-webkit-animation:grid-dot-1-2-pong 1600ms steps(1, end) infinite;animation:grid-dot-1-2-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-3-pong{-webkit-animation:grid-dot-1-3-pong 1600ms steps(1, end) infinite;animation:grid-dot-1-3-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-4-pong{-webkit-animation:grid-dot-1-4-pong 1600ms steps(1, end) infinite;animation:grid-dot-1-4-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-0-pong{-webkit-animation:grid-dot-2-0-pong 1600ms steps(1, end) infinite;animation:grid-dot-2-0-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-1-pong{-webkit-animation:grid-dot-2-1-pong 1600ms steps(1, end) infinite;animation:grid-dot-2-1-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-2-pong{-webkit-animation:grid-dot-2-2-pong 1600ms steps(1, end) infinite;animation:grid-dot-2-2-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-3-pong{-webkit-animation:grid-dot-2-3-pong 1600ms steps(1, end) infinite;animation:grid-dot-2-3-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-4-pong{-webkit-animation:grid-dot-2-4-pong 1600ms steps(1, end) infinite;animation:grid-dot-2-4-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-0-pong{-webkit-animation:grid-dot-3-0-pong 1600ms steps(1, end) infinite;animation:grid-dot-3-0-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-1-pong{-webkit-animation:grid-dot-3-1-pong 1600ms steps(1, end) infinite;animation:grid-dot-3-1-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-2-pong{-webkit-animation:grid-dot-3-2-pong 1600ms steps(1, end) infinite;animation:grid-dot-3-2-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-3-pong{-webkit-animation:grid-dot-3-3-pong 1600ms steps(1, end) infinite;animation:grid-dot-3-3-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-4-pong{-webkit-animation:grid-dot-3-4-pong 1600ms steps(1, end) infinite;animation:grid-dot-3-4-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-0-pong{-webkit-animation:grid-dot-4-0-pong 1600ms steps(1, end) infinite;animation:grid-dot-4-0-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-1-pong{-webkit-animation:grid-dot-4-1-pong 1600ms steps(1, end) infinite;animation:grid-dot-4-1-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-2-pong{-webkit-animation:grid-dot-4-2-pong 1600ms steps(1, end) infinite;animation:grid-dot-4-2-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-3-pong{-webkit-animation:grid-dot-4-3-pong 1600ms steps(1, end) infinite;animation:grid-dot-4-3-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-4-pong{-webkit-animation:grid-dot-4-4-pong 1600ms steps(1, end) infinite;animation:grid-dot-4-4-pong 1600ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-0-agent{-webkit-animation:grid-dot-0-0-agent 3200ms steps(1, end) infinite;animation:grid-dot-0-0-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-1-agent{-webkit-animation:grid-dot-0-1-agent 3200ms steps(1, end) infinite;animation:grid-dot-0-1-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-2-agent{-webkit-animation:grid-dot-0-2-agent 3200ms steps(1, end) infinite;animation:grid-dot-0-2-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-3-agent{-webkit-animation:grid-dot-0-3-agent 3200ms steps(1, end) infinite;animation:grid-dot-0-3-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-0-4-agent{-webkit-animation:grid-dot-0-4-agent 3200ms steps(1, end) infinite;animation:grid-dot-0-4-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-0-agent{-webkit-animation:grid-dot-1-0-agent 3200ms steps(1, end) infinite;animation:grid-dot-1-0-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-1-agent{-webkit-animation:grid-dot-1-1-agent 3200ms steps(1, end) infinite;animation:grid-dot-1-1-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-2-agent{-webkit-animation:grid-dot-1-2-agent 3200ms steps(1, end) infinite;animation:grid-dot-1-2-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-3-agent{-webkit-animation:grid-dot-1-3-agent 3200ms steps(1, end) infinite;animation:grid-dot-1-3-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-1-4-agent{-webkit-animation:grid-dot-1-4-agent 3200ms steps(1, end) infinite;animation:grid-dot-1-4-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-0-agent{-webkit-animation:grid-dot-2-0-agent 3200ms steps(1, end) infinite;animation:grid-dot-2-0-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-1-agent{-webkit-animation:grid-dot-2-1-agent 3200ms steps(1, end) infinite;animation:grid-dot-2-1-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-2-agent{-webkit-animation:grid-dot-2-2-agent 3200ms steps(1, end) infinite;animation:grid-dot-2-2-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-3-agent{-webkit-animation:grid-dot-2-3-agent 3200ms steps(1, end) infinite;animation:grid-dot-2-3-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-2-4-agent{-webkit-animation:grid-dot-2-4-agent 3200ms steps(1, end) infinite;animation:grid-dot-2-4-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-0-agent{-webkit-animation:grid-dot-3-0-agent 3200ms steps(1, end) infinite;animation:grid-dot-3-0-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-1-agent{-webkit-animation:grid-dot-3-1-agent 3200ms steps(1, end) infinite;animation:grid-dot-3-1-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-2-agent{-webkit-animation:grid-dot-3-2-agent 3200ms steps(1, end) infinite;animation:grid-dot-3-2-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-3-agent{-webkit-animation:grid-dot-3-3-agent 3200ms steps(1, end) infinite;animation:grid-dot-3-3-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-3-4-agent{-webkit-animation:grid-dot-3-4-agent 3200ms steps(1, end) infinite;animation:grid-dot-3-4-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-0-agent{-webkit-animation:grid-dot-4-0-agent 3200ms steps(1, end) infinite;animation:grid-dot-4-0-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-1-agent{-webkit-animation:grid-dot-4-1-agent 3200ms steps(1, end) infinite;animation:grid-dot-4-1-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-2-agent{-webkit-animation:grid-dot-4-2-agent 3200ms steps(1, end) infinite;animation:grid-dot-4-2-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-3-agent{-webkit-animation:grid-dot-4-3-agent 3200ms steps(1, end) infinite;animation:grid-dot-4-3-agent 3200ms steps(1, end) infinite;}
+/*!sc*/
+.grid-dot-4-4-agent{-webkit-animation:grid-dot-4-4-agent 3200ms steps(1, end) infinite;animation:grid-dot-4-4-agent 3200ms steps(1, end) infinite;}

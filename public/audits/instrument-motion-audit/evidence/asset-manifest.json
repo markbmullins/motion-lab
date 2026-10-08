@@ -1,0 +1,470 @@
+[
+  {
+    "url": "https://www.instrument.com/_nuxt/Button.5ccbd749.js",
+    "file": "Button.5ccbd749.js",
+    "bytes": 2114,
+    "sha256": "408974c401cf17caa4a3925157ab18d4a4cf52d5e161df6db0c8f29416d20039"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/CardGrid.d1e380fa.css",
+    "file": "CardGrid.d1e380fa.css",
+    "bytes": 1183,
+    "sha256": "d1e380fab53c18a3791ed56e553c191584fdc57cf20d454cac159a00012f2c6c"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/CardGrid.f95880ec.js",
+    "file": "CardGrid.f95880ec.js",
+    "bytes": 3510,
+    "sha256": "91506e97ded1c633363d48fbb316cdb12c19aad79feada42b2ca6533df79d893"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientList.4def306a.css",
+    "file": "ClientList.4def306a.css",
+    "bytes": 312,
+    "sha256": "4def306a3ab0c59a62563c168ef838004ea48d2b4ceea37344e44471561a13a4"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientList.aeb94832.js",
+    "file": "ClientList.aeb94832.js",
+    "bytes": 1941,
+    "sha256": "adb92435f46bb0eff6fdd3a57756d7c611050a731ab28e0adce6fd04f1332cfd"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientListRotator.10fddf66.css",
+    "file": "ClientListRotator.10fddf66.css",
+    "bytes": 573,
+    "sha256": "10fddf660b712c308c897678fb14f3f7cfa17a4f7484fb63105aa902fedf0af0"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientListRotator.d01184ac.js",
+    "file": "ClientListRotator.d01184ac.js",
+    "bytes": 1155,
+    "sha256": "03d1d28e3192613cfd3d977c608a270d0b4004d9f7729064f47deddd8e21a9bb"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientLogo.85c7f916.js",
+    "file": "ClientLogo.85c7f916.js",
+    "bytes": 419,
+    "sha256": "2fd6a4fc94e4136206bd7e1e882ce79c8468c618db5602027b59408d44cf5e18"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ClientLogo.dad25cce.css",
+    "file": "ClientLogo.dad25cce.css",
+    "bytes": 317,
+    "sha256": "dad25ccee72e85bbb26c51a6436efbeaeb034c127b8eb31a5f85434195d8e73d"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Datasources.2785b976.js",
+    "file": "Datasources.2785b976.js",
+    "bytes": 904,
+    "sha256": "e84e815ddc52b4488f74c11539084082f38a516b446e5cc9ca255813c279cc92"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Diptych.2aaec1a5.js",
+    "file": "Diptych.2aaec1a5.js",
+    "bytes": 2963,
+    "sha256": "f3e7c367f2853b0de358ce8497fec3ac0e8a6daf115f355ed611b582b1f06899"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Diptych.88180b54.css",
+    "file": "Diptych.88180b54.css",
+    "bytes": 10904,
+    "sha256": "88180b54bba6c6550ee85409f34f6bcc2c5975780ad42241aaf123115b234400"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/DiptychText.5e228599.css",
+    "file": "DiptychText.5e228599.css",
+    "bytes": 5851,
+    "sha256": "5e2285996e7f4abee04895c09bc4f75909323fb939be55cb211c5f18a7c563eb"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/DiptychText.dafade6a.js",
+    "file": "DiptychText.dafade6a.js",
+    "bytes": 949,
+    "sha256": "f4b1735bc19e0357cc9db03911bdd4bad289320d75b6b67b7e3bc7220c5f15b2"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/FeaturedWorkGrid.28c5457d.css",
+    "file": "FeaturedWorkGrid.28c5457d.css",
+    "bytes": 1203,
+    "sha256": "28c5457d84600cce8b23399b6d9d8a96978d38558492c518e1081dcc38e77ff9"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/FeaturedWorkGrid.51ecffa9.js",
+    "file": "FeaturedWorkGrid.51ecffa9.js",
+    "bytes": 3169,
+    "sha256": "f946f82d970c2a935615d5aa367d877bc7be398efd117252b8b3df1f5e7defa3"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GDPR.7aa792be.css",
+    "file": "GDPR.7aa792be.css",
+    "bytes": 2892,
+    "sha256": "7aa792be996a1023119b47b70934280f12224ed86f90f01d84baf5bfb0e054c8"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GDPR.a3fa72c8.js",
+    "file": "GDPR.a3fa72c8.js",
+    "bytes": 1423,
+    "sha256": "45466714af9bae5bc3977a6107102bd3b35dbeb6313ba43bcdf13cde9e240a44"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalFooter.24e15bf2.css",
+    "file": "GlobalFooter.24e15bf2.css",
+    "bytes": 5958,
+    "sha256": "24e15bf23766a9b3c221e72e586de2258b76b2eb3b1b9fac2e79b9b513490cae"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalFooter.be415a21.js",
+    "file": "GlobalFooter.be415a21.js",
+    "bytes": 2167,
+    "sha256": "7ac4f86122292a25152fbb6efc226f1fbe693c0639fe2ffc25aeeeaa01ec35dd"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalFooterLinkColumn.a9078769.css",
+    "file": "GlobalFooterLinkColumn.a9078769.css",
+    "bytes": 4795,
+    "sha256": "a90787699e7304f6dd0faceabd1ceaa525ecfbd3b1b2da6fa4e6bfab7de6978e"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalFooterLinkColumn.d9db1736.js",
+    "file": "GlobalFooterLinkColumn.d9db1736.js",
+    "bytes": 1172,
+    "sha256": "1775ddd5b08254a996b9e845cab3b2c482ec98e710bbd3c176312a08fe4a118a"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalHeader.28be4516.js",
+    "file": "GlobalHeader.28be4516.js",
+    "bytes": 13320,
+    "sha256": "8c07a081706e773b8bc73a06f3eadc64f41a80a11397d9c233b61e2326c8d6df"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/GlobalHeader.85b5dafa.css",
+    "file": "GlobalHeader.85b5dafa.css",
+    "bytes": 23354,
+    "sha256": "85b5dafa081be5483d274d2633ee571d74ac00126f9eb4ff9f6833b1ab0a3758"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Icon.223290f1.css",
+    "file": "Icon.223290f1.css",
+    "bytes": 25,
+    "sha256": "223290f160fd9d471cfe2261337fe4e74fbb60e1763ba1d1df3f098799c71881"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Icon.ca472510.js",
+    "file": "Icon.ca472510.js",
+    "bytes": 18608,
+    "sha256": "524039131e2b8e3d630555ef71fff123b74a3d61b71a2b7a8de1dfeaf84915ff"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Image.ad1e1baf.js",
+    "file": "Image.ad1e1baf.js",
+    "bytes": 1444,
+    "sha256": "346314893936a630ea9d7c823670c994e7e4976cc1240161a06a9b295446e9ae"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Image.e6ccbbb4.css",
+    "file": "Image.e6ccbbb4.css",
+    "bytes": 345,
+    "sha256": "e6ccbbb4086089089e4056c20726df9a444b98d8e6b0f1b43e9ddc6f2dbddade"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Jobs.579b9121.js",
+    "file": "Jobs.579b9121.js",
+    "bytes": 26141,
+    "sha256": "46112435bcd7cd971742bbeaa5aca586e3d74f61fe7a360e4e675c759fcaf98c"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/LatestCard.08550864.js",
+    "file": "LatestCard.08550864.js",
+    "bytes": 4030,
+    "sha256": "2663315a318f6ddc55e956eb1f1926bf5d8500bf819ed46532fcb0cfef610247"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/LatestCard.0f4b9424.css",
+    "file": "LatestCard.0f4b9424.css",
+    "bytes": 4903,
+    "sha256": "0f4b9424c7d338992b8ed6647d2e0377362fed5c472fbd4a62b849df5dd9ea38"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Page.b5cdc0af.js",
+    "file": "Page.b5cdc0af.js",
+    "bytes": 1127,
+    "sha256": "7d6f09c7a36b166064ebc7b01687e065dd63923207d3eb849e7b38a4cbba8d5a"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Purpose.82d88ce3.js",
+    "file": "Purpose.82d88ce3.js",
+    "bytes": 1296,
+    "sha256": "b4279ee9046db2bca3c8b2fe8d4437e1cdf7a07b8cc0870e8240d9576aec66d1"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Purpose.de9fa175.css",
+    "file": "Purpose.de9fa175.css",
+    "bytes": 8029,
+    "sha256": "de9fa17561fec5cb143133bdc62a8b23aa945e923bd3958d922158d544565d8d"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SectionHeader.783dbd77.js",
+    "file": "SectionHeader.783dbd77.js",
+    "bytes": 819,
+    "sha256": "4d6fa4e9476459da3a80c2051f2e412f6a0ce1311ed8128843498d194421334d"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SectionHeader.e08cf79a.css",
+    "file": "SectionHeader.e08cf79a.css",
+    "bytes": 472,
+    "sha256": "e08cf79af40c7f2fcb59cf1d1c5349b15b960eaaa740b04b1b6be8997674ebb4"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Slideshow.1a4e83cf.css",
+    "file": "Slideshow.1a4e83cf.css",
+    "bytes": 1862,
+    "sha256": "1a4e83cf2c1884adf9b11270654196074acf688ecf5fb59f0967f213cbae03af"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Slideshow.1f424fa3.js",
+    "file": "Slideshow.1f424fa3.js",
+    "bytes": 3101,
+    "sha256": "725249cd0ab338a5aa0b33e2a63ecafef63a095e1d323761a79daca504ee5c34"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SlideshowItem.ac8437d7.js",
+    "file": "SlideshowItem.ac8437d7.js",
+    "bytes": 618,
+    "sha256": "439e649b6852af3dedfe9f0670209f41f8e3a7831a5d27b2c0054287ecd886fd"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SlideshowItem.b524a1d9.css",
+    "file": "SlideshowItem.b524a1d9.css",
+    "bytes": 131,
+    "sha256": "b524a1d99446a1d487a10f4004a44029b7370313e11e3d052335e6be0d64e3f3"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SlideshowPagination.0fcf7a73.js",
+    "file": "SlideshowPagination.0fcf7a73.js",
+    "bytes": 830,
+    "sha256": "002d1a90a505ae84fb58d96f9be30ff3c74ab9fe9114ca07df0403bd618faf93"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/SlideshowPagination.dfbf3412.css",
+    "file": "SlideshowPagination.dfbf3412.css",
+    "bytes": 1023,
+    "sha256": "dfbf3412ebc1ca9364205335dafa6b1f5f3b05134a10ce155ee903c49f2b2fd8"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Stories.9176e27f.js",
+    "file": "Stories.9176e27f.js",
+    "bytes": 3887,
+    "sha256": "f8dd590f7f4acfcfbac3a7ee096da808d71e995612c489d80d8298d4b1d754d0"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Tag.462af497.css",
+    "file": "Tag.462af497.css",
+    "bytes": 1284,
+    "sha256": "462af4978e2e5cecff8e0b2e413132ea3ea309b29fb8c38a56087546222f53d5"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Tag.57515a77.js",
+    "file": "Tag.57515a77.js",
+    "bytes": 983,
+    "sha256": "97cca1d2aae5900a83f369e03f1b4b71b2e77f5fb5d1b03e4675759ac5cfd5bc"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/TagList.89d92f9c.js",
+    "file": "TagList.89d92f9c.js",
+    "bytes": 859,
+    "sha256": "ab4ae7d5e2997a1507709e87986786ef2e7d7f3c662a0962823b2d7178beaed5"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/TagList.adf4b1fc.css",
+    "file": "TagList.adf4b1fc.css",
+    "bytes": 189,
+    "sha256": "adf4b1fca4b6e16b515f10bde6483e3d1dec6c605c555bf30b6a5af299091aee"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/TextTout.0074b817.css",
+    "file": "TextTout.0074b817.css",
+    "bytes": 8711,
+    "sha256": "0074b817bbd880de7c1dc4cb6d73209d65365011ed7ce6dbfb54e2a755553846"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/TextTout.d1854d28.js",
+    "file": "TextTout.d1854d28.js",
+    "bytes": 1492,
+    "sha256": "982ca488194b8689b46cccdcad256c388328d7945701293a855963be8586e868"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/ThemeSwitcher.b0bd7760.js",
+    "file": "ThemeSwitcher.b0bd7760.js",
+    "bytes": 1731,
+    "sha256": "193f8b71b7f9c9c4353d52d76fe6e39cd0178e48387ded05b2e2816df37cc18d"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/Themes.1eab5932.js",
+    "file": "Themes.1eab5932.js",
+    "bytes": 803,
+    "sha256": "6ea1a55dc649ba5d015490c54e0a3c15734d97adfa731e974634041335dd40f6"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/VideoClip.3a279ff7.css",
+    "file": "VideoClip.3a279ff7.css",
+    "bytes": 1593,
+    "sha256": "3a279ff7600e4082589d2f6129e247b1605a9a996951e6205a33a81b95365408"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/VideoClip.979b033d.js",
+    "file": "VideoClip.979b033d.js",
+    "bytes": 4677,
+    "sha256": "3d1f4b047ffd7398c36a63876ae938854b38c8fc0427badadc92c0d03b6a9dfd"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/VideoFeature.228d8805.js",
+    "file": "VideoFeature.228d8805.js",
+    "bytes": 2660,
+    "sha256": "6ac299e0ebf88ec71d23c501bb953561a48858576c2547b3f9f89fd459e32335"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/VideoFeature.772accc9.css",
+    "file": "VideoFeature.772accc9.css",
+    "bytes": 2099,
+    "sha256": "772accc9a76c18dba4c342818ee69498d45c4d588ecdb415b3705bee9a572473"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/WorkCard.d75034e7.js",
+    "file": "WorkCard.d75034e7.js",
+    "bytes": 2231,
+    "sha256": "6508db0cd141da8812a36a6dc750217bde20968132171c4746d748de40cfea4c"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/WorkCard.f3074127.css",
+    "file": "WorkCard.f3074127.css",
+    "bytes": 2755,
+    "sha256": "f307412761317c2b9aa8ca565bae6cb3202c526841499cbe582e01026f2393b0"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/_...slug_.d278c024.js",
+    "file": "_...slug_.d278c024.js",
+    "bytes": 1620,
+    "sha256": "d52addf167044fd4ef152b13b096a191545449b0e30c1c3bfecc98b3ec9640ed"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/default.2c9e7c97.css",
+    "file": "default.2c9e7c97.css",
+    "bytes": 186,
+    "sha256": "2c9e7c974263c7a06785d0578b359750548fd7697dcf3d3b311d8eb02fa37819"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/default.5e393356.js",
+    "file": "default.5e393356.js",
+    "bytes": 1936,
+    "sha256": "0c8ca671e17e7aac1449602815014a987a196649e9a8ac1487be0f8d2df6159b"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/entry.8f4df974.js",
+    "file": "entry.8f4df974.js",
+    "bytes": 141007,
+    "sha256": "8c45761240a5c66786b5552eac311501c4c17d32f310ae84e0a388e920fe4922"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/entry.ee029dff.css",
+    "file": "entry.ee029dff.css",
+    "bytes": 77320,
+    "sha256": "ee029dff5e0bcd5f2abd90980a0eae624b179a3aed0424a19c99406793db43e3"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/index.b4faffcc.js",
+    "file": "index.b4faffcc.js",
+    "bytes": 1295,
+    "sha256": "643895c109acdd9ed54cebf7278ef4853d3a1f88059e6d9607aea69c115c5291"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/index.cf87e9ff.js",
+    "file": "index.cf87e9ff.js",
+    "bytes": 70009,
+    "sha256": "6ca46473d121b330d83830a59cfd9c6e07f7f735642b877e2c90b9a1d0bad31b"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/nuxt-link.c3c57594.js",
+    "file": "nuxt-link.c3c57594.js",
+    "bytes": 4360,
+    "sha256": "58fe0e54e825b42595097163fadd38caf699b69583612fd4534bc19c8ea4390f"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/player.es.f69980da.js",
+    "file": "player.es.f69980da.js",
+    "bytes": 22072,
+    "sha256": "ea4c7e920c0d77ceb1bdf66714287af8d107489a49a7712f26b962ab37220024"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/storyblokSpaceVersion.9acc04d1.js",
+    "file": "storyblokSpaceVersion.9acc04d1.js",
+    "bytes": 319,
+    "sha256": "c9430ad83a7b2d375fc74295541ca61f73e1e7d83c350d7e0928736b25750899"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/swiper-vue.6126da36.js",
+    "file": "swiper-vue.6126da36.js",
+    "bytes": 226406,
+    "sha256": "15fdacb0e692d328f8081e1474d0912952eb684a88ae40e4145b8f143bcbb8cc"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/swiper-vue.a337f45f.css",
+    "file": "swiper-vue.a337f45f.css",
+    "bytes": 17377,
+    "sha256": "a337f45f280451e74d8cf5f6a721ca125e5b286522893533027dfb998b54d124"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useAbacus.4568542c.js",
+    "file": "useAbacus.4568542c.js",
+    "bytes": 20560,
+    "sha256": "406008e6eceac60974c1f2cf755995bf36625d86623acd75c233ca98d6081f66"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useGtm.64a48623.js",
+    "file": "useGtm.64a48623.js",
+    "bytes": 72,
+    "sha256": "0f08b21eaa456f92d2f666d00f3a9d220c9a6952a542d9b44ee2e05724154aee"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useImageService.443d6da2.js",
+    "file": "useImageService.443d6da2.js",
+    "bytes": 343,
+    "sha256": "6727d7d6b36800a0c50adc540fe0daf385714d2fb9c0e0f02971d20efc3cf0ba"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useLinks.9c2a8b1f.js",
+    "file": "useLinks.9c2a8b1f.js",
+    "bytes": 261,
+    "sha256": "65a8f220e2b76008ba586028c243e4ab8d8ee8e11b16188469b7b6bd0c6460ab"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useMeta.fac24d53.js",
+    "file": "useMeta.fac24d53.js",
+    "bytes": 3984,
+    "sha256": "d8ef1bf01956e9cbef6ec8d23ea6a3ee1ff33aefdc4a84297a7bf52f79f15d19"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/usePageLoad.b2989f0a.js",
+    "file": "usePageLoad.b2989f0a.js",
+    "bytes": 1178,
+    "sha256": "a3b6e976b9bdf943add93f0fea25161948e0a0330c5ac2f1b917b2dd4f37702a"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useResponsiveImage.e72a81c5.js",
+    "file": "useResponsiveImage.e72a81c5.js",
+    "bytes": 542,
+    "sha256": "0dc8b5b3a054d82d0301daf9ea4151edb4d4d157dac67bdf0a1df2b5fd1b7b8a"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useReveal.d63c7b47.js",
+    "file": "useReveal.d63c7b47.js",
+    "bytes": 52531,
+    "sha256": "c1edf9407c1d3b74004512acf872b287897bf6914c779f723ffafb7f3a9e5bec"
+  },
+  {
+    "url": "https://www.instrument.com/_nuxt/useWorkTagData.67d2d57d.js",
+    "file": "useWorkTagData.67d2d57d.js",
+    "bytes": 168,
+    "sha256": "cfcaa40a07d783f9e82970aa380a778414b6f0d13fe302c9130cb5902734b395"
+  }
+]

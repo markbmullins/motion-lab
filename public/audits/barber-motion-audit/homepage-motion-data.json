@@ -1,0 +1,2142 @@
+{
+  "audit_date": "2026-10-06",
+  "page": "https://www.barberandco.us/",
+  "page_id": "66e9959dc77a9ebbe055c1e7",
+  "method": "Public HTML/CSS/JavaScript source extraction plus live DOM/computed-style inspection and native scroll/click/hover observation. In-app browser; requested viewport widths 1440, 820, 390. Touch and reduced-motion emulation not performed.",
+  "sources": {
+    "javascript": "https://cdn.prod.website-files.com/66e9959dc77a9ebbe055c1e0/js/barber-and-co.ec7dec17.3111fca94a4d1bda.js",
+    "css": "https://cdn.prod.website-files.com/66e9959dc77a9ebbe055c1e0/css/barber-and-co.shared.0a635e7ff.min.css"
+  },
+  "source_sha256": {
+    "home.html": "a9a1e7c75bafdb9cd53207a286e7d6c6a80b79443fb4f608772f0448543f2900",
+    "site.js": "01df47624c9dd2a3c5019ad18c4a202a496bc8dd3da2d404ad16c142003e526d",
+    "site.css": "a0a9be3cd469e62460db5687a1440a31202d047fe5c3ab88bb08a5c84cc98730"
+  },
+  "counts": {
+    "bundled_site_events": 209,
+    "bundled_site_action_lists": 29,
+    "event_configs_with_homepage_target_matches": 19,
+    "scroll_into_view_configs": 12,
+    "scroll_target_instances": 14,
+    "action_lists_referenced_by_matching_events": 10,
+    "referenced_lists_with_real_animation_targets": 7
+  },
+  "breakpoints": [
+    {
+      "key": "main",
+      "min": 992,
+      "max": 10000
+    },
+    {
+      "key": "medium",
+      "min": 768,
+      "max": 991
+    },
+    {
+      "key": "small",
+      "min": 480,
+      "max": 767
+    },
+    {
+      "key": "tiny",
+      "min": 0,
+      "max": 479
+    }
+  ],
+  "events": [
+    {
+      "id": "e-3",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-4"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|37b1799a-71c6-b7a9-60d9-b046c96f147f",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|37b1799a-71c6-b7a9-60d9-b046c96f147f",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1714163321856,
+      "matches": [
+        "div.vertical-flex Upscale Experience luxury at Miami\u2019s Best upscale barbershop. At Barber & Co Miami, we are"
+      ]
+    },
+    {
+      "id": "e-5",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-2",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-6"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "selector": ".title-divider",
+        "originalId": "2d447679-4706-91d2-9ca4-2f7f6cbc8c69",
+        "appliesTo": "CLASS"
+      },
+      "targets": [
+        {
+          "selector": ".title-divider",
+          "originalId": "2d447679-4706-91d2-9ca4-2f7f6cbc8c69",
+          "appliesTo": "CLASS"
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1713698359313,
+      "matches": [
+        "div.title-divider ",
+        "div.title-divider ",
+        "div.title-divider "
+      ]
+    },
+    {
+      "id": "e-7",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-3",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-8"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|003587f9-693a-7614-5d08-2e51e63dc74f",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|003587f9-693a-7614-5d08-2e51e63dc74f",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1726588830388,
+      "matches": [
+        "div.heading-wrapper popular services Hair wash, complimentary drink, grooming consultation & styling are inclu"
+      ]
+    },
+    {
+      "id": "e-9",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-10"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|003587f9-693a-7614-5d08-2e51e63dc751",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|003587f9-693a-7614-5d08-2e51e63dc751",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1726588830388,
+      "matches": [
+        "h2.heading-02 popular services"
+      ]
+    },
+    {
+      "id": "e-11",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-12"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|10632ad0-6ee4-75cb-88cc-a97c51602eb6",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|10632ad0-6ee4-75cb-88cc-a97c51602eb6",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1717084195035,
+      "matches": [
+        "div.w-dyn-list Fade Learn More Haircut Learn More Imperial Shave Learn More Black Mask Learn More Nose & "
+      ]
+    },
+    {
+      "id": "e-13",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-14"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|10632ad0-6ee4-75cb-88cc-a97c51602eb7",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|10632ad0-6ee4-75cb-88cc-a97c51602eb7",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1714163396239,
+      "matches": [
+        "div._3-column-grid.collection-list.feature.w-dyn-items Fade Learn More Haircut Learn More Imperial Shave Learn More Black Mask Learn More Nose & "
+      ]
+    },
+    {
+      "id": "e-15",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-26",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-16"
+        }
+      },
+      "mediaQueries": [
+        "main"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1713775471658,
+      "matches": [
+        "a.service-card.w-inline-block Fade Learn More",
+        "a.service-card.w-inline-block Haircut Learn More",
+        "a.service-card.w-inline-block Imperial Shave Learn More",
+        "a.service-card.w-inline-block Black Mask Learn More",
+        "a.service-card.w-inline-block Nose & Ear Wax Learn More"
+      ]
+    },
+    {
+      "id": "e-16",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-28",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-15"
+        }
+      },
+      "mediaQueries": [
+        "main"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1713775471659,
+      "matches": [
+        "a.service-card.w-inline-block Fade Learn More",
+        "a.service-card.w-inline-block Haircut Learn More",
+        "a.service-card.w-inline-block Imperial Shave Learn More",
+        "a.service-card.w-inline-block Black Mask Learn More",
+        "a.service-card.w-inline-block Nose & Ear Wax Learn More"
+      ]
+    },
+    {
+      "id": "e-25",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-35",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-31"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "selector": ".nav-list",
+        "originalId": "60e182ba-e5f3-151e-deae-4b99b3daeae8",
+        "appliesTo": "CLASS"
+      },
+      "targets": [
+        {
+          "selector": ".nav-list",
+          "originalId": "60e182ba-e5f3-151e-deae-4b99b3daeae8",
+          "appliesTo": "CLASS"
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1711193180745,
+      "matches": [
+        "li.nav-list Services",
+        "li.nav-list Studio",
+        "li.nav-list.overflow-visible Locations Edgewater Pinecrest",
+        "li.nav-list.overflow-visible.bottom Book Now"
+      ]
+    },
+    {
+      "id": "e-31",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-36",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-25"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "selector": ".nav-list",
+        "originalId": "60e182ba-e5f3-151e-deae-4b99b3daeae8",
+        "appliesTo": "CLASS"
+      },
+      "targets": [
+        {
+          "selector": ".nav-list",
+          "originalId": "60e182ba-e5f3-151e-deae-4b99b3daeae8",
+          "appliesTo": "CLASS"
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1711193180745,
+      "matches": [
+        "li.nav-list Services",
+        "li.nav-list Studio",
+        "li.nav-list.overflow-visible Locations Edgewater Pinecrest",
+        "li.nav-list.overflow-visible.bottom Book Now"
+      ]
+    },
+    {
+      "id": "e-98",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OVER",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-8",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-99"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1726867558046,
+      "matches": [
+        "a.service-card.w-inline-block Fade Learn More",
+        "a.service-card.w-inline-block Haircut Learn More",
+        "a.service-card.w-inline-block Imperial Shave Learn More",
+        "a.service-card.w-inline-block Black Mask Learn More",
+        "a.service-card.w-inline-block Nose & Ear Wax Learn More"
+      ]
+    },
+    {
+      "id": "e-99",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "MOUSE_OUT",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-9",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-98"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|a3d5b135-8929-a29f-2268-48f7d4016472",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": null,
+        "scrollOffsetUnit": null,
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1726867558046,
+      "matches": [
+        "a.service-card.w-inline-block Fade Learn More",
+        "a.service-card.w-inline-block Haircut Learn More",
+        "a.service-card.w-inline-block Imperial Shave Learn More",
+        "a.service-card.w-inline-block Black Mask Learn More",
+        "a.service-card.w-inline-block Nose & Ear Wax Learn More"
+      ]
+    },
+    {
+      "id": "e-205",
+      "name": "",
+      "animationType": "custom",
+      "eventTypeId": "PAGE_SCROLL",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_CONTINUOUS_ACTION",
+        "config": {
+          "actionListId": "a-34",
+          "affectedElements": {},
+          "duration": 0
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7",
+        "appliesTo": "PAGE",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7",
+          "appliesTo": "PAGE",
+          "styleBlockIds": []
+        }
+      ],
+      "config": [
+        {
+          "continuousParameterGroupId": "a-34-p",
+          "smoothing": 50,
+          "startsEntering": true,
+          "addStartOffset": false,
+          "addOffsetValue": 50,
+          "startsExiting": false,
+          "addEndOffset": false,
+          "endOffsetValue": 50
+        }
+      ],
+      "createdOn": 1727370347760,
+      "matches": [
+        "root Barber & Co - Luxury Barbershop & Classic Haircuts in Miami @media (min-width:992px) {html"
+      ]
+    },
+    {
+      "id": "e-254",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-255"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|e06a1164-96cc-3f16-13eb-0c70edc3d8d7",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|e06a1164-96cc-3f16-13eb-0c70edc3d8d7",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730231577592,
+      "matches": [
+        "div.vertical-flex What is the price of a haircut at Barber & Co in Miami and Pinecrest? Haircuts and skin fa"
+      ]
+    },
+    {
+      "id": "e-256",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-257"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|e06a1164-96cc-3f16-13eb-0c70edc3d8e0",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|e06a1164-96cc-3f16-13eb-0c70edc3d8e0",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730231577592,
+      "matches": [
+        "div.vertical-flex we offer a variety of high-quality grooming products Let's help you maintain your look bet"
+      ]
+    },
+    {
+      "id": "e-258",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-259"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|a0e0c7c0-fa7f-369f-0127-7ff6714ca64c",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|a0e0c7c0-fa7f-369f-0127-7ff6714ca64c",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730231934214,
+      "matches": [
+        "div.vertical-flex Biscayne at the border of wynwood, edgewater & brickell Our Biscayne location is perfectly"
+      ]
+    },
+    {
+      "id": "e-260",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-261"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|ee0330cc-d02a-7aa1-16a3-8d42a85ca8d1",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|ee0330cc-d02a-7aa1-16a3-8d42a85ca8d1",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730233469812,
+      "matches": [
+        "div.vertical-flex Pinecrest/Dadeland Area in the heart of pinecrest Our Pinecrest location is conveniently s"
+      ]
+    },
+    {
+      "id": "e-262",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a-3",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-263"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|01a87e1c-04fc-5391-ae21-155918d8c190",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|01a87e1c-04fc-5391-ae21-155918d8c190",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730235642291,
+      "matches": [
+        "div.heading-wrapper locations"
+      ]
+    },
+    {
+      "id": "e-264",
+      "name": "",
+      "animationType": "preset",
+      "eventTypeId": "SCROLL_INTO_VIEW",
+      "action": {
+        "id": "",
+        "actionTypeId": "GENERAL_START_ACTION",
+        "config": {
+          "delay": 0,
+          "easing": "",
+          "duration": 0,
+          "actionListId": "a",
+          "affectedElements": {},
+          "playInReverse": false,
+          "autoStopEventId": "e-265"
+        }
+      },
+      "mediaQueries": [
+        "main",
+        "medium",
+        "small",
+        "tiny"
+      ],
+      "target": {
+        "id": "66e9959dc77a9ebbe055c1e7|01a87e1c-04fc-5391-ae21-155918d8c192",
+        "appliesTo": "ELEMENT",
+        "styleBlockIds": []
+      },
+      "targets": [
+        {
+          "id": "66e9959dc77a9ebbe055c1e7|01a87e1c-04fc-5391-ae21-155918d8c192",
+          "appliesTo": "ELEMENT",
+          "styleBlockIds": []
+        }
+      ],
+      "config": {
+        "loop": false,
+        "playInReverse": false,
+        "scrollOffsetValue": 0,
+        "scrollOffsetUnit": "%",
+        "delay": null,
+        "direction": null,
+        "effectIn": null
+      },
+      "createdOn": 1730235642291,
+      "matches": [
+        "h2.heading-02 locations"
+      ]
+    }
+  ],
+  "actionLists": {
+    "a": {
+      "id": "a",
+      "title": "Slide In From Bottom Delayed",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-n",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "650a867a37d9816c7cc188f0|ec02e1d4-c06c-e998-e277-dcc7ce0d4192"
+                },
+                "value": 0,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "650a867a37d9816c7cc188f0|ec02e1d4-c06c-e998-e277-dcc7ce0d4192"
+                },
+                "xValue": null,
+                "yValue": 50,
+                "xUnit": "%",
+                "yUnit": "px",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-n-3",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 300,
+                "easing": "",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "650a867a37d9816c7cc188f0|ec02e1d4-c06c-e998-e277-dcc7ce0d4192"
+                },
+                "value": 1,
+                "unit": ""
+              }
+            },
+            {
+              "id": "a-n-4",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 300,
+                "easing": "outExpo",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "650a867a37d9816c7cc188f0|ec02e1d4-c06c-e998-e277-dcc7ce0d4192"
+                },
+                "xValue": null,
+                "yValue": 0,
+                "xUnit": "%",
+                "yUnit": "px",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1695029808760
+    },
+    "a-2": {
+      "id": "a-2",
+      "title": "Title Divider Animation",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-2-n",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "2d447679-4706-91d2-9ca4-2f7f6cbc8c69"
+                },
+                "widthValue": 0,
+                "widthUnit": "px",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-2-n-2",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 400,
+                "easing": "inOutQuad",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": true,
+                  "id": "2d447679-4706-91d2-9ca4-2f7f6cbc8c69"
+                },
+                "widthValue": 50,
+                "widthUnit": "px",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1713698361718
+    },
+    "a-26": {
+      "id": "a-26",
+      "title": "Service Card Hover In 3",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-26-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".service-card-body",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f7647"
+                  ]
+                },
+                "yValue": 249,
+                "xUnit": "PX",
+                "yUnit": "px",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-2",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".bottom-overlay",
+                  "selectorGuids": [
+                    "eb56c805-13b3-5a52-0436-2a28196a9669"
+                  ]
+                },
+                "heightValue": 40,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-26-n-3",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "outExpo",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".service-card-body",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f7647"
+                  ]
+                },
+                "yValue": 0,
+                "xUnit": "PX",
+                "yUnit": "px",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-26-n-4",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outExpo",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".bottom-overlay",
+                  "selectorGuids": [
+                    "eb56c805-13b3-5a52-0436-2a28196a9669"
+                  ]
+                },
+                "heightValue": 80,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1713891086001
+    },
+    "a-28": {
+      "id": "a-28",
+      "title": "Service Card Hover Out 3",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-28-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "outExpo",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".service-card-body",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f7647"
+                  ]
+                },
+                "yValue": 70,
+                "xUnit": "PX",
+                "yUnit": "px",
+                "zUnit": "PX"
+              }
+            },
+            {
+              "id": "a-28-n-2",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outExpo",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".bottom-overlay",
+                  "selectorGuids": [
+                    "eb56c805-13b3-5a52-0436-2a28196a9669"
+                  ]
+                },
+                "heightValue": 40,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1713891086001
+    },
+    "a-3": {
+      "id": "a-3",
+      "title": "Heading Style Wrapper 3",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-3-n",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {},
+                "widthValue": 0,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-3-n-2",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-block",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f26"
+                  ]
+                },
+                "xValue": 0,
+                "yValue": 0,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-3-n-3",
+              "actionTypeId": "TRANSFORM_ROTATE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-block",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f26"
+                  ]
+                },
+                "zValue": 0,
+                "xUnit": "DEG",
+                "yUnit": "DEG",
+                "zUnit": "deg"
+              }
+            },
+            {
+              "id": "a-3-n-4",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-line",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f25"
+                  ]
+                },
+                "widthValue": 0,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-3-n-5",
+              "actionTypeId": "TRANSFORM_ROTATE",
+              "config": {
+                "delay": 500,
+                "easing": "outCubic",
+                "duration": 1200,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-block",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f26"
+                  ]
+                },
+                "zValue": 225,
+                "xUnit": "DEG",
+                "yUnit": "DEG",
+                "zUnit": "deg"
+              }
+            },
+            {
+              "id": "a-3-n-6",
+              "actionTypeId": "TRANSFORM_SCALE",
+              "config": {
+                "delay": 500,
+                "easing": "ease",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-block",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f26"
+                  ]
+                },
+                "xValue": 1,
+                "yValue": 1,
+                "locked": true
+              }
+            },
+            {
+              "id": "a-3-n-7",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 1500,
+                "easing": "outCubic",
+                "duration": 1000,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".diamond-line",
+                  "selectorGuids": [
+                    "8cc7f194-4b1d-be77-37e0-7ae99fec2f25"
+                  ]
+                },
+                "widthValue": 150,
+                "widthUnit": "px",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-3-n-8",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 2000,
+                "easing": "outExpo",
+                "duration": 1500,
+                "target": {},
+                "widthValue": 300,
+                "widthUnit": "px",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1716549261362
+    },
+    "a-34": {
+      "id": "a-34",
+      "title": "Navbar",
+      "continuousParameterGroups": [
+        {
+          "id": "a-34-p",
+          "type": "SCROLL_PROGRESS",
+          "parameterLabel": "Scroll",
+          "continuousActionGroups": []
+        }
+      ],
+      "createdOn": 1727370365407
+    },
+    "a-35": {
+      "id": "a-35",
+      "title": "Nav Link Hover In",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-35-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {},
+                "xValue": -110,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-35-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuart",
+                "duration": 500,
+                "target": {},
+                "xValue": 0,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1711193183785
+    },
+    "a-36": {
+      "id": "a-36",
+      "title": "Nav Link Hover Out",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-36-n",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuart",
+                "duration": 300,
+                "target": {},
+                "xValue": 100,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-36-n-2",
+              "actionTypeId": "TRANSFORM_MOVE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 0,
+                "target": {},
+                "xValue": -110,
+                "xUnit": "%",
+                "yUnit": "PX",
+                "zUnit": "PX"
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1711193183785
+    },
+    "a-8": {
+      "id": "a-8",
+      "title": "Border Animation On Hover In 2",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-8-n",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-top",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764d"
+                  ]
+                },
+                "widthValue": 30,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-2",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-right-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764a"
+                  ]
+                },
+                "heightValue": 30,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-3",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-left-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764b"
+                  ]
+                },
+                "heightValue": 30,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-4",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764e"
+                  ]
+                },
+                "widthValue": 30,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-5",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animate-on-view-wrapper",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764c"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            }
+          ]
+        },
+        {
+          "actionItems": [
+            {
+              "id": "a-8-n-6",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764e"
+                  ]
+                },
+                "widthValue": 100,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-7",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-left-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764b"
+                  ]
+                },
+                "heightValue": 100,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-8",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-top",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764d"
+                  ]
+                },
+                "widthValue": 100,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-9",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-right-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764a"
+                  ]
+                },
+                "heightValue": 100,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-8-n-10",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animate-on-view-wrapper",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764c"
+                  ]
+                },
+                "value": 1,
+                "unit": ""
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": true,
+      "createdOn": 1711291517083
+    },
+    "a-9": {
+      "id": "a-9",
+      "title": "Border Animation On Hover Out 2",
+      "actionItemGroups": [
+        {
+          "actionItems": [
+            {
+              "id": "a-9-n",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-right-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764a"
+                  ]
+                },
+                "heightValue": 30,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-9-n-2",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-top",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764d"
+                  ]
+                },
+                "widthValue": 30,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-9-n-3",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764e"
+                  ]
+                },
+                "widthValue": 30,
+                "widthUnit": "%",
+                "heightUnit": "PX",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-9-n-4",
+              "actionTypeId": "STYLE_SIZE",
+              "config": {
+                "delay": 0,
+                "easing": "outQuad",
+                "duration": 500,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animation-divider-left-horizontal",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764b"
+                  ]
+                },
+                "heightValue": 30,
+                "widthUnit": "PX",
+                "heightUnit": "%",
+                "locked": false
+              }
+            },
+            {
+              "id": "a-9-n-5",
+              "actionTypeId": "STYLE_OPACITY",
+              "config": {
+                "delay": 0,
+                "easing": "inQuad",
+                "duration": 300,
+                "target": {
+                  "useEventTarget": "CHILDREN",
+                  "selector": ".animate-on-view-wrapper",
+                  "selectorGuids": [
+                    "3efd47dc-b2f6-3f14-0ead-34e9b85f764c"
+                  ]
+                },
+                "value": 0,
+                "unit": ""
+              }
+            }
+          ]
+        }
+      ],
+      "useFirstGroupAsInitialState": false,
+      "createdOn": 1711291517083
+    }
+  },
+  "css_rules": [
+    {
+      "selector": ".service-image",
+      "declarations": "aspect-ratio:auto;filter:brightness(74%);object-fit:cover;width:100%;height:100%;min-height:20em;transition:all .2s"
+    },
+    {
+      "selector": ".service-image:hover",
+      "declarations": "filter:brightness(74%)"
+    },
+    {
+      "selector": ".text-field",
+      "declarations": "background-color:#0000;height:100%;margin-bottom:0;font-family:Bitter,serif"
+    },
+    {
+      "selector": ".submit-button",
+      "declarations": "height:100%;color:var(--barber-yellolw);text-transform:uppercase;background-color:#000"
+    },
+    {
+      "selector": ".nav-list",
+      "declarations": "z-index:2;flex-flow:column;flex:none;padding-left:0;padding-right:0;text-decoration:none;transition:all .3s ease-in-out;display:flex;position:relative;overflow:hidden"
+    },
+    {
+      "selector": ".nav-link",
+      "declarations": "z-index:2;color:#fff;justify-content:flex-start;align-items:center;margin-left:0;margin-right:0;padding:0;font-size:16px;font-weight:400;line-height:26px;text-decoration:none;transition:color .3s ease-out;display:flex;position:relative"
+    },
+    {
+      "selector": ".nav-link:hover",
+      "declarations": "color:#ffb949"
+    },
+    {
+      "selector": ".nav-link.footer",
+      "declarations": "color:var(--offwhite);transition:transform .2s cubic-bezier(.55,.085,.68,.53),color .3s ease-out"
+    },
+    {
+      "selector": ".nav-link.footer:hover",
+      "declarations": "color:var(--crisp-white);transform:translate(10px)"
+    },
+    {
+      "selector": ".button",
+      "declarations": "grid-column-gap:10px;grid-row-gap:10px;background-color:var(--barber-yellolw);height:64px;color:var(--sleek-black);border-radius:100px;justify-content:center;align-items:center;padding:1em 1.5em;display:flex"
+    },
+    {
+      "selector": ".button:hover",
+      "declarations": "background-color:var(--_apps---sidebar--sidebar)"
+    },
+    {
+      "selector": ".button.dark",
+      "declarations": "border:1px none var(--barber-yellolw);color:var(--_apps---colors--input-dark);background-color:#303030"
+    },
+    {
+      "selector": ".button.dark:hover",
+      "declarations": "background-color:#000"
+    },
+    {
+      "selector": ".nav-dropdown-toggle",
+      "declarations": "z-index:2;color:#fff;justify-content:flex-start;align-items:center;margin-left:0;margin-right:0;padding:0;font-size:16px;font-weight:500;line-height:26px;text-decoration:none;transition:color .3s ease-out;display:flex;position:relative"
+    },
+    {
+      "selector": ".nav-dropdown-toggle:hover",
+      "declarations": "color:var(--barber-yellolw)"
+    },
+    {
+      "selector": ".submenu-link",
+      "declarations": "grid-column-gap:5px;grid-row-gap:5px;white-space:nowrap;justify-content:flex-start;align-items:center;width:100%;margin-right:0;padding:8px 0;font-weight:400;text-decoration:none;transition:transform .3s cubic-bezier(.25,.46,.45,.94),color .35s;display:flex;transform:translate(-20px)"
+    },
+    {
+      "selector": ".submenu-link:hover",
+      "declarations": "transform:translate(0)"
+    },
+    {
+      "selector": ".hamburger-menu",
+      "declarations": "padding:0;transition:transform .3s"
+    },
+    {
+      "selector": ".hamburger-menu:hover",
+      "declarations": "transform:scale(.96)"
+    },
+    {
+      "selector": ".button-3",
+      "declarations": "background-color:var(--_apps---colors--ring);color:var(--sleek-black);border:1px solid #ffffff57;border-radius:100px;padding:16px 24px;transition:color .5s cubic-bezier(.25,.46,.45,.94),background-color .5s cubic-bezier(.25,.46,.45,.94)"
+    },
+    {
+      "selector": ".button-3:hover",
+      "declarations": "background-color:var(--_apps---charts--chart-4);color:#000"
+    },
+    {
+      "selector": ".button-3.bottom-right",
+      "declarations": "z-index:1000;grid-column-gap:11px;grid-row-gap:11px;background-color:var(--_apps---colors--ring);filter:none;color:#000;border-style:none;flex:0 auto;justify-content:flex-start;align-items:center;padding-right:12px;text-decoration:none;transition:all .2s;display:flex;position:fixed;inset:auto 2em 2em auto;box-shadow:0 3px 7px 1px #69502c"
+    },
+    {
+      "selector": ".button-3.bottom-right:hover",
+      "declarations": "background-color:var(--_apps---colors--input);filter:none;border-style:none"
+    },
+    {
+      "selector": ".button-3.stroke",
+      "declarations": "border-color:var(--_apps---colors--ring);color:var(--_apps---colors--input-dark);background-color:#cd9a4f00"
+    },
+    {
+      "selector": ".service-image",
+      "declarations": "min-height:360px"
+    },
+    {
+      "selector": ".nav-list",
+      "declarations": "text-align:center"
+    },
+    {
+      "selector": ".nav-link",
+      "declarations": "font-size:1.5em"
+    },
+    {
+      "selector": ".submenu-link",
+      "declarations": "font-size:1.2em;font-weight:400"
+    },
+    {
+      "selector": ".hamburger-menu",
+      "declarations": "transition:transform .3s"
+    },
+    {
+      "selector": ".hamburger-menu:hover",
+      "declarations": "transform:scale(.96)"
+    },
+    {
+      "selector": ".mobile-menu-item.w--current",
+      "declarations": "filter:brightness(124%)brightness(200%);transition:all .2s cubic-bezier(.455,.03,.515,.955)"
+    },
+    {
+      "selector": ".button-3.bottom-right",
+      "declarations": "align-self:auto;display:none;position:static"
+    },
+    {
+      "selector": ".service-image",
+      "declarations": "min-height:260px"
+    },
+    {
+      "selector": ".nav-list",
+      "declarations": "font-size:16px"
+    },
+    {
+      "selector": ".nav-dropdown-toggle",
+      "declarations": "font-size:16px;font-weight:400"
+    }
+  ],
+  "native_navbar": {
+    "selector": ".navbar.w-nav",
+    "animation": "default",
+    "collapse": "medium",
+    "duration_ms": 600,
+    "open_easing": "ease-out-quart",
+    "open_cubic_bezier": [
+      0.165,
+      0.84,
+      0.44,
+      1
+    ],
+    "close_easing": "ease",
+    "start_y": "-(navbar height + menu outer height including margins)",
+    "end_y": 0
+  },
+  "booking_drawer_observed": {
+    "open_duration_ms": 300,
+    "close_duration_ms": 150,
+    "cubic_bezier": [
+      0.33,
+      0,
+      0.09,
+      1
+    ],
+    "hidden_transform": "translateX(calc(100% + 50px))",
+    "visible_transform": "translateX(0px)",
+    "scope": "Squire booking drawer initiated from homepage; internal booking flow not audited"
+  },
+  "non_effective_definitions": [
+    {
+      "eventIds": [
+        "e-25",
+        "e-31"
+      ],
+      "actionLists": [
+        "a-35",
+        "a-36"
+      ],
+      "reason": "Matching .nav-list triggers but every action has target:{}; runtime target resolution returns [] so no element gets these transforms."
+    },
+    {
+      "eventIds": [
+        "e-205"
+      ],
+      "actionLists": [
+        "a-34"
+      ],
+      "reason": "continuousActionGroups is empty; smoothing:50 does not create visible motion."
+    },
+    {
+      "actionList": "a-3",
+      "reason": "Two wrapper width actions have target:{} and are no-ops; child diamond scale/rotation and line widths do run."
+    },
+    {
+      "actionLists": [
+        "a-37",
+        "a-42",
+        "a-40",
+        "a-41",
+        "a-38",
+        "a-39"
+      ],
+      "reason": "Referenced old component IDs have no matching data-w-id nodes on the current homepage. Navbar/menu behavior comes from native Webflow component code and CSS."
+    }
+  ],
+  "runtime_observations": {
+    "luxury_before_scroll": {
+      "parent_opacity": 0,
+      "parent_translate_y_px": 50,
+      "children_opacity": 1,
+      "children_transform": "none",
+      "title_line_width_px": 0
+    },
+    "luxury_mid_animation": {
+      "parent_opacity": 0.3865,
+      "parent_translate_y_px": 3.4315,
+      "children_opacity": 1,
+      "children_transform": "none"
+    },
+    "services_nested_reveals_mid_animation": {
+      "outer_opacity": 0.7425,
+      "inner_opacity": 0.7425,
+      "effective_combined_opacity": 0.55130625,
+      "outer_translate_y_px": 0.291,
+      "inner_translate_y_px": 0.291,
+      "effective_combined_translate_y_px": 0.582
+    },
+    "desktop_card_initial": {
+      "body_translate_y_px": 249,
+      "gradient_height_percent": 40,
+      "frame_opacity": 0
+    },
+    "desktop_card_hover": {
+      "body_translate_y_px": 0,
+      "gradient_height_percent": 80,
+      "frame_opacity": 1
+    },
+    "desktop_card_after_mouseout": {
+      "body_translate_y_px": 70,
+      "gradient_height_percent": 40,
+      "frame_opacity": 0
+    },
+    "phone_and_tablet_card_defaults": {
+      "body_inline_transform": null,
+      "computed_transform": "none"
+    },
+    "mobile_hamburger_open": {
+      "three_line_transforms": "none",
+      "three_line_opacities": 1,
+      "whole_button_hover_scale": 0.96
+    },
+    "reduced_motion_source": {
+      "body_has_data_wf_ix_vacation": false,
+      "ix2_guard": "body.hasAttribute(\"data-wf-ix-vacation\") && matchMedia(\"(prefers-reduced-motion)\").matches",
+      "css_reduced_motion_media_rules": false
+    }
+  }
+}

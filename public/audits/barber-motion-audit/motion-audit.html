@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Barber & Co — Homepage motion audit</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#faf9f6,#161616);--fg:light-dark(#252320,#eeeae3);--muted:light-dark(#625e57,#bab4aa);--line:light-dark(#d9d3c9,#454039);--accent:light-dark(#805717,#e2b366);--code:light-dark(#efebe4,#25221e)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:48px 28px 100px}h1{font-size:clamp(28px,5vw,44px);line-height:1.15;letter-spacing:-.035em;margin:0 0 18px}h2{font-size:26px;margin-top:52px;line-height:1.3}h3{font-size:20px;margin-top:30px;line-height:1.4}a{color:var(--accent);text-underline-offset:3px}p{max-width:85ch}small,.meta{color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:10px 24px;margin:24px 0;padding:20px 0;border-block:1px solid var(--line)}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:12px 10px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line);overflow-wrap:anywhere}th{font-weight:600}code{font: .88em ui-monospace,monospace;background:var(--code);padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:var(--code);padding:20px;overflow:auto;font-size:14px;line-height:1.6}pre code{padding:0;background:transparent}li{margin:8px 0}.note{border-left:3px solid var(--accent);padding-left:20px}.scroll{overflow-x:auto}details{margin:20px 0;padding:12px 0;border-block:1px solid var(--line)}summary{cursor:pointer;font-weight:600}figure{margin:24px 0}figcaption{font-size:14px;color:var(--muted)}.timeline{display:grid;grid-template-columns:145px 1fr;gap:12px 16px;margin:26px 0;font-size:14px}.track{height:24px;background:var(--code);position:relative}.bar{position:absolute;background:var(--accent);height:100%;opacity:.7}.axis{display:flex;justify-content:space-between;color:var(--muted)}@media(max-width:600px){main{padding:28px 18px 70px}table{font-size:14px}td,th{padding:10px 5px}.timeline{grid-template-columns:105px 1fr}}@media print{body{font-size:11pt;background:white;color:black}main{padding:0;max-width:none}nav{display:none}h2,h3{break-after:avoid}tr,pre{break-inside:avoid}a{color:black}details{display:block}summary{display:none}}
+:root{--study-gold:#cd9a4f;--study-dark:#090909;--study-white:#fff;--study-offwhite:#d7d7d7}
+.study-index{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}.study-index a{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-size:14px}.study-index a:hover{background:var(--code)}
+.study-settings{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:16px 0;border-block:1px solid var(--line);margin:20px 0}.study-settings label{display:flex;align-items:center;gap:8px}.study-settings select,.motion-controls button,.study-settings input,.motion-options input,.motion-options select{accent-color:var(--accent)}
+.motion-lab{margin:28px 0 36px;padding-top:20px;border-top:1px solid var(--line);scroll-margin-top:24px}.motion-lab h3{margin:0 0 8px}.motion-lab>p{margin:8px 0 16px;font-size:15px}.motion-options{border:0;margin:12px 0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}.motion-options legend{float:left;margin-right:16px;font-size:14px;color:var(--muted)}.motion-options label{display:inline-flex;align-items:center;gap:8px;min-height:36px;font-size:14px}.motion-options input{width:16px;height:16px;margin:0}.motion-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0}.motion-controls button,.study-settings select,.motion-options select{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg);padding:8px 12px;min-height:44px;cursor:pointer}.motion-controls button.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}.motion-controls button:hover{filter:brightness(.93)}.motion-controls button:disabled{opacity:.45;cursor:default}.motion-controls button:focus-visible,.motion-lab button:focus-visible,.study-index a:focus-visible,.study-settings select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.motion-scrub{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;align-items:center;font-size:14px}.motion-scrub input{min-width:0;width:100%;accent-color:var(--accent);min-height:32px}.motion-scrub output{font-variant-numeric:tabular-nums;white-space:nowrap}.motion-readout{font:13px/1.6 ui-monospace,monospace;overflow-wrap:anywhere;margin-top:12px;color:var(--muted);min-height:24px}.motion-status{font-size:14px;min-height:24px;margin:8px 0;color:var(--muted)}
+.motion-stage{position:relative;overflow:hidden;background:var(--study-dark);color:var(--study-white);padding:32px;min-width:0}.motion-stage.light{background:var(--study-white);color:#111}.motion-stage .study-display{font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(28px,4vw,44px);line-height:1.12;font-weight:400;letter-spacing:-.02em}.motion-stage .study-caption{font-size:14px;line-height:1.6}.motion-stage .study-cta{display:inline-flex;align-items:center;background:var(--study-gold);color:#000;border-radius:100px;padding:10px 22px;font:16px/1.4 Georgia,serif;margin-top:12px}.luxury-stage{min-height:350px;display:flex;align-items:center}.luxury-content{width:100%;max-width:620px}.luxury-label{display:flex;gap:10px;align-items:center;font-size:15px;font-weight:600;margin-bottom:18px}.luxury-line{display:block;width:50px;height:3px;background:#ffb949;flex:none}.study-scissors{width:160px;height:60px;display:block;margin:0 0 16px}.luxury-copy{margin-top:14px;max-width:52ch;font:16px/1.5 Georgia,serif}
+.ornament-stage{min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;text-align:center}.study-ornament{display:flex;align-items:center;gap:20px;justify-content:center;width:100%;height:32px}.study-diamond{width:17px;height:17px;flex:none;background:#ffb949;transform:rotate(225deg)}.study-line{width:150px;height:3px;flex:none;max-width:calc((100% - 57px)/2)}.study-line.left{background:linear-gradient(90deg,transparent,#fff 10% 90%,transparent)}.study-line.right{background:linear-gradient(90deg,transparent,#fff 10% 90%,transparent)}
+.grid-study{display:grid;grid-template-columns:1fr 1fr;gap:28px}.grid-case{min-width:0}.grid-case-label{font-size:14px;margin-bottom:16px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini-tile{aspect-ratio:1;display:flex;align-items:end;padding:12px;font-family:Impact,'Arial Narrow',sans-serif;font-size:24px;border:1px solid #74634b;background:repeating-linear-gradient(120deg,#171717 0 14px,#28241d 14px 15px)}.grid-values{font-size:12px;line-height:1.6;min-height:40px;margin-top:20px;color:var(--study-offwhite);font-variant-numeric:tabular-nums}
+.card-stage{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:28px;align-items:center}.study-service-card{display:block;position:relative;overflow:hidden;padding:0;width:100%;height:360px;border:0;background:#1b1916;color:#fff;cursor:pointer;text-align:left;font:inherit}.card-art{position:absolute;inset:5px;background:repeating-linear-gradient(128deg,#1a1814 0 20px,#3e382e 20px 21px,#25211b 21px 38px)}.card-mark{position:absolute;inset:30px 24px auto;font:100px/1 Impact,'Arial Narrow',sans-serif;color:#b49d79;opacity:.65}.card-art-label{position:absolute;top:150px;left:24px;letter-spacing:.24em;font-size:12px;color:#e6dac7}.card-shade{position:absolute;bottom:5px;left:5px;right:5px;height:40%;background:linear-gradient(transparent,rgba(0,0,0,.7) 41%,#000);pointer-events:none}.card-copy{position:absolute;z-index:2;left:24px;right:24px;bottom:18px;display:flex;flex-direction:column;gap:8px}.card-copy strong{font-family:Impact,'Arial Narrow',sans-serif;font-size:36px;font-weight:400;line-height:1.1}.card-copy span{font-size:15px;line-height:1.5}.card-frame{position:absolute;inset:0;pointer-events:none}.card-frame i{position:absolute;background:var(--study-gold)}.card-frame .frame-top{top:0;right:0;height:5px;width:30%}.card-frame .frame-right{top:0;right:0;width:5px;height:30%}.card-frame .frame-bottom{bottom:0;left:0;height:5px;width:30%}.card-frame .frame-left{bottom:0;left:0;width:5px;height:30%}.card-side-note{font-size:14px;line-height:1.7;color:var(--study-offwhite)}
+.micro-stage{display:flex;flex-wrap:wrap;gap:20px;align-items:center;min-height:150px}.micro-sample{display:flex;flex-direction:column;gap:14px;min-width:130px}.micro-sample>span{font-size:12px;color:var(--study-offwhite)}.micro-widget{font:16px/1.4 Georgia,serif;border:0;background:none;color:white;padding:0;text-align:left;cursor:pointer;min-height:44px}.micro-widget.standard,.micro-widget.floating,.micro-widget.instant{border-radius:100px;padding:12px 20px;color:#000;background:var(--study-gold)}.micro-widget.standard{transition:background-color .5s cubic-bezier(.25,.46,.45,.94),color .5s cubic-bezier(.25,.46,.45,.94)}.micro-widget.floating{transition:background-color .2s ease}.micro-widget.footer{color:#d7d7d7;transition:transform .2s cubic-bezier(.55,.085,.68,.53),color .3s ease-out}.micro-widget.submenu{transform:translateX(-20px);display:flex;align-items:center;gap:5px;transition:transform .3s cubic-bezier(.25,.46,.45,.94),color .35s ease}.micro-widget.submenu::before{content:'';width:20px;height:1px;background:white;flex:none}.micro-clip{overflow:hidden;min-width:145px}.micro-widget.navtext{transition:color .3s ease-out}.micro-widget.hamburger{width:36px;display:flex;flex-direction:column;justify-content:center;gap:8px;transition:transform .3s ease}.micro-widget.hamburger i{width:36px;height:3px;background:white;display:block}
+.micro-widget.standard:is(:hover,:focus-visible),.forced-hover .micro-widget.standard{background:#b17a13}.micro-widget.floating:is(:hover,:focus-visible),.forced-hover .micro-widget.floating{background:#eee}.micro-widget.instant:is(:hover,:focus-visible),.forced-hover .micro-widget.instant{background:#f8f8f8}.micro-widget.footer:is(:hover,:focus-visible),.forced-hover .micro-widget.footer{color:white;transform:translateX(10px)}.micro-widget.submenu:is(:hover,:focus-visible),.forced-hover .micro-widget.submenu{transform:translateX(0);color:var(--study-gold)}.micro-widget.navtext:is(:hover,:focus-visible),.forced-hover .micro-widget.navtext{color:#ffb949}.micro-widget.hamburger:is(:hover,:focus-visible),.forced-hover .micro-widget.hamburger{transform:scale(.96)}
+.panel-stage{height:320px;padding:0}.panel-backdrop{position:absolute;inset:0;background:repeating-linear-gradient(135deg,#171717 0 28px,#24211b 28px 29px);display:flex;align-items:end;padding:24px;font-size:13px;color:var(--study-offwhite)}.menu-study-header{height:56px;position:relative;z-index:2;background:black;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid #ffffff40;font:18px Georgia,serif}.menu-study-panel{position:absolute;left:0;top:56px;right:0;height:224px;background:#000;z-index:1;padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;font:18px Georgia,serif;border-bottom:1px solid #ffffff70}.menu-study-panel button,.drawer-study-panel button{font:14px system-ui,sans-serif;min-height:44px;padding:8px 16px;background:var(--study-gold);color:black;border:0;border-radius:4px;cursor:pointer}.drawer-study-panel{position:absolute;right:24px;top:24px;bottom:24px;width:min(280px,calc(100% - 48px));background:#f7f7f7;color:#111;border-radius:12px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;font-size:15px}.drawer-study-panel strong{font-size:20px}.drawer-study-panel button{margin-top:auto}.drawer-placeholder{width:100%;height:48px;background:#e5e3df;border-radius:4px}
+.trigger-window{height:250px;overflow:auto;overscroll-behavior:contain;position:relative;padding:0 24px;background:var(--study-dark);color:var(--study-white);border:1px solid var(--line)}.trigger-window:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.trigger-spacer{height:300px;display:flex;align-items:center;color:var(--study-offwhite);font-size:14px}.trigger-target{min-height:150px;padding:24px;background:#28231c;border-left:3px solid var(--study-gold)}.trigger-target strong{font-size:24px;font-family:Impact,'Arial Narrow',sans-serif;font-weight:400}.trigger-target p{font-size:14px;margin-bottom:0}
+@media(max-width:600px){.motion-stage{padding:24px}.grid-study{grid-template-columns:1fr;gap:32px}.card-stage{grid-template-columns:1fr}.card-side-note{max-width:48ch}.luxury-stage{min-height:370px}.panel-stage{padding:0}.motion-scrub{grid-template-columns:1fr;gap:0}.motion-options{gap:4px 16px}.motion-options legend{float:none;margin-bottom:4px}.micro-stage{gap:24px}.study-index a{font-size:13px}}
+@media print{.motion-controls,.motion-scrub,.motion-options,.study-settings,.study-index{display:none}.motion-stage{print-color-adjust:exact}.motion-lab{break-inside:avoid}.motion-lab .motion-status::after{content:' Interactive playback is available in the HTML report.'}}
+.study-reduced .micro-widget{transition:none!important}
+
+.study-settings-link{font-size:13px!important}.motion-options input:focus-visible,.motion-scrub input:focus-visible,.study-settings input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+</style></head><body><main>
+<p class="meta">Live homepage inspection • October 6, 2026 • Desktop, tablet, and phone viewport checks</p>
+<h1>How Barber & Co’s homepage motion actually works</h1>
+<p>The motion is mostly a small, reused set of Webflow Interactions 2.0 timelines, plus CSS hover transitions, Webflow’s native navigation, and Squire’s booking drawer. The published page exposes the underlying values. You can reproduce the animation behavior without Webflow.</p>
+<p class="note"><strong>The key correction:</strong> in the current live luxury section, the scissors, “Upscale,” headline, paragraph, and About Us button share one parent fade and upward movement. The gold line is independently animated. They are not three separately scheduled fades in the delivered homepage inspected here.</p>
+<nav aria-label="Report contents"><a href="#map">Page map</a><a href="#luxury">Luxury reveal</a><a href="#ornaments">Heading ornaments</a><a href="#cards">Service cards</a><a href="#micro">Small interactions</a><a href="#responsive">Responsive behavior</a><a href="#recreate">Recreation</a><a href="#evidence">Exact evidence</a></nav>
+<section id="motion-studies"><h2>Try the motion</h2><p>Eight interactive studies reconstruct the inspected values with simplified artwork. Use the channel switches to build combinations, or inspect an effect on its own. Replay simulates entry; scrubbing shows exact timeline states. These are teaching models, not embedded copies of the live site.</p><div class="study-settings"><label for="study-speed">Playback speed</label><select id="study-speed"><option value="1">1× — original timing</option><option value="0.5">½× — twice as slow</option><option value="0.25">¼× — four times as slow</option></select><label><input type="checkbox" id="study-reduce">Reduce motion — show destinations immediately</label></div><p class="meta">The reduced-motion preference is enabled automatically when requested by your system. You can explicitly turn it off for this study. Scrubbing is always manual. No study autoplays when the report opens.</p><div class="study-index"><a href="#motion-luxury">Parent reveal + line</a><a href="#motion-trigger">Scroll trigger</a><a href="#motion-ornament">Heading ornament</a><a href="#motion-grid">Nested wrappers</a><a href="#motion-card">Card hover</a><a href="#motion-micro">Small interactions</a><a href="#motion-menu">Menu panel</a><a href="#motion-drawer">Booking drawer</a></div><noscript><p class="note">Enable JavaScript to use the showcases. The full source audit below remains readable without it.</p></noscript></section><h2 id="method">What was inspected</h2>
+<p>I inspected the live DOM and computed styles through the in-app browser, observed scroll entrances, card hover, navigation, and booking open/close, and downloaded the public HTML, shared CSS, and Webflow interaction bundle. A dedicated Chrome DevTools MCP connection was not available; the in-app inspection APIs supplied the runtime DOM/style evidence. Requested viewport sizes were 1440 × 900, 820 × 1000, and 390 × 844; the initial narrow browser was also observed at 615 × 668.</p>
+<p>The bundle contains <strong>209 site-wide event definitions and 29 action lists</strong>. Only 19 event definitions have targets matching this homepage. Those reference 10 lists; seven lists have effective animation targets. There are 12 scroll entrance definitions resolving to 14 target instances, including three separate gold lines. Other bundled definitions refer to other pages, absent old components, or empty action targets. Listing all 209 as homepage motion would be incorrect.</p>
+<p><strong>Scope:</strong> the homepage and the opening/closing of the booking drawer. Internal appointment steps, navigation to other pages, actual email submission, touch-device emulation, and OS reduced-motion emulation were not performed. Timing values below come from source rather than visual estimates. Observed behavior is identified separately where useful. Lazy asset loading can change section positions, so scroll coordinates are not universal constants.</p>
+<h2 id="map">Every region, from top to bottom</h2>
+<div class="scroll"><table><thead><tr><th>Region</th><th>Motion present</th><th>How it is triggered</th></tr></thead><tbody>
+<tr><td>Hero photograph, headline, copy, and main buttons</td><td>No authored load/reveal timeline attached to these nodes. Static background image with dark gradient layers; button hover colors.</td><td>Normal page rendering; pointer hover for buttons.</td></tr>
+<tr><td>Fixed top navbar</td><td>Stays fixed while the document scrolls. Text color transitions. No effective scroll-controlled hide/shrink timeline.</td><td>CSS fixed positioning and hover.</td></tr>
+<tr><td>Luxury introduction</td><td>Entire text/graphic column fades 0 → 1 and rises 50px. Its gold line grows 0 → 50px independently. Framed portrait remains static.</td><td>Column or gold line intersects the viewport; each plays once.</td></tr>
+<tr><td>Locations heading</td><td>Heading fades/rises. Gold diamond grows/rotates; two pale lines extend afterward.</td><td>Heading and ornament wrapper have separate entrance triggers.</td></tr>
+<tr><td>Biscayne location</td><td>Label, heading, copy, buttons share one fade/rise. Gold label line grows separately. Chair photo remains static.</td><td>Text column and gold line enter the viewport.</td></tr>
+<tr><td>Pinecrest location</td><td>Same shared text fade/rise and separate gold line. Exterior photo remains static.</td><td>Text column and gold line enter the viewport.</td></tr>
+<tr><td>Popular services heading</td><td>Heading fades/rises. Same diamond/line sequence. The razor graphic and supporting description have no individual fade timeline.</td><td>Heading and heading-wrapper entrance triggers.</td></tr>
+<tr><td>Service grid entrance</td><td>Two nested wrappers receive the same fade/rise, creating compounded opacity and displacement. No per-card entrance stagger is specified.</td><td>Each wrapper enters the viewport independently.</td></tr>
+<tr><td>Five service cards</td><td>On desktop: body rises, gradient grows, gold frame extends/fades in. On mouseout these return with different timings and a different body resting offset.</td><td>Pointer over/out; text/gradient motion is desktop only.</td></tr>
+<tr><td>Price section</td><td>Small graphic, heading, and paragraph share one fade/rise. Framed photo has no attached reveal.</td><td>Its text column enters the viewport.</td></tr>
+<tr><td>Grooming products section</td><td>Same shared fade/rise for its graphic, heading, and paragraph. Framed photo remains static.</td><td>Its text column enters the viewport.</td></tr>
+<tr><td>Email signup band</td><td>No scroll reveal attached. Its black diamond and lines remain static. Standard field focus styling and form state changes are not a dedicated motion sequence.</td><td>Normal rendering and native form interaction.</td></tr>
+<tr><td>Footer</td><td>No entrance sequence. Text links slide 10px right and change color on hover. Logos, badges, hours, contact blocks stay static.</td><td>CSS hover on <code>.nav-link.footer</code>.</td></tr>
+<tr><td>Floating booking button</td><td>Fixed position; background color transitions. It does not rise into view when a scroll threshold is crossed.</td><td>CSS fixed positioning and hover.</td></tr>
+<tr><td>Small-screen bottom navigation</td><td>Fixed bar with Home, Services, Book Now. Current Home uses brightness styling; no entrance choreography.</td><td>Responsive CSS and current-page class.</td></tr>
+<tr><td>Mobile/tablet menu</td><td>Panel translates down from above, then back up on close. Hamburger has a small hover scale, but no active three-lines-to-X transformation.</td><td>Menu button open/close.</td></tr>
+<tr><td>Locations submenu</td><td>Desktop panel appears via display state, without the old custom expansion timeline. Individual links translate right on hover.</td><td>Native dropdown click/hover; link pointer hover.</td></tr>
+<tr><td>Booking drawer</td><td>Squire iframe slides from the right in 300ms and exits in 150ms.</td><td>Book Now and Close widget.</td></tr>
+</tbody></table></div>
+<h2 id="luxury">The luxury reveal, decomposed</h2>
+<p>The target is <code>[data-w-id="37b1799a-71c6-b7a9-60d9-b046c96f147f"]</code>, a <code>.vertical-flex</code> container. Event <code>e-3</code> runs action list <code>a</code>, named “Slide In From Bottom Delayed.” Its children are arranged in this order:</p>
+<pre><code>Animated .vertical-flex parent
+├─ .subheading-wrapper
+│  ├─ .title-divider  ← independent width animation
+│  └─ .subheading     ← “Upscale”
+├─ scissors image
+├─ h2 headline
+├─ paragraph
+└─ About Us button</code></pre>
+<div class="scroll"><table><thead><tr><th>Channel</th><th>Initial state</th><th>Delay after its trigger</th><th>Duration</th><th>Final state / easing</th></tr></thead><tbody>
+<tr><td>Parent opacity</td><td>0</td><td>300ms</td><td>1000ms</td><td>1 / linear</td></tr>
+<tr><td>Parent vertical position</td><td>translateY(50px)</td><td>300ms</td><td>1000ms</td><td>translateY(0) / outExpo</td></tr>
+<tr><td>Gold line width</td><td>0px</td><td>400ms</td><td>1000ms</td><td>50px / inOutQuad</td></tr>
+</tbody></table></div>
+<p><strong>Important timing detail:</strong> the line and parent each have their own viewport trigger. The 300ms and 400ms delays are relative to those separate triggers, not necessarily one shared clock. If both become visible in the same scroll event, the line begins roughly 100ms later. Slow scrolling, the parent’s movement, or a different layout can change their relative trigger times.</p>
+<p>Initial-state groups are applied immediately during interaction setup. Their exported <code>duration:500</code> does not mean there is a 500ms fade-out before the reveal. The played portion lasts 300ms delay + 1000ms animation = 1300ms. The line lasts 1400ms from its own trigger.</p>
+<h3>Why it feels like multiple beats</h3>
+<p>The rise and fade do not progress identically. At halfway through the 1000ms motion, <code>outExpo</code> has completed 96.875% of the movement: only <strong>1.5625px</strong> of the original 50px remains. Opacity is only <strong>0.5</strong>. The element settles into position early while becoming fully visible more slowly. That separation makes the movement feel controlled rather than like a rigid object moving and fading at the same rate.</p>
+<p>The line’s width changes the horizontal position of the label because they are adjacent items in a flex row. As the line grows 0 → 50px, “Upscale” is pushed approximately 50px to the right. The label therefore appears to have its own later movement even though it has no separate transform animation.</p>
+<p>Scrolling also reveals children at different physical positions. A scissors image near the top and headline below it enter your field of view at different times. Images are marked <code>loading="lazy"</code>, so their load/render timing can add another apparent reveal. That is not evidence of a separate fade timeline.</p>
+<p><strong>Runtime evidence:</strong> before entrance, the parent had opacity 0 and a 50px translation. During the reveal, a sample showed parent opacity <code>0.3865</code> and translation <code>3.4315px</code>. The label, scissors, and headline still had their own computed opacity 1 and transform <code>none</code>. A child’s computed opacity does not include its parent’s opacity; the parent fades the complete rendered subtree.</p>
+<section class="motion-lab" id="motion-luxury" data-lab="luxury" data-duration="1400"><h3>Showcase: one parent, three channels</h3><p>Replay the inspected shared parent reveal. Disable channels to isolate the fade, rise, or line growth. This study aligns the parent and line trigger at 0 ms; on the website they trigger independently.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage luxury-stage"><div class="luxury-content" data-group><div class="luxury-label"><span class="luxury-line" data-line></span><span>Upscale</span></div><svg class="study-scissors" viewBox="0 0 160 60" aria-hidden="true" fill="none" stroke="#cd9a4f" stroke-width="3"><circle cx="24" cy="15" r="10"/><circle cx="24" cy="45" r="10"/><path d="M33 19L133 53M33 41L133 7"/><circle cx="70" cy="30" r="3"/></svg><div class="study-display">Experience luxury at Miami’s<br>Best upscale barbershop.</div><div class="luxury-copy">A shared wrapper carries the label, scissors, headline, paragraph, and button together.</div><span class="study-cta">About Us</span></div></div><fieldset class="motion-options"><legend>Combine channels</legend><label><input type="checkbox" data-channel="fade" checked>Parent fade</label><label><input type="checkbox" data-channel="rise" checked>Parent rise</label><label><input type="checkbox" data-channel="line" checked>Gold line</label></fieldset><div class="motion-controls"><button type="button" class="primary" data-play>Replay</button><button type="button" data-pause disabled>Pause</button><button type="button" data-start>Initial state</button><button type="button" data-end>Finished state</button></div><div class="motion-scrub"><label for="luxury-time">Scrub time</label><input id="luxury-time" type="range" min="0" max="1400" step="1" value="1400" data-time><span></span><output for="luxury-time" data-clock>1400 ms</output></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h3>Trigger semantics</h3>
+<p>All homepage scroll entrances use <code>SCROLL_INTO_VIEW</code>, offset 0%, loop false, and play-in-reverse false. The runtime compares the element’s bounding rectangle with the viewport. There is no “wait until the element reaches 80% of the screen” offset here. The initial transform is included in that bounding rectangle. Once triggered, the animation continues with elapsed time even if you stop scrolling. It is not a scrubbed scroll-progress animation. Returning to the section does not replay it during the same normal page session; reload or interaction reinitialization can reset it.</p>
+<section class="motion-lab" id="motion-trigger" data-lab="trigger" ><h3>Showcase: a trigger is not scroll progress</h3><p>Scroll inside this box or use the trigger button, then stop. The reveal continues on its own clock and plays once. Reset is the only way to replay this study. IntersectionObserver models the entrance trigger; it is not Webflow’s original event engine.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="trigger-window" tabindex="0" role="region" aria-label="Scrollable one-shot reveal demonstration"><div class="trigger-spacer">Scroll down to bring the target into this viewport.</div><div class="trigger-target"><strong>One entrance. Its own clock.</strong><p>Pause scrolling now. The fade and rise keep going.</p></div><div class="trigger-spacer">Scroll back up and down: the target stays revealed.</div></div><div class="motion-controls"><button type="button" class="primary" data-trigger>Scroll to trigger</button><button type="button" data-reset>Reset entrance</button></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h2 id="ornaments">The heading ornament choreography</h2>
+<p>The Locations and Popular Services <code>.heading-wrapper</code> elements run list <code>a-3</code>. Their heading text independently uses the standard 300ms-delayed reveal. The ornament contains two lines and a 17 × 17px gold square.</p>
+<div class="scroll"><table><thead><tr><th>Element</th><th>Initial → final</th><th>Starts</th><th>Ends</th><th>Easing</th></tr></thead><tbody>
+<tr><td>Diamond scale</td><td>0 → 1</td><td>500ms</td><td>1500ms</td><td>ease, cubic-bezier(.25,.1,.25,1)</td></tr>
+<tr><td>Diamond rotation</td><td>0° → 225°</td><td>500ms</td><td>1700ms</td><td>outCubic</td></tr>
+<tr><td>Both line widths</td><td>0 → 150px each</td><td>1500ms</td><td>2500ms</td><td>outCubic</td></tr>
+</tbody></table></div>
+<p>These animations are in one played group with different delays, so they overlap. Lines begin extending at 1500ms while the final 200ms of diamond rotation is still happening. That overlap connects the two stages. A 225° rotated square has the same final diamond silhouette as a 45° square, but takes an extra half-turn to get there.</p>
+<p>The two lines have opposite anchoring around the centered diamond. Their outer edges extend away from it. Each line uses a gradient rather than a flat stroke, which softens its ends. At final state the ornament spans two 150px lines, a 17px diamond, and two 20px gaps.</p>
+<p>There are also two exported wrapper-width actions, including a nominal 2000ms-delayed growth to 300px. Both have <code>target:{}</code>. The runtime resolves these to no elements. They do not animate the heading wrapper on the current page. I observed no inline width assigned to the wrapper, while its diamond and lines acquired the expected rotation/scale/width styles.</p>
+<p>The email band reuses the visual black diamond/line markup, but has no matching entrance event for that ornament. Visual component reuse does not imply animation reuse.</p>
+<section class="motion-lab" id="motion-ornament" data-lab="ornament" data-duration="2500"><h3>Showcase: overlap the ornament stages</h3><p>Scale and rotation start at 500 ms. Lines begin at 1500 ms, overlapping the final 200 ms of rotation. The optional heading reveal has a separate trigger on the original site; here its trigger is aligned for comparison.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage ornament-stage"><div class="study-display" data-heading>Popular Services</div><div class="study-ornament" aria-hidden="true"><span class="study-line left"></span><span class="study-diamond"></span><span class="study-line right"></span></div><div class="study-caption">One shape. Three overlapping motion channels.</div></div><fieldset class="motion-options"><legend>Combine channels</legend><label><input type="checkbox" data-channel="heading" checked>Heading fade + rise</label><label><input type="checkbox" data-channel="scale" checked>Diamond scale</label><label><input type="checkbox" data-channel="rotate" checked>Diamond rotation</label><label><input type="checkbox" data-channel="lines" checked>Line growth</label></fieldset><div class="motion-controls"><button type="button" class="primary" data-play>Replay</button><button type="button" data-pause disabled>Pause</button><button type="button" data-start>Initial state</button><button type="button" data-end>Finished state</button></div><div class="motion-scrub"><label for="ornament-time">Scrub time</label><input id="ornament-time" type="range" min="0" max="2500" step="1" value="2500" data-time><span></span><output for="ornament-time" data-clock>2500 ms</output></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h2 id="cards">The services grid and cards</h2>
+<h3>The entrance is compounded, not staggered card by card</h3>
+<p>Events <code>e-11</code> and <code>e-13</code> target <code>.w-dyn-list</code> and its nested <code>.collection-list.feature</code>. Both run the same 50px rise and linear fade. If they are at the same animation progress, the effective opacity is <code>parentOpacity × childOpacity</code> and the vertical displacement is the sum of the two translations.</p>
+<p>At 50% fade progress, the grid is only 25% opaque, not 50%. A runtime sample showed each wrapper at <code>0.7425</code> opacity, producing approximately <code>0.5513</code> combined opacity. Both had a 0.291px translation, producing 0.582px total. Because they have separate bounding rectangles and triggers, slow scrolling can start them at different times. No item-index delay or individual card entrance stagger exists in these definitions.</p>
+<section class="motion-lab" id="motion-grid" data-lab="grid" data-duration="1300"><h3>Showcase: compare one wrapper with two</h3><p>These two examples use identical, aligned triggers. The nested example applies the fade and rise twice. Toggle the inner wrapper to see its contribution. The live wrappers can trigger at different times; no per-card stagger is authored.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage grid-study"><div class="grid-case"><div class="grid-case-label">One animated wrapper</div><div data-single><div class="mini-grid"><div class="mini-tile">Cut</div><div class="mini-tile">Beard</div><div class="mini-tile">Shave</div><div class="mini-tile">Style</div></div></div><div class="grid-values" data-single-values></div></div><div class="grid-case"><div class="grid-case-label">Two nested animated wrappers</div><div data-outer><div data-inner><div class="mini-grid"><div class="mini-tile">Cut</div><div class="mini-tile">Beard</div><div class="mini-tile">Shave</div><div class="mini-tile">Style</div></div></div></div><div class="grid-values" data-nested-values></div></div></div><fieldset class="motion-options"><legend>Combine channels</legend><label><input type="checkbox" data-channel="fade" checked>Fade</label><label><input type="checkbox" data-channel="rise" checked>Rise</label><label><input type="checkbox" data-channel="inner" checked>Inner wrapper</label></fieldset><div class="motion-controls"><button type="button" class="primary" data-play>Replay</button><button type="button" data-pause disabled>Pause</button><button type="button" data-start>Initial state</button><button type="button" data-end>Finished state</button></div><div class="motion-scrub"><label for="grid-time">Scrub time</label><input id="grid-time" type="range" min="0" max="1300" step="1" value="1300" data-time><span></span><output for="grid-time" data-clock>1300 ms</output></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h3>Hover: three coordinated effects</h3>
+<p>All five cards share the same authored data-w-id, so the hover definitions bind to each CMS item. Two independent event pairs operate on each card: text/gradient (<code>e-15/e-16</code>) and frame (<code>e-98/e-99</code>).</p>
+<div class="scroll"><table><thead><tr><th>Channel</th><th>Before first hover</th><th>Hover in</th><th>Hover out</th></tr></thead><tbody>
+<tr><td>Text body Y</td><td>249px down</td><td>→ 0px, 500ms outExpo</td><td>→ 70px, 500ms outExpo</td></tr>
+<tr><td>Bottom gradient height</td><td>40% of card</td><td>→ 80%, 500ms outExpo</td><td>→ 40%, 500ms outExpo</td></tr>
+<tr><td>Top/bottom gold segments</td><td>30% width</td><td>→ 100%, 500ms outQuad</td><td>→ 30%, 500ms outQuad</td></tr>
+<tr><td>Left/right gold segments</td><td>30% height</td><td>→ 100%, 500ms outQuad</td><td>→ 30%, 500ms outQuad</td></tr>
+<tr><td>Frame wrapper opacity</td><td>0</td><td>→ 1, 500ms outQuad</td><td>→ 0, 300ms inQuad</td></tr>
+</tbody></table></div>
+<p>The frame consists of four <strong>5px-thick</strong> absolutely positioned strips. Top and right are anchored at the top-right corner; bottom and left are anchored at the bottom-left. Their lengths expand toward a complete rectangle. Each card actually contains two identical frame wrappers, so the child selectors animate both copies. This duplication does not create two timed frame beats; they run concurrently.</p>
+<p>The gradient is <code>linear-gradient(transparent, rgba(0,0,0,.7) 41%, black)</code>. Increasing its height spreads the dark area farther up the photo, improving readability as the text rises. The image itself remains at <code>brightness(74%)</code>; its hover rule repeats the same value. There is no zoom or brightness animation specified by these active card timelines.</p>
+<p>The card’s image/body wrapper clips overflow, hiding text that sits below the card. The first state of 249px is not the same as the mouseout state of 70px. This was confirmed live: hovered text ended at 0px, then ended at 70px after leaving. A clean recreation should choose one consistent resting offset.</p>
+<p>The paired <code>autoStopEventId</code> links stop the opposing animation when pointer state changes. On interruption, the next tween starts from the current state and heads toward its destination. A replacement should cancel/retarget motion rather than queue competing hover transitions.</p>
+<section class="motion-lab" id="motion-card" data-lab="card" ><h3>Showcase: coordinate the card hover</h3><p>Hover, focus, tap the card, or use the buttons. The text, gradient, and four frame strips use different easing and exit timings. Reverse mid-flight to see cancellation and retargeting. This is the desktop behavior, demonstrated at every report width.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage card-stage"><button type="button" class="study-service-card" aria-label="Toggle service card hover demonstration" aria-pressed="false"><span class="card-art" aria-hidden="true"><span class="card-mark">01</span><span class="card-art-label">MOTION STUDY</span></span><span class="card-shade" aria-hidden="true"></span><span class="card-copy"><strong>Precision Cut</strong><span>Text rises as the dark gradient grows behind it.</span></span><span class="card-frame" aria-hidden="true"><i class="frame-top"></i><i class="frame-right"></i><i class="frame-bottom"></i><i class="frame-left"></i></span></button><div class="card-side-note">The source starts the body at <strong>249 px</strong>, but returns it to <strong>70 px</strong> after mouseout. “Reset first load” makes that difference visible.<br><br>The patterned artwork is static. The original card photograph has no zoom or brightness animation.</div></div><fieldset class="motion-options"><legend>Combine channels</legend><label><input type="checkbox" data-channel="body" checked>Text rise</label><label><input type="checkbox" data-channel="gradient" checked>Gradient growth</label><label><input type="checkbox" data-channel="frame" checked>Frame growth + fade</label></fieldset><div class="motion-controls"><button type="button" class="primary" data-enter>Hover in</button><button type="button" data-leave>Hover out</button><button type="button" data-reset>Reset first load</button></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h2 id="micro">Every smaller interaction</h2>
+<div class="scroll"><table><thead><tr><th>Target</th><th>Change</th><th>Transition</th></tr></thead><tbody>
+<tr><td>Top text links, <code>.nav-link</code></td><td>White → #ffb949</td><td>Color 300ms ease-out</td></tr>
+<tr><td>Locations toggle</td><td>Text hover color; dropdown open state</td><td>Toggle color 300ms ease-out. Panel display is immediate, with data-delay=0.</td></tr>
+<tr><td>Submenu text rows</td><td>translateX(-20px) → 0px; the short leading rule enters the clipped row</td><td>Transform 300ms cubic-bezier(.25,.46,.45,.94), color 350ms default ease</td></tr>
+<tr><td>Ordinary <code>.button-3</code> links: About Us, location Book Now, Location Info, View All</td><td>Background → #b17a13; color → black where different</td><td>Background/color 500ms cubic-bezier(.25,.46,.45,.94)</td></tr>
+<tr><td>Floating <code>.button-3.bottom-right</code></td><td>Gold → #eee</td><td>200ms default ease; fixed bottom/right 2em</td></tr>
+<tr><td>Hero and header <code>.button</code> booking links</td><td>Gold → #f8f8f8</td><td>No explicit transition on this button class; immediate state change</td></tr>
+<tr><td>Hero phone button, <code>.button.dark</code></td><td>#303030 → black</td><td>No explicit transition on this button class</td></tr>
+<tr><td>Hamburger button hover</td><td>scale(1) → scale(.96)</td><td>Transform 300ms default ease; applies to whole button</td></tr>
+<tr><td>Footer text links</td><td>translateX(0) → 10px; #d7d7d7 → white</td><td>Transform 200ms cubic-bezier(.55,.085,.68,.53); color 300ms ease-out</td></tr>
+<tr><td>Email field</td><td>Native focus border styling</td><td>No dedicated transition on the actual homepage <code>.text-field</code>. The bundled 400ms <code>.input-field</code> transition belongs to another class.</td></tr>
+<tr><td>Form success/error/loading state</td><td>Native Webflow display/text state changes</td><td>No custom animation attached. Submission was not performed.</td></tr>
+</tbody></table></div>
+<p>The page contains no active homepage carousel, background video, Lottie component, canvas animation, custom animated cursor, CSS marquee, or effective parallax/continuous scroll timeline in the inspected first-party implementation. Shared CSS includes slider/lightbox/spinner rules, but the corresponding components are absent here. Static photographs and fixed navigation can create a sense of layered movement without animated transforms.</p>
+<section class="motion-lab" id="motion-micro" data-lab="micro" ><h3>Showcase: the small interactions</h3><p>Hover or keyboard-focus each sample. The paired buttons apply and release all hover states together. Global playback speed also scales these CSS transitions; the immediate button remains immediate.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage micro-stage"><div class="micro-sample"><button type="button" class="micro-widget standard" >About Us</button><span>500 ms · cubic-bezier(.25,.46,.45,.94)</span></div><div class="micro-sample"><button type="button" class="micro-widget floating" >Book Now</button><span>200 ms · ease</span></div><div class="micro-sample"><button type="button" class="micro-widget instant" >Book Now</button><span>Immediate color change</span></div><div class="micro-sample"><button type="button" class="micro-widget footer" >Services →</button><span>200 ms move + 300 ms color</span></div><div class="micro-sample"><div class="micro-clip"><button type="button" class="micro-widget submenu" >Locations</button></div><span>300 ms move + 350 ms color</span></div><div class="micro-sample"><button type="button" class="micro-widget navtext" >Services</button><span>300 ms · ease-out</span></div><div class="micro-sample"><button type="button" class="micro-widget hamburger" aria-label="Hamburger hover study"><i></i><i></i><i></i></button><span>300 ms · scale to .96</span></div></div><div class="motion-controls"><button type="button" class="primary" data-apply>Apply all hover states</button><button type="button" data-release>Release all hover states</button></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h3>Booking is a separate motion system</h3>
+<p>Book Now opens a Squire iframe drawer. Its observed visible transform is <code>translateX(0px)</code>; its closed transform is <code>translateX(calc(100% + 50px))</code>. Entrance uses <strong>300ms cubic-bezier(.33,0,.09,1)</strong>; exit uses the same curve over <strong>150ms</strong>. The current page includes Squire loader/integration code and multiple widget frames, so this drawer is not a Webflow action list.</p>
+<p>The homepage’s custom integration switches visibility, z-index, and pointer-events on the widget root and suppresses the vendor’s floating book button. Those switches are not interpolated transitions. Vendor content can load after the outer drawer appears; the initial blank drawer observed during loading is not another deliberate fade. This audit stops at open/close rather than the internal appointment flow.</p>
+<section class="motion-lab" id="motion-drawer" data-lab="drawer" ><h3>Showcase: fast booking drawer exit</h3><p>Open takes 300 ms; close takes 150 ms with the same cubic curve. The offscreen destination is the panel width plus 50 px. This is a local motion simulation with no booking integration.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage panel-stage"><div class="panel-backdrop">Page beneath the booking drawer</div><div class="drawer-study-panel" inert><strong>Booking motion study</strong><span>Observe the outer panel’s travel.</span><span class="drawer-placeholder" aria-hidden="true"></span><button type="button" data-close>Close study drawer</button></div></div><div class="motion-controls"><button type="button" class="primary" data-open aria-expanded="false" aria-controls="study-drawer-panel">Open drawer</button><button type="button" data-shut>Close drawer</button></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h2 id="responsive">Responsive differences that matter</h2>
+<div class="scroll"><table><thead><tr><th>Width</th><th>Motion behavior</th></tr></thead><tbody>
+<tr><td>992px and up — main</td><td>All scroll reveals; text/gradient card hover plus frame hover; desktop navbar.</td></tr>
+<tr><td>768–991px — medium</td><td>Same scroll reveals. Text/gradient hover list is disabled, so card bodies have no 249px transform. Collapsed navigation uses the native menu panel.</td></tr>
+<tr><td>480–767px — small</td><td>Same scroll reveals and disabled text/gradient hover; mobile bottom bar present. Floating bottom-right booking button hidden at ≤767px.</td></tr>
+<tr><td>0–479px — tiny</td><td>Same scroll reveals; same card defaults. Hero height changes to 92vh rather than 100vh. Layout stacking changes when individual entrance targets reach the viewport.</td></tr>
+</tbody></table></div>
+<p>The gold frame hover events are configured for all four breakpoints. A width-only browser test does not prove behavior on a real touchscreen, where hover is unavailable or synthesized. At 820px I observed both the mobile bottom bar and floating booking button visible; at 390px the floating button was hidden.</p>
+<p>The native navbar uses <code>data-duration="600"</code>, <code>data-animation="default"</code>, and collapses below 992px. Its menu starts at <code>Y = -(navbar height + menu outer height)</code> and animates to 0. Opening uses <code>ease-out-quart</code>, implemented by Webflow’s tram as <code>cubic-bezier(.165,.84,.44,1)</code>. Closing uses <code>ease</code>, also 600ms. After closing, Webflow hides/restores the menu and resets its transform.</p>
+<p>The hamburger’s three line elements retained opacity 1 and no individual transforms after opening. Old lists named “Hamburger Menu” and “Nav Dropdown Open” exist in the bundle, but their target IDs are absent from the current homepage. Do not infer an X morph or 300ms accordion from their names.</p>
+<section class="motion-lab" id="motion-menu" data-lab="menu" ><h3>Showcase: menu entrance and exit</h3><p>This bounded panel models the native mobile menu: 600 ms in each direction, with different curves. Its initial travel is the header height plus the menu height. The hamburger’s bars do not morph into an X.</p><p class="study-settings-link"><a href="#motion-studies">Playback speed and reduced-motion settings ↑</a></p><div class="motion-stage panel-stage"><div class="panel-backdrop">Page beneath the menu</div><div class="menu-study-header"><span>Barber &amp; Co</span><span aria-hidden="true">☰</span></div><div class="menu-study-panel" inert><span>Home</span><span>Services</span><span>Locations</span><button type="button" data-close>Close study menu</button></div></div><div class="motion-controls"><button type="button" class="primary" data-open aria-expanded="false" aria-controls="study-menu-panel">Open menu</button><button type="button" data-shut>Close menu</button></div><div class="motion-readout" data-readout></div><p class="motion-status" data-status role="status" aria-live="polite"></p></section><h2 id="recreate">How to recreate the quality, and improve it</h2>
+<h3>A small motion vocabulary</h3>
+<p>Recreate these primitives: one-shot fade/rise, independent line growth, scale/rotate-then-extend ornaments, coordinated card text/overlay/frame hover, color transitions, and sliding panels. The craft comes from choosing which element groups own each primitive, spacing them well, and overlapping their timings. You do not need a different effect for every visible element.</p>
+<p><code>outExpo(p) = p === 1 ? 1 : 1 − 2^(−10p)</code>; <code>outCubic(p) = 1 − (1 − p)^3</code>; <code>outQuad(p) = 1 − (1 − p)^2</code>; <code>inQuad(p) = p²</code>; <code>inOutQuad(p) = 2p²</code> for p &lt; .5, otherwise <code>1 − (−2p + 2)² / 2</code>. CSS <code>ease</code> and <code>ease-out</code> are different cubic curves; an empty IX2 easing string resolves to linear progress. Webflow’s exact mathematical outExpo is not identical to an arbitrary CSS ease-out curve.</p>
+<h3>Dependency-free reveal example</h3>
+<p>This teaching example matches the main parent fade/rise channels and gold-line growth, using your own <code>data-reveal</code> and <code>data-title-line</code> elements. IntersectionObserver is a practical replacement for Webflow’s viewport test, not a byte-for-byte recreation of its scroll event engine. It gives each target its own trigger and plays once. Its initial-state setup assumes dedicated motion wrappers without pre-existing transforms.</p>
+<pre><code id="reveal-example">const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp = p =&gt; Math.max(0, Math.min(1, p));
+const expoOut = p =&gt; p === 1 ? 1 : 1 - 2 ** (-10 * p);
+const quadInOut = p =&gt; p &lt; .5 ? 2*p*p : 1 - (-2*p+2)**2/2;
+
+function tween(delay, duration, update) {
+  const start = performance.now() + delay;
+  function frame(now) {
+    const p = clamp((now - start) / duration);
+    update(p);
+    if (p &lt; 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+if (!reduce) {
+  const observer = new IntersectionObserver(entries =&gt; {
+    for (const {target, isIntersecting} of entries) {
+      if (!isIntersecting) continue;
+      observer.unobserve(target);
+      if (target.hasAttribute('data-reveal')) {
+        tween(300, 1000, p =&gt; {
+          target.style.opacity = p;
+          target.style.transform = `translateY(${50*(1-expoOut(p))}px)`;
+        });
+      } else {
+        tween(400, 1000, p =&gt; {
+          target.style.width = `${50*quadInOut(p)}px`;
+        });
+      }
+    }
+  }, {root: null, rootMargin: '0px', threshold: 0});
+
+  document.querySelectorAll('[data-reveal]').forEach(el =&gt; {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(50px)';
+    observer.observe(el);
+  });
+  document.querySelectorAll('[data-title-line]').forEach(el =&gt; {
+    el.style.width = '0px';
+    observer.observe(el);
+  });
+}
+// With reduced motion, leave content visible in its normal layout.</code></pre>
+<p>For a framework, initialize through its lifecycle and disconnect the observer/cancel animation frames on teardown. For production, arrange progressive enhancement so a failed initialization cannot strand text at opacity 0; ensure images have dimensions so loading does not move trigger positions.</p>
+<h3>If you really want three distinct luxury beats</h3>
+<p>That would be a new design rather than the exact inspected implementation. Give the label, scissors, and text separate motion wrappers. Trigger them from one section observer, with explicit relative starts—for example label 0ms, scissors 120ms, headline 240ms—and use smaller rise distances on the smaller elements. A shared trigger gives reproducible choreography; independent element observers make the sequence depend on scroll speed and layout. Keep paragraph/button grouped with the headline unless there is a reason to delay reading or action.</p>
+<h3>Improvements supported by this audit</h3>
+<ul>
+<li><strong>Use one reveal wrapper for the service grid.</strong> Remove the duplicate parent/child fade unless compounded opacity and up to 100px initial movement are intentional.</li>
+<li><strong>Give cards a consistent idle state.</strong> Replace the mismatch between 249px first-load and 70px after-hover offsets. Keep a title visible before interaction.</li>
+<li><strong>Keep card content usable on touch and keyboard.</strong> Show essential information by default; support focus-visible/focus-within when hover reveals extra detail. The inspected IX2 card events are pointer over/out, not focus events.</li>
+<li><strong>Use transform-based decorative growth where practical.</strong> scaleX/scaleY avoid repeated width/height layout updates. Preserve transform-origin to keep the same growing direction. If you want the Upscale label to move, animate it explicitly or intentionally retain layout growth.</li>
+<li><strong>Handle reduced motion explicitly.</strong> The inspected body lacks <code>data-wf-ix-vacation</code>. This bundle’s IX2 reduced-motion guard requires that attribute plus the media preference, so presence of reduced-motion code in the runtime alone does not prove the page enables it. The shared CSS has no dedicated reduced-motion rule. Prefer visible content, no large translations, and immediate panel states when requested.</li>
+<li><strong>Remove obsolete definitions.</strong> Empty target actions, duplicate frame markup, and absent-component animation lists obscure what actually runs.</li>
+<li><strong>Choose ornament speed deliberately.</strong> The original takes 2.5 seconds to finish. Keeping the overlap but shortening its delays/durations can improve responsiveness; there is no universal faster-is-better rule.</li>
+</ul>
+<h2 id="evidence">Evidence, target inventory, and exact action tables</h2>
+<p>Primary sources: <a href="https://www.barberandco.us/">live homepage</a>, <a href="https://cdn.prod.website-files.com/66e9959dc77a9ebbe055c1e0/js/barber-and-co.ec7dec17.3111fca94a4d1bda.js">published interaction/runtime bundle</a>, and <a href="https://cdn.prod.website-files.com/66e9959dc77a9ebbe055c1e0/css/barber-and-co.shared.0a635e7ff.min.css">published stylesheet</a>. These hashed URLs identify the inspected versions. The companion <a href="homepage-motion-data.json">homepage-motion-data.json</a> includes target mappings, timings, breakpoints, CSS declarations, source checksums, and runtime observations.</p>
+<p>There are three particularly misleading bundled definitions: <code>a-34</code> (“Navbar”) has an empty continuous action group; <code>a-35/a-36</code> match nav-list hover triggers but have empty action targets; and the wrapper-width actions in <code>a-3</code> have empty targets. The runtime’s target resolver returns an empty array when it has no valid ID/selector/event-target relation. None of those actions produces the nominal motion described by its title.</p>
+<h3>Matching homepage event definitions</h3><div class="scroll"><table><thead><tr><th>Event</th><th>Trigger / list</th><th>Target(s)</th><th>Breakpoints / status</th></tr></thead><tbody>
+<tr><td><code>e-3</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.vertical-flex Upscale Experience luxury at Miami’s Best upscale barbershop. At Barber &amp; Co Miami, we are</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-5</code></td><td>SCROLL_INTO_VIEW<br><code>a-2</code></td><td>div.title-divider <br>div.title-divider <br>div.title-divider </td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-7</code></td><td>SCROLL_INTO_VIEW<br><code>a-3</code></td><td>div.heading-wrapper popular services Hair wash, complimentary drink, grooming consultation &amp; styling are inclu</td><td>main, medium, small, tiny<br>Effective (a-3 has two empty-target actions)</td></tr>
+<tr><td><code>e-9</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>h2.heading-02 popular services</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-11</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.w-dyn-list Fade Learn More Haircut Learn More Imperial Shave Learn More Black Mask Learn More Nose &amp; </td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-13</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div._3-column-grid.collection-list.feature.w-dyn-items Fade Learn More Haircut Learn More Imperial Shave Learn More Black Mask Learn More Nose &amp; </td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-15</code></td><td>MOUSE_OVER<br><code>a-26</code></td><td>a.service-card.w-inline-block Fade Learn More<br>a.service-card.w-inline-block Haircut Learn More<br>a.service-card.w-inline-block Imperial Shave Learn More<br>a.service-card.w-inline-block Black Mask Learn More<br>a.service-card.w-inline-block Nose &amp; Ear Wax Learn More</td><td>main<br>Effective</td></tr>
+<tr><td><code>e-16</code></td><td>MOUSE_OUT<br><code>a-28</code></td><td>a.service-card.w-inline-block Fade Learn More<br>a.service-card.w-inline-block Haircut Learn More<br>a.service-card.w-inline-block Imperial Shave Learn More<br>a.service-card.w-inline-block Black Mask Learn More<br>a.service-card.w-inline-block Nose &amp; Ear Wax Learn More</td><td>main<br>Effective</td></tr>
+<tr><td><code>e-25</code></td><td>MOUSE_OUT<br><code>a-35</code></td><td>li.nav-list Services<br>li.nav-list Studio<br>li.nav-list.overflow-visible Locations Edgewater Pinecrest<br>li.nav-list.overflow-visible.bottom Book Now</td><td>main, medium, small, tiny<br>No effective action</td></tr>
+<tr><td><code>e-31</code></td><td>MOUSE_OVER<br><code>a-36</code></td><td>li.nav-list Services<br>li.nav-list Studio<br>li.nav-list.overflow-visible Locations Edgewater Pinecrest<br>li.nav-list.overflow-visible.bottom Book Now</td><td>main, medium, small, tiny<br>No effective action</td></tr>
+<tr><td><code>e-98</code></td><td>MOUSE_OVER<br><code>a-8</code></td><td>a.service-card.w-inline-block Fade Learn More<br>a.service-card.w-inline-block Haircut Learn More<br>a.service-card.w-inline-block Imperial Shave Learn More<br>a.service-card.w-inline-block Black Mask Learn More<br>a.service-card.w-inline-block Nose &amp; Ear Wax Learn More</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-99</code></td><td>MOUSE_OUT<br><code>a-9</code></td><td>a.service-card.w-inline-block Fade Learn More<br>a.service-card.w-inline-block Haircut Learn More<br>a.service-card.w-inline-block Imperial Shave Learn More<br>a.service-card.w-inline-block Black Mask Learn More<br>a.service-card.w-inline-block Nose &amp; Ear Wax Learn More</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-205</code></td><td>PAGE_SCROLL<br><code>a-34</code></td><td>root Barber &amp; Co - Luxury Barbershop &amp; Classic Haircuts in Miami @media (min-width:992px) {html</td><td>main, medium, small, tiny<br>No effective action</td></tr>
+<tr><td><code>e-254</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.vertical-flex What is the price of a haircut at Barber &amp; Co in Miami and Pinecrest? Haircuts and skin fa</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-256</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.vertical-flex we offer a variety of high-quality grooming products Let&#x27;s help you maintain your look bet</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-258</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.vertical-flex Biscayne at the border of wynwood, edgewater &amp; brickell Our Biscayne location is perfectly</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-260</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>div.vertical-flex Pinecrest/Dadeland Area in the heart of pinecrest Our Pinecrest location is conveniently s</td><td>main, medium, small, tiny<br>Effective</td></tr>
+<tr><td><code>e-262</code></td><td>SCROLL_INTO_VIEW<br><code>a-3</code></td><td>div.heading-wrapper locations</td><td>main, medium, small, tiny<br>Effective (a-3 has two empty-target actions)</td></tr>
+<tr><td><code>e-264</code></td><td>SCROLL_INTO_VIEW<br><code>a</code></td><td>h2.heading-02 locations</td><td>main, medium, small, tiny<br>Effective</td></tr>
+</tbody></table></div>
+<details><summary>a — Slide In From Bottom Delayed</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>STYLE_OPACITY<br><code>Trigger element</code></td><td>0ms / 500ms</td><td><code>{&quot;value&quot;: 0}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>TRANSFORM_MOVE<br><code>Trigger element</code></td><td>0ms / 500ms</td><td><code>{&quot;yValue&quot;: 50, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;px&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>STYLE_OPACITY<br><code>Trigger element</code></td><td>300ms / 1000ms</td><td><code>{&quot;value&quot;: 1}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_MOVE<br><code>Trigger element</code></td><td>300ms / 1000ms</td><td><code>{&quot;yValue&quot;: 0, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;px&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>outExpo</td></tr>
+</tbody></table></div></details>
+<details><summary>a-2 — Title Divider Animation</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>Trigger element</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 0, &quot;widthUnit&quot;: &quot;px&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>Trigger element</code></td><td>400ms / 1000ms</td><td><code>{&quot;widthValue&quot;: 50, &quot;widthUnit&quot;: &quot;px&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>inOutQuad</td></tr>
+</tbody></table></div></details>
+<details><summary>a-26 — Service Card Hover In 3</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>TRANSFORM_MOVE<br><code>.service-card-body</code></td><td>0ms / 500ms</td><td><code>{&quot;yValue&quot;: 249, &quot;xUnit&quot;: &quot;PX&quot;, &quot;yUnit&quot;: &quot;px&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.bottom-overlay</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 40, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_MOVE<br><code>.service-card-body</code></td><td>0ms / 500ms</td><td><code>{&quot;yValue&quot;: 0, &quot;xUnit&quot;: &quot;PX&quot;, &quot;yUnit&quot;: &quot;px&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>outExpo</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.bottom-overlay</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 80, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outExpo</td></tr>
+</tbody></table></div></details>
+<details><summary>a-28 — Service Card Hover Out 3</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Played group 0</td><td>TRANSFORM_MOVE<br><code>.service-card-body</code></td><td>0ms / 500ms</td><td><code>{&quot;yValue&quot;: 70, &quot;xUnit&quot;: &quot;PX&quot;, &quot;yUnit&quot;: &quot;px&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>outExpo</td></tr>
+<tr><td>Played group 0</td><td>STYLE_SIZE<br><code>.bottom-overlay</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 40, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outExpo</td></tr>
+</tbody></table></div></details>
+<details><summary>a-3 — Heading Style Wrapper 3</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 0, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>TRANSFORM_SCALE<br><code>.diamond-block</code></td><td>0ms / 500ms</td><td><code>{&quot;xValue&quot;: 0, &quot;yValue&quot;: 0}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>TRANSFORM_ROTATE<br><code>.diamond-block</code></td><td>0ms / 500ms</td><td><code>{&quot;zValue&quot;: 0, &quot;xUnit&quot;: &quot;DEG&quot;, &quot;yUnit&quot;: &quot;DEG&quot;, &quot;zUnit&quot;: &quot;deg&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.diamond-line</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 0, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_ROTATE<br><code>.diamond-block</code></td><td>500ms / 1200ms</td><td><code>{&quot;zValue&quot;: 225, &quot;xUnit&quot;: &quot;DEG&quot;, &quot;yUnit&quot;: &quot;DEG&quot;, &quot;zUnit&quot;: &quot;deg&quot;}</code><br>outCubic</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_SCALE<br><code>.diamond-block</code></td><td>500ms / 1000ms</td><td><code>{&quot;xValue&quot;: 1, &quot;yValue&quot;: 1}</code><br>ease</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.diamond-line</code></td><td>1500ms / 1000ms</td><td><code>{&quot;widthValue&quot;: 150, &quot;widthUnit&quot;: &quot;px&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outCubic</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>2000ms / 1500ms</td><td><code>{&quot;widthValue&quot;: 300, &quot;widthUnit&quot;: &quot;px&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outExpo</td></tr>
+</tbody></table></div></details>
+<details><summary>a-34 — Navbar</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td colspan="4">Empty continuous action groups: no rendered motion.</td></tr>
+</tbody></table></div></details>
+<details><summary>a-35 — Nav Link Hover In</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>TRANSFORM_MOVE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>0ms / 500ms</td><td><code>{&quot;xValue&quot;: -110, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;PX&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_MOVE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>0ms / 500ms</td><td><code>{&quot;xValue&quot;: 0, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;PX&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>outQuart</td></tr>
+</tbody></table></div></details>
+<details><summary>a-36 — Nav Link Hover Out</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Played group 0</td><td>TRANSFORM_MOVE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>0ms / 300ms</td><td><code>{&quot;xValue&quot;: 100, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;PX&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>outQuart</td></tr>
+<tr><td>Played group 1</td><td>TRANSFORM_MOVE<br><code>EMPTY TARGET — NO EFFECT</code></td><td>0ms / 0ms</td><td><code>{&quot;xValue&quot;: -110, &quot;xUnit&quot;: &quot;%&quot;, &quot;yUnit&quot;: &quot;PX&quot;, &quot;zUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+</tbody></table></div></details>
+<details><summary>a-8 — Border Animation On Hover In 2</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.animation-divider-top</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 30, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.animation-divider-right-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 30, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.animation-divider-left-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 30, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_SIZE<br><code>.animation-divider</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 30, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Initial state (immediate)</td><td>STYLE_OPACITY<br><code>.animate-on-view-wrapper</code></td><td>0ms / 500ms</td><td><code>{&quot;value&quot;: 0}</code><br>linear / unspecified initial-state easing</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.animation-divider</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 100, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.animation-divider-left-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 100, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.animation-divider-top</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 100, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 1</td><td>STYLE_SIZE<br><code>.animation-divider-right-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 100, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 1</td><td>STYLE_OPACITY<br><code>.animate-on-view-wrapper</code></td><td>0ms / 500ms</td><td><code>{&quot;value&quot;: 1}</code><br>outQuad</td></tr>
+</tbody></table></div></details>
+<details><summary>a-9 — Border Animation On Hover Out 2</summary><div class="scroll"><table><thead><tr><th>Group</th><th>Action / target</th><th>Delay / duration</th><th>Destination / easing</th></tr></thead><tbody>
+<tr><td>Played group 0</td><td>STYLE_SIZE<br><code>.animation-divider-right-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 30, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 0</td><td>STYLE_SIZE<br><code>.animation-divider-top</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 30, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 0</td><td>STYLE_SIZE<br><code>.animation-divider</code></td><td>0ms / 500ms</td><td><code>{&quot;widthValue&quot;: 30, &quot;widthUnit&quot;: &quot;%&quot;, &quot;heightUnit&quot;: &quot;PX&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 0</td><td>STYLE_SIZE<br><code>.animation-divider-left-horizontal</code></td><td>0ms / 500ms</td><td><code>{&quot;heightValue&quot;: 30, &quot;widthUnit&quot;: &quot;PX&quot;, &quot;heightUnit&quot;: &quot;%&quot;}</code><br>outQuad</td></tr>
+<tr><td>Played group 0</td><td>STYLE_OPACITY<br><code>.animate-on-view-wrapper</code></td><td>0ms / 300ms</td><td><code>{&quot;value&quot;: 0}</code><br>inQuad</td></tr>
+</tbody></table></div></details>
+<p class="meta">This is an audit of the delivered version observed on October 6, 2026. Published site updates, vendor widget updates, font/image loading, viewport height, and actual input hardware can affect later observations. Exact source values are distinguished from suggested recreation choices throughout.</p>
+</main><script>
+(() => {
+'use strict';
+const $ = (root, selector) => root.querySelector(selector);
+const $$ = (root, selector) => [...root.querySelectorAll(selector)];
+const clamp = p => Math.max(0, Math.min(1, p));
+const expo = p => p === 0 ? 0 : p === 1 ? 1 : 1 - 2 ** (-10 * p);
+const cubic = p => 1 - (1-p) ** 3;
+const quad = p => 1 - (1-p) ** 2;
+const inQuad = p => p*p;
+const inOutQuad = p => p < .5 ? 2*p*p : 1 - (-2*p+2)**2/2;
+const progress = (time, delay, duration) => clamp((time-delay)/duration);
+const mix = (a,b,p) => a+(b-a)*p;
+const fixed = (n,places=2) => n.toFixed(places);
+function bezier(x1,y1,x2,y2) {
+  const axis = (t,a,b) => 3*(1-t)**2*t*a + 3*(1-t)*t*t*b + t**3;
+  return p => {
+    if (p <= 0 || p >= 1) return clamp(p);
+    let lo=0,hi=1;
+    for (let i=0;i<24;i++) { const mid=(lo+hi)/2; if(axis(mid,x1,x2)<p)lo=mid;else hi=mid; }
+    return axis((lo+hi)/2,y1,y2);
+  };
+}
+const ease = bezier(.25,.1,.25,1);
+const menuEase = bezier(.165,.84,.44,1);
+const drawerEase = bezier(.33,0,.09,1);
+const speedControl = document.getElementById('study-speed');
+const reduceControl = document.getElementById('study-reduce');
+const preference = matchMedia('(prefers-reduced-motion: reduce)');
+reduceControl.checked = preference.matches;
+const speed = () => Number(speedControl.value);
+const reduced = () => reduceControl.checked;
+const channel = (root, key) => $(root, `[data-channel="${key}"]`)?.checked ?? true;
+const message = (root, value) => { $(root,'[data-status]').textContent=value; };
+const setGroup = (node,opacity,y) => {node.style.opacity=opacity;node.style.transform=`translateY(${y}px)`;};
+const controllers=[];
+function clock(root, render) {
+  const duration=Number(root.dataset.duration);
+  const range=$(root,'[data-time]'),output=$(root,'[data-clock]'),pause=$(root,'[data-pause]');
+  let time=duration,raf=0,playing=false,last=0;
+  const draw=()=>{render(time);range.value=Math.round(time);output.textContent=`${Math.round(time)} / ${duration} ms`;};
+  const stop=()=>{cancelAnimationFrame(raf);raf=0;playing=false;pause.disabled=true;};
+  const frame=now=>{
+    time=Math.min(duration,time+(now-last)*speed());last=now;draw();
+    if(time<duration)raf=requestAnimationFrame(frame);else{stop();message(root,'Finished. Scrub or replay to inspect another moment.');}
+  };
+  const play=()=>{
+    stop();time=0;
+    if(reduced()){time=duration;draw();message(root,'Destination shown immediately: reduced motion is enabled.');return;}
+    playing=true;pause.disabled=false;last=performance.now();draw();raf=requestAnimationFrame(frame);message(root,'Playing. You can pause or scrub at any point.');
+  };
+  $(root,'[data-play]').addEventListener('click',play);
+  pause.addEventListener('click',()=>{stop();message(root,`Paused at ${Math.round(time)} ms. Use Replay to start again or scrub to inspect.`);});
+  $(root,'[data-start]').addEventListener('click',()=>{stop();time=0;draw();message(root,'Initial state. Replay starts the timeline.');});
+  $(root,'[data-end]').addEventListener('click',()=>{stop();time=duration;draw();message(root,'Finished state.');});
+  range.addEventListener('input',()=>{stop();time=Number(range.value);draw();});
+  $$(root,'[data-channel]').forEach(input=>input.addEventListener('change',draw));
+  controllers.push({finish(){if(playing){stop();time=duration;draw();message(root,'Destination shown immediately: reduced motion is enabled.');}}});
+  draw();
+}
+const luxury=$(document,'[data-lab="luxury"]');
+clock(luxury,time=>{
+  const p=progress(time,300,1000),q=progress(time,400,1000);
+  const alpha=channel(luxury,'fade')?p:1,y=channel(luxury,'rise')?50*(1-expo(p)):0;
+  const width=channel(luxury,'line')?50*inOutQuad(q):50;
+  setGroup($(luxury,'[data-group]'),alpha,y);$(luxury,'[data-line]').style.width=`${width}px`;
+  $(luxury,'[data-readout]').textContent=`Parent opacity ${fixed(alpha,3)} · parent Y ${fixed(y)} px · line ${fixed(width)} px`;
+});
+const ornament=$(document,'[data-lab="ornament"]');
+clock(ornament,time=>{
+  const p=progress(time,300,1000),s=channel(ornament,'scale')?ease(progress(time,500,1000)):1;
+  const angle=channel(ornament,'rotate')?225*cubic(progress(time,500,1200)):225;
+  const width=channel(ornament,'lines')?150*cubic(progress(time,1500,1000)):150;
+  setGroup($(ornament,'[data-heading]'),channel(ornament,'heading')?p:1,channel(ornament,'heading')?50*(1-expo(p)):0);
+  $(ornament,'.study-diamond').style.transform=`rotate(${angle}deg) scale(${s})`;
+  $$(ornament,'.study-line').forEach(line=>line.style.width=`${width}px`);
+  $(ornament,'[data-readout]').textContent=`Scale ${fixed(s,3)} · rotation ${fixed(angle)}° · each line ${fixed(width)} px (constrained to fit on small screens)`;
+});
+const grid=$(document,'[data-lab="grid"]');
+clock(grid,time=>{
+  const p=progress(time,300,1000),alpha=channel(grid,'fade')?p:1,y=channel(grid,'rise')?50*(1-expo(p)):0;
+  const inner=channel(grid,'inner');
+  setGroup($(grid,'[data-single]'),alpha,y);setGroup($(grid,'[data-outer]'),alpha,y);setGroup($(grid,'[data-inner]'),inner?alpha:1,inner?y:0);
+  $(grid,'[data-single-values]').textContent=`Effective opacity ${fixed(alpha,3)} · total Y ${fixed(y)} px`;
+  $(grid,'[data-nested-values]').textContent=`Effective opacity ${fixed(inner?alpha*alpha:alpha,3)} · total Y ${fixed(inner?y*2:y)} px`;
+  $(grid,'[data-readout]').textContent=`Fade progress ${fixed(p*100,1)}% · movement progress ${fixed(expo(p)*100,1)}%`;
+});
+function triggerStudy(root) {
+  const viewport=$(root,'.trigger-window'),target=$(root,'.trigger-target');
+  let observer,raf=0,triggered=false,time=0,last=0,playing=false,generation=0;
+  const render=()=>{const p=progress(time,300,1000);setGroup(target,p,50*(1-expo(p)));$(root,'[data-readout]').textContent=`${Math.round(time)} / 1300 ms · ${triggered?'trigger consumed':'waiting for intersection'} · scroll position ${Math.round(viewport.scrollTop)} px`;};
+  const stop=()=>{cancelAnimationFrame(raf);playing=false;};
+  const frame=now=>{time=Math.min(1300,time+(now-last)*speed());last=now;render();if(time<1300)raf=requestAnimationFrame(frame);else{stop();message(root,'Finished. Leaving and returning does not replay it; use Reset entrance.');}};
+  const reset=()=>{
+    stop();observer?.disconnect();generation++;const current=generation;triggered=false;time=0;viewport.scrollTop=0;render();
+    if(!('IntersectionObserver' in window)){message(root,'This browser does not support IntersectionObserver.');return;}
+    observer=new IntersectionObserver(entries=>{if(current!==generation)return;for(const entry of entries){if(!entry.isIntersecting||triggered)continue;triggered=true;observer.unobserve(target);if(reduced()){time=1300;render();message(root,'Trigger consumed. Destination shown immediately with reduced motion.');}else{playing=true;last=performance.now();raf=requestAnimationFrame(frame);message(root,'Intersection triggered the clock. Stop scrolling and watch it finish.');}}},{root:viewport,threshold:0});
+    observer.observe(target);message(root,'Reset. Scroll within the box to trigger the entrance.');
+  };
+  $(root,'[data-trigger]').addEventListener('click',()=>viewport.scrollTo({top:260,behavior:'instant'}));
+  $(root,'[data-reset]').addEventListener('click',reset);viewport.addEventListener('scroll',render,{passive:true});
+  controllers.push({finish(){if(playing){stop();time=1300;render();message(root,'Destination shown immediately with reduced motion.');}}});reset();
+}
+triggerStudy($(document,'[data-lab="trigger"]'));
+function cardStudy(root) {
+  const card=$(root,'.study-service-card');
+  let state={y:249,gradient:40,length:30,alpha:0},active=false,raf=0,last=0,elapsed=0,from,target,pointerType='';
+  const draw=()=>{
+    const body=channel(root,'body'),gradient=channel(root,'gradient'),frame=channel(root,'frame');
+    $(root,'.card-copy').style.transform=`translateY(${body?state.y:0}px)`;
+    $(root,'.card-shade').style.height=`${gradient?state.gradient:40}%`;
+    $(root,'.card-frame').style.opacity=frame?state.alpha:0;
+    $$(root,'.frame-top,.frame-bottom').forEach(n=>n.style.width=`${state.length}%`);
+    $$(root,'.frame-left,.frame-right').forEach(n=>n.style.height=`${state.length}%`);
+    $(root,'[data-readout]').textContent=`Body Y ${fixed(body?state.y:0)} px · gradient ${fixed(gradient?state.gradient:40)}% · strip length ${fixed(state.length)}% · frame opacity ${fixed(frame?state.alpha:0,3)}`;
+  };
+  const stop=()=>{cancelAnimationFrame(raf);raf=0;};
+  const frame=now=>{
+    elapsed+= (now-last)*speed();last=now;
+    const p=clamp(elapsed/500);
+    state={y:mix(from.y,target.y,expo(p)),gradient:mix(from.gradient,target.gradient,expo(p)),length:mix(from.length,target.length,quad(p)),alpha:mix(from.alpha,target.alpha,active?quad(p):inQuad(clamp(elapsed/300)))};
+    draw();if(p<1)raf=requestAnimationFrame(frame);else{raf=0;message(root,active?'Hover in finished.':'Hover out finished. The body now rests at 70 px.');}
+  };
+  const go=enter=>{
+    stop();active=enter;card.setAttribute('aria-pressed',String(active));from={...state};target={y:active?0:70,gradient:active?80:40,length:active?100:30,alpha:active?1:0};elapsed=0;
+    if(reduced()){state={...target};draw();message(root,'Destination shown immediately with reduced motion.');return;}
+    last=performance.now();raf=requestAnimationFrame(frame);message(root,active?'Playing hover in.':'Playing hover out.');
+  };
+  const reset=()=>{stop();active=false;card.setAttribute('aria-pressed','false');state={y:249,gradient:40,length:30,alpha:0};draw();message(root,'First-load state restored: body 249 px below its final position.');};
+  $(root,'[data-enter]').addEventListener('click',()=>go(true));$(root,'[data-leave]').addEventListener('click',()=>go(false));$(root,'[data-reset]').addEventListener('click',reset);
+  card.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'||event.pointerType==='pen')go(true);});
+  card.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'||event.pointerType==='pen')go(false);});
+  card.addEventListener('pointerdown',event=>{pointerType=event.pointerType;});
+  card.addEventListener('focus',()=>{if(pointerType!=='touch')go(true);});card.addEventListener('blur',()=>{pointerType='';go(false);});
+  card.addEventListener('click',()=>go(!active));
+  $$(root,'[data-channel]').forEach(n=>n.addEventListener('change',draw));
+  controllers.push({finish(){if(raf){stop();state={...target};draw();message(root,'Destination shown immediately with reduced motion.');}}});reset();
+}
+cardStudy($(document,'[data-lab="card"]'));
+function microStudy(root) {
+  const stage=$(root,'.micro-stage');
+  const update=()=>{
+    const f=reduced()?0:1/speed();
+    const durations={standard:[.5,.5],floating:[.2],footer:[.2,.3],submenu:[.3,.35],navtext:[.3],hamburger:[.3]};
+    Object.entries(durations).forEach(([cls,values])=>$(root,`.${cls}`).style.transitionDuration=values.map(n=>`${n*f}s`).join(','));
+    $(root,'[data-readout]').textContent=`CSS transitions at ${speed()}× playback${reduced()?' · durations suppressed by reduced motion':''}`;
+  };
+  $(root,'[data-apply]').addEventListener('click',()=>{stage.classList.add('forced-hover');message(root,'All hover states applied.');});
+  $(root,'[data-release]').addEventListener('click',()=>{stage.classList.remove('forced-hover');message(root,'All forced hover states released. A pointer or focused sample can still keep its own hover state.');});
+  speedControl.addEventListener('change',update);reduceControl.addEventListener('change',update);update();
+}
+microStudy($(document,'[data-lab="micro"]'));
+function panelStudy(root,kind) {
+  const panel=$(root,kind==='menu'?'.menu-study-panel':'.drawer-study-panel'),open=$(root,'[data-open]');
+  panel.id=`study-${kind}-panel`;
+  let position=0,from=0,to=0,elapsed=0,last=0,raf=0,duration=0,opened=false;
+  const distance=()=>kind==='menu'?$(root,'.menu-study-header').offsetHeight+panel.offsetHeight:panel.offsetWidth+50;
+  const draw=()=>{
+    const d=distance();panel.style.transform=kind==='menu'?`translateY(${-d*(1-position)}px)`:`translateX(${d*(1-position)}px)`;
+    panel.style.visibility=position===0&&!opened?'hidden':'visible';
+    $(root,'[data-readout]').textContent=`${kind==='menu'?'Y':'X'} ${fixed((kind==='menu'?-1:1)*d*(1-position))} px · travel ${d} px · ${opened?'open':'closed'} destination`;
+  };
+  const finish=()=>{cancelAnimationFrame(raf);raf=0;position=to;draw();message(root,opened?'Panel open. Use Close or Escape.':'Panel closed.');};
+  const frame=now=>{elapsed+=(now-last)*speed();last=now;const p=clamp(elapsed/duration);position=mix(from,to,(kind==='drawer'?drawerEase:opened?menuEase:ease)(p));draw();if(p<1)raf=requestAnimationFrame(frame);else finish();};
+  const go=value=>{
+    cancelAnimationFrame(raf);raf=0;opened=value;panel.inert=!value;open.setAttribute('aria-expanded',String(value));
+    if(!value&&panel.contains(document.activeElement))open.focus();
+    from=position;to=value?1:0;elapsed=0;duration=kind==='menu'?600:value?300:150;
+    if(reduced()){finish();return;}
+    last=performance.now();draw();raf=requestAnimationFrame(frame);message(root,`Playing ${value?'open':'close'}: ${duration} ms source duration.`);
+  };
+  open.addEventListener('click',()=>go(true));$(root,'[data-shut]').addEventListener('click',()=>go(false));$(root,'[data-close]').addEventListener('click',()=>go(false));
+  root.addEventListener('keydown',event=>{if(event.key==='Escape'&&opened){event.preventDefault();go(false);open.focus();}});
+  window.addEventListener('resize',draw);controllers.push({finish(){if(raf)finish();}});draw();
+}
+panelStudy($(document,'[data-lab="menu"]'),'menu');panelStudy($(document,'[data-lab="drawer"]'),'drawer');
+reduceControl.addEventListener('change',()=>{document.documentElement.classList.toggle('study-reduced',reduced());if(reduced())controllers.forEach(c=>c.finish());});
+document.documentElement.classList.toggle('study-reduced',reduced());
+
+})();
+
+</script></body></html>

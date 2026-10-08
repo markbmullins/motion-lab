@@ -1,0 +1,14 @@
+{
+  "letters": [
+    "transform: translateY(106.886%);",
+    "transform: translateY(117.816%);",
+    "transform:translateY(120%)",
+    "transform:translateY(120%)",
+    "transform:translateY(120%)"
+  ],
+  "media": "opacity: 0.6; filter: blur(2px); transform: scale(1.11319);",
+  "support": [
+    "0",
+    "0"
+  ]
+}

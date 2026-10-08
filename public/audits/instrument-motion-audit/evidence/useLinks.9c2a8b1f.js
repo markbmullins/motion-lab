@@ -1,0 +1,1 @@
+const n=()=>{const r=document.querySelectorAll("a");r!=null&&r.length&&r.forEach(t=>{var e;(e=t==null?void 0:t.getAttribute("href"))!=null&&e.startsWith("http")&&(t.setAttribute("target","_blank"),t.setAttribute("rel","noopener noreferrer"))})};export{n as u};

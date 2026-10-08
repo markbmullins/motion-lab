@@ -1,0 +1,320 @@
+[
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/32c039788ef328d8.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "32c039788ef328d8.js",
+    "bytes": 33801,
+    "sha256": "a44e52b4a110524910b1709269c3edc118c48dca90fc3c7cdc2ff41e60e13ef3"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/c023ce6eb64a7e8f.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "c023ce6eb64a7e8f.js",
+    "bytes": 223557,
+    "sha256": "ddec122932338b969ef886eea743397f743b5e2e4641a88f1e6501e3fa057b94"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/d945a4743ff4a024.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "d945a4743ff4a024.js",
+    "bytes": 84661,
+    "sha256": "1ccf2afcf21e371853ab057011ffaaff00660cce1c5916f9092faa3f35003cde"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/f9f7c8ab49189135.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "f9f7c8ab49189135.js",
+    "bytes": 50018,
+    "sha256": "d02702b3e08729cc8a3684ce6ebba4937f99f9791a2de1ff24e821c003848abd"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/turbopack-21f09457add02f65.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "turbopack-21f09457add02f65.js",
+    "bytes": 10730,
+    "sha256": "1d28a52dfa81bed0bf7f22cd58656f2f8200544bbe7515d1ca50f0dd0decd505"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/35aeaf64e7a88da3.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "35aeaf64e7a88da3.js",
+    "bytes": 6143,
+    "sha256": "6c93d2a40938862f99c075931502c47125f5ff8f181a382a32b0a7294a38faaf"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/03b569d16303be31.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "03b569d16303be31.js",
+    "bytes": 24930,
+    "sha256": "5f54d38ef402ec35b53b8f53be63105adb65c3da6c0c023e816450c87f27b4b6"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/c26a4425589fe714.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "c26a4425589fe714.js",
+    "bytes": 29084,
+    "sha256": "1ec137fbf472d6162eeb75e1b56dfcb06657ef6e3b12b2eec4f26b9dc4e7eafc"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/487a7f969d973243.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "487a7f969d973243.js",
+    "bytes": 26529,
+    "sha256": "3720d67cc4b6a7cf1a59d722c6a681869369a94a7776e58d790f1cc09b94ae18"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/91dde80e4e8bfb41.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "91dde80e4e8bfb41.js",
+    "bytes": 22380,
+    "sha256": "782abd5bbf3afd3babc63d6560a7bec254eb64f54a219463d72792c9721340df"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/57a0f45fa947139b.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "57a0f45fa947139b.js",
+    "bytes": 28221,
+    "sha256": "441d06b0e49203e5a2f782c644228e3ca09e7094ead94a9cd82495af33b0b2ee"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/e26440d14bd15f71.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "e26440d14bd15f71.js",
+    "bytes": 25425,
+    "sha256": "3ca565182799bd21088d8b492aec8dcda257962abe1243ac7976f2ed4af34cca"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/37978edf8bf064a2.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "37978edf8bf064a2.js",
+    "bytes": 23371,
+    "sha256": "f4d913901cd99a12740af74177945c63a368e35ccf6c58cc1a94f4b91775cda8"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/29bc85b92546f6fb.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "29bc85b92546f6fb.js",
+    "bytes": 24451,
+    "sha256": "7831958293e92f3913ea1c8466fd0ac1c90a02d1cc8bd0ea2e4a633303b257cb"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/288d2982d73cba8c.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "288d2982d73cba8c.js",
+    "bytes": 40314,
+    "sha256": "d14c3814a51e28eac10ddeb6acd194ea311284cb41558c1b5816353f69aeaf5b"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/dfcab127872932c7.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "dfcab127872932c7.js",
+    "bytes": 45337,
+    "sha256": "5b365f7346944111303de7076d592a337827d9c054c3577305f470f363966532"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/3736622aa2951352.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "3736622aa2951352.js",
+    "bytes": 34887,
+    "sha256": "5e15ec9eab665f7447b3b51ff7f264b370ad69a18eb780b39fe21ecb6be0df69"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/aac18c92871df0e1.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "aac18c92871df0e1.js",
+    "bytes": 30894,
+    "sha256": "0666d28627919686ff8fd78ea6f545cbee4fdcb3ca9f11405c7341961e16bcad"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/7578330437034cbf.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "7578330437034cbf.js",
+    "bytes": 41035,
+    "sha256": "9698ec8544ccef798b535c311b75fd3959811b23732487a6266c76d59a29b4da"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/f8e1f6b91a0e19e1.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "f8e1f6b91a0e19e1.js",
+    "bytes": 42502,
+    "sha256": "487457c8e5d2596d2aa09e724eb503b94d073af4405106ae6050b39396a03d23"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/3462b53b9009288a.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "3462b53b9009288a.js",
+    "bytes": 75288,
+    "sha256": "f886c75e6b861a61305cdafb54d66629fbae91ccebd37f1db3faffcdb23a6ffd"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/f56f56753bb184ef.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "f56f56753bb184ef.js",
+    "bytes": 223328,
+    "sha256": "bb083b8b549723b033ff5e64db0c66b16a7ac7693cfef695af32c6d0f08b04c4"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/beeeb39da60ef107.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "beeeb39da60ef107.js",
+    "bytes": 152009,
+    "sha256": "60f1efe68d69f1f443096117754d6768387dba95b2e8ca62906b4d619ce36a45"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/b664f27371261aee.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "b664f27371261aee.js",
+    "bytes": 98799,
+    "sha256": "ca20b38b992b85774b182dd9da8628fc158a74914b835df8650d9fc293410aee"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/9131ef9020552984.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "9131ef9020552984.js",
+    "bytes": 24017,
+    "sha256": "3685179afba2b73f5f2396795aa3205cf4e73dac320a458c3622a7d0a30fea52"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/1ba9806cd1e37756.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "1ba9806cd1e37756.js",
+    "bytes": 42409,
+    "sha256": "0e69c968e68244711c130f2721b1428c6e95f7feda069c18c2007b3a1da8eb14"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/24a5a8322c7ee35e.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "24a5a8322c7ee35e.js",
+    "bytes": 45381,
+    "sha256": "e0b2a910faa06386350177c58d050bf5ae42ce9344a1cfcb306a5a4852b8e395"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/2ed703a53512c6bb.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "2ed703a53512c6bb.js",
+    "bytes": 43337,
+    "sha256": "a7170ce04d67d2e12988a7b756d4e4c46e07959052b5b91c99cf8bd26327ca72"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/99fe663ebcc99cfa.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "99fe663ebcc99cfa.js",
+    "bytes": 35589,
+    "sha256": "fa5c934c341f4a94454be0f52378fd62968267953ff037565aa779d6acbeacce"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/b5ad62f4cd7589b8.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "b5ad62f4cd7589b8.js",
+    "bytes": 154024,
+    "sha256": "fdb25d4598c59a7bde61b222ebacf9558b99006c422c0afa77bcee92323b97ac"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/7dbdaf06c47d2c40.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "7dbdaf06c47d2c40.js",
+    "bytes": 1162,
+    "sha256": "4898692f8ef6fcf37d7cfc5ae6d7507eda7b409fbc3990ccf89d03b192174d4d"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/e693a111acb2493a.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "e693a111acb2493a.js",
+    "bytes": 23942,
+    "sha256": "03b697dd9a95838a932cd6abb2e1143f947a4a514bd88ecd00b9dedca740327a"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/43f8342382a2e50d.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "43f8342382a2e50d.js",
+    "bytes": 58936,
+    "sha256": "8f15cb3ddeb2b5f843006b2611c90118419fe2951ef4e074fda1e0257d45eb90"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a38911ff8b6091cb.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a38911ff8b6091cb.js",
+    "bytes": 18851,
+    "sha256": "227001a719038de622fcbdce0aefb946ab980120065c5f53385003659ed763ce"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a6dad97d9634a72d.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a6dad97d9634a72d.js",
+    "bytes": 112594,
+    "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/738fa642168d7f35.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "738fa642168d7f35.js",
+    "bytes": 6296,
+    "sha256": "093cfaff7e37d1df5bb9250c2d61f58b45c5415279159777e8bf2a1b697b91bc"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a48611a2df19b616.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a48611a2df19b616.js",
+    "bytes": 31193,
+    "sha256": "ad794fb9372896dbdd8a088945635eab756e8bb390c096d0868cc63013cdec5f"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/26f4d4615019e65f.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "26f4d4615019e65f.js",
+    "bytes": 124500,
+    "sha256": "b2e76c0a6244f30a827bb9fd93f7e4382f33f5bfcbc88817339e32deb8ccd855"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/283d6f9b8a3afe66.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "283d6f9b8a3afe66.js",
+    "bytes": 17411,
+    "sha256": "502ce2cc7b4dded89c59f1aadc90d9cd08035514a24fcd50c3527413e3260cd9"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/dddb31d6982abe9f.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "dddb31d6982abe9f.js",
+    "bytes": 19577,
+    "sha256": "37e1591f16d88d06502b97e595dd8b670972481833a1c15ba4a6a5cb11db7d53"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/7d93111c3965a48f.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "7d93111c3965a48f.js",
+    "bytes": 21309,
+    "sha256": "c3ce7161be61737a7e20b894094bd02431e1c2468d08f61b88727fedab2b2534"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/b816ebeaba7b1795.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "b816ebeaba7b1795.js",
+    "bytes": 5845,
+    "sha256": "b2e2f1a9fd5fa54b97a0c7545ad8c0f0412905dc1af79d77edff88fb6f4dc161"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a038fdf1b6baa266.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a038fdf1b6baa266.js",
+    "bytes": 16720,
+    "sha256": "f57ea354ecee120e15ef6cf04b52cb6647c399bf3583a4f62538ecb1fb9c2e7c"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/78076b44466090a5.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "78076b44466090a5.js",
+    "bytes": 32904,
+    "sha256": "f4716f21e459f6369c2aa75150d7a26682b2d16a20efd7dfab6a752bea4a18b3"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/cedb18fc1877eb18.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "cedb18fc1877eb18.js",
+    "bytes": 1659,
+    "sha256": "d788e62b8f73c06d2e4506025796c5202c89d31abe55ffeb7e5bd52148f71c75"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/9674e576c0e853cc.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "9674e576c0e853cc.js",
+    "bytes": 28012,
+    "sha256": "c2a0bbe660609b3343cb578c067753f468f0fcdb2a7b96d69689efceebfcb1d9"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a2c913f11796aee4.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a2c913f11796aee4.js",
+    "bytes": 12996,
+    "sha256": "db458307d920ef08fa589d3e61d8fc5e454e7e69b4ac7b84463511b8ebed4d8c"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/831248ac33949ec9.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "831248ac33949ec9.js",
+    "bytes": 20381,
+    "sha256": "0ae6d806dc895997f4ce9d528298140e4045eb8c338cf2b00a955a6731850d61"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/d6f5df857bb7a6d6.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "d6f5df857bb7a6d6.js",
+    "bytes": 610,
+    "sha256": "45b23237948b0cfce2fb9ff8fd0796f9c95aff12725d474058fd1ceb4f9a645d"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/02f02bb02ebc2147.js?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "02f02bb02ebc2147.js",
+    "bytes": 8679,
+    "sha256": "53f5d0605b879900cd366e993a7152a7f045a201d8d72c9b119dbce43892aa5c"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/706408b83b455d97.css?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "706408b83b455d97.css",
+    "bytes": 3713,
+    "sha256": "4774629b2500429a2cb67ea78dc0f080bbb3d6c028f94006ab4391180f3c201b"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/a0955bf8ab7df94c.css?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "a0955bf8ab7df94c.css",
+    "bytes": 122691,
+    "sha256": "b35adb076b953a8bbff2ae3efec269430e0224b993504c37ef04f7de9a6c3af0"
+  },
+  {
+    "url": "https://www.vestre.com/_next/static/chunks/496145751534e116.css?dpl=dpl_dqmtWsfdDZTGL4wLsXfGNcM33xqj",
+    "file": "496145751534e116.css",
+    "bytes": 2471,
+    "sha256": "82d899691576bbdbef3edb16efbbf84eb3417fc9aef1d020e07c783f636a72f8"
+  }
+]

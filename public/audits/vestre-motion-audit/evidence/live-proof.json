@@ -1,0 +1,25 @@
+{
+  "compact": "true",
+  "footerAnimation": "120s linear infinite footer-shapes-module__zX7oxG__footer-strip-scroll",
+  "helpOpacity": "0",
+  "scriptCount": 50,
+  "url": "https://www.vestre.com/us",
+  "videoStates": [
+    {
+      "paused": false,
+      "top": -5445
+    },
+    {
+      "paused": false,
+      "top": -4041.8671875
+    },
+    {
+      "paused": false,
+      "top": -3265.6015625
+    }
+  ],
+  "viewport": {
+    "height": 900,
+    "width": 1440
+  }
+}

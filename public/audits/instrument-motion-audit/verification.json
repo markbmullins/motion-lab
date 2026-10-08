@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-07",
+  "browser": "Codex in-app Chromium browser",
+  "startEndControls": [
+    {
+      "id": "entrance",
+      "start": "0 / 2060 ms",
+      "end": "2060 / 2060 ms"
+    },
+    {
+      "id": "reveal",
+      "start": "0 / 2400 ms",
+      "end": "2400 / 2400 ms"
+    },
+    {
+      "id": "purpose",
+      "start": "0 / 2400 ms",
+      "end": "2400 / 2400 ms"
+    },
+    {
+      "id": "batch",
+      "start": "0 / 1500 ms",
+      "end": "1500 / 1500 ms"
+    },
+    {
+      "id": "filters",
+      "start": "0 / 1300 ms",
+      "end": "1300 / 1300 ms"
+    },
+    {
+      "id": "bead",
+      "start": "0 / 300 ms",
+      "end": "300 / 300 ms"
+    },
+    {
+      "id": "dropdown",
+      "start": "0 / 480 ms",
+      "end": "480 / 480 ms"
+    },
+    {
+      "id": "header",
+      "start": "0 / 3000 ms",
+      "end": "3000 / 3000 ms"
+    },
+    {
+      "id": "announcement",
+      "start": "0 / 300 ms",
+      "end": "300 / 300 ms"
+    },
+    {
+      "id": "logos",
+      "start": "0 / 5900 ms",
+      "end": "5900 / 5900 ms"
+    },
+    {
+      "id": "slideshow",
+      "start": "0 / 3300 ms",
+      "end": "3300 / 3300 ms"
+    },
+    {
+      "id": "mobile",
+      "start": "0 / 2050 ms",
+      "end": "2050 / 2050 ms"
+    },
+    {
+      "id": "micro",
+      "start": "0 / 330 ms",
+      "end": "330 / 330 ms"
+    },
+    {
+      "id": "cookie",
+      "start": "0 / 750 ms",
+      "end": "750 / 750 ms"
+    }
+  ],
+  "responsive": [
+    {
+      "body": 305,
+      "doc": 305,
+      "overflow": [],
+      "width": 320
+    },
+    {
+      "body": 753,
+      "doc": 753,
+      "overflow": [],
+      "width": 768
+    },
+    {
+      "body": 1009,
+      "doc": 1009,
+      "overflow": [],
+      "width": 1024
+    },
+    {
+      "body": 1425,
+      "doc": 1425,
+      "overflow": [],
+      "width": 1440
+    }
+  ],
+  "localConsole": [],
+  "checks": [
+    "Slow playback and pause: first word partially revealed while last is hidden",
+    "Keyboard range at 650ms: outgoing complete, incoming not started",
+    "Reduced-motion replay immediately reaches destination",
+    "Reveal modes: 15 non-space characters, 3 lines, 1 whole element, 8 words",
+    "Purpose comparison changes container opacity 0.3 to 1",
+    "Completed batch clears inline opacity and transform",
+    "Logo columns switch to 3; source reduced policy 4000ms with no translation",
+    "Manual slide 5 selects and fades correctly",
+    "Mobile exit reaches zero overlay opacity",
+    "Cookie exit at 75ms anticipates with y=-2.6px",
+    "Focus selects About bead with measured geometry",
+    "Dropdown close hides all items immediately",
+    "Native nested scroll hides and restores header",
+    "Card focus leaves focused opacity 1, siblings 0.5; scale settles from 1.05 to 1"
+  ],
+  "limits": [
+    "No OS motion preference was changed; source guards inspected and showcase preference tested",
+    "No frame-time, FPS, compositor, CPU or GPU trace",
+    "Narrow viewport uses fine pointer; not a physical touch test",
+    "Full-page actual-homepage capture is a layout record, not observer timing evidence",
+    "Illustrative purpose offsets, batch arrival groups, header replay and grouped menu exit are labelled in report"
+  ]
+}

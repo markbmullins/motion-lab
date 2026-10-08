@@ -1,0 +1,1 @@
+.client-list{-moz-column-gap:var(--grid-gap);column-gap:var(--grid-gap);display:grid;grid-template-columns:repeat(3,1fr);margin:var(--space-48) var(--side-spacing)}@media (min-width:64rem){.client-list{-moz-column-gap:var(--grid-gap);column-gap:var(--grid-gap);display:grid;grid-template-columns:repeat(6,1fr)}}
